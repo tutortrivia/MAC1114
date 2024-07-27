@@ -1,4 +1,5 @@
 import { shuffleArray, getAvailableLibraries, updateGameTitle, updateTimerDisplay, toggleQRCode } from './util.js';
+import { loadQuestionLibrary, allQuestions } from './questions.js';
 
 const startButton = document.getElementById('start-button');
 const gameContent = document.getElementById('game-content');
@@ -251,11 +252,16 @@ function toggleVolume() {
     volumeToggle.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
 }
 
+function getTutoring() {
+    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
+}
+
 // Event listeners
 startButton.addEventListener('click', startGame);
 volumeToggle.addEventListener('click', toggleVolume);
 finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
+document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
 
 // Initialize the game
 showStartMenu();
