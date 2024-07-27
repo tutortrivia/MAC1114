@@ -21,4 +21,4 @@ async function loadQuestionLibrary(libraryName) {
     return allQuestions[libraryName];
 }
 
-export { loadQuestionLibrary };
+export { loadQuestionLibrary, allQuestions };
