@@ -1,3 +1,4 @@
+//game.js
 const startButton = document.getElementById('start-button');
 const gameContent = document.getElementById('game-content');
 const questionElement = document.getElementById('question');
