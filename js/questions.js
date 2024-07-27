@@ -1,4 +1,3 @@
-//questions.js
 const allQuestions = {
     SetTheory: null,
     Logic: null,
@@ -8,7 +7,7 @@ const allQuestions = {
 async function loadQuestionLibrary(libraryName) {
     if (allQuestions[libraryName] === null) {
         try {
-            const response = await fetch(`${libraryName}.json`);
+            const response = await fetch(`data/${libraryName}.json`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -21,3 +20,5 @@ async function loadQuestionLibrary(libraryName) {
     }
     return allQuestions[libraryName];
 }
+
+export { loadQuestionLibrary };
