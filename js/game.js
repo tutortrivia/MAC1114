@@ -1,4 +1,5 @@
-//game.js
+import { shuffleArray, getAvailableLibraries, updateGameTitle, updateTimerDisplay, toggleQRCode } from './util.js';
+
 const startButton = document.getElementById('start-button');
 const gameContent = document.getElementById('game-content');
 const questionElement = document.getElementById('question');
@@ -13,7 +14,7 @@ const volumeToggle = document.getElementById('volume-toggle');
 const backgroundMusic = document.getElementById('backgroundMusic');
 const correctSound = document.getElementById('correctSound');
 const incorrectSound = document.getElementById('incorrectSound');
-const personalBestSound = new Audio('personalBest.mp3');
+const personalBestSound = new Audio('assets/sounds/personalBest.mp3');
 let librarySelect = document.getElementById('library-select');
 let gameTitle = document.getElementById('game-title');
 const reviewContainer = document.getElementById('review-container');
@@ -39,37 +40,13 @@ let currentLibrary = 'SetTheory';
 let currentQuestions = [];
 let answeredQuestions = [];
 
-function toggleQRCode() {
-    if (qrImage.classList.contains('hidden')) {
-        qrImage.classList.remove('hidden');
-        qrToggle.textContent = 'Hide QR';
-    } else {
-        qrImage.classList.add('hidden');
-        qrToggle.textContent = 'Display QR';
-    }
-}
-
-function getAvailableLibraries() {
-    return Object.keys(allQuestions);
-}
-
 function populateLibrarySelect() {
-    const libraries = getAvailableLibraries();
+    const libraries = getAvailableLibraries(allQuestions);
     librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
     librarySelect.value = currentLibrary;
-    librarySelect.addEventListener('change', updateGameTitle);
-}
-
-function updateGameTitle() {
-    currentLibrary = librarySelect.value;
-    gameTitle.textContent = `Who Wants To Be A ${currentLibrary.charAt(0).toUpperCase() + currentLibrary.slice(1)} Buff?`;
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+    librarySelect.addEventListener('change', () => {
+        currentLibrary = updateGameTitle(librarySelect, gameTitle);
+    });
 }
 
 async function startGame() {
@@ -179,26 +156,15 @@ function updateScore() {
 }
 
 function startTimer() {
-    updateTimerDisplay();
+    updateTimerDisplay(timerElement, timeLeft);
     timer = setInterval(() => {
         timeLeft--;
-        updateTimerDisplay();
+        updateTimerDisplay(timerElement, timeLeft);
         if (timeLeft <= 0) {
             clearInterval(timer);
             endGame();
         }
     }, 1000);
-}
-
-function updateTimerDisplay() {
-    timerElement.textContent = `Time left: ${timeLeft}s`;
-    if (timeLeft <= 17) {
-        timerElement.classList.add('timer-warning');
-        timerElement.style.animation = 'timerPulse 1s ease-in-out infinite';
-    } else {
-        timerElement.classList.remove('timer-warning');
-        timerElement.style.animation = 'none';
-    }
 }
 
 function endGame() {
@@ -259,7 +225,6 @@ function displayReviewQuestions() {
             <p>Your answer: ${question.userAnswer}</p>
             <p>Correct answer: ${question.correct}</p>
             <p>Explanation: ${question.explanation || 'Not provided'}</p>
-            <button class="flag-question mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-1 px-2 rounded" data-index="${index}">Flag Question</button>
         `;
         if (question.isCorrect) {
             questionReview.classList.add('bg-green-100');
@@ -268,75 +233,13 @@ function displayReviewQuestions() {
         }
         reviewQuestionsElement.appendChild(questionReview);
     });
-
-    const flagButtons = document.querySelectorAll('.flag-question');
-    flagButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const index = e.target.getAttribute('data-index');
-            flagQuestion(index);
-        });
-    });
-}
-
-function flagQuestion(index) {
-    const questionToFlag = answeredQuestions[index];
-    const feedbackPrompt = prompt('Please provide feedback for this question:');
-    if (feedbackPrompt) {
-        sendFeedbackToGoogleSheets(questionToFlag.questionId, feedbackPrompt);
-    }
-}
-
-function sendFeedbackToGoogleSheets(questionId, feedback) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFgKe0-xM0iUIjaYJ5KlqwN_Gbc6xw893PoHSoAAJ_e9KJGNLwrRGWr6h0wM1ErG9T/exec';
-    const data = {
-        questionId: questionId,
-        feedback: feedback
-    };
-
-    fetch(scriptURL, {
-        method: 'POST',
-        mode: 'cors',
-        credentials: 'omit',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => {
-        if (response.ok) {
-            return response.text();
-        } else {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-    })
-    .then(text => {
-        console.log('Response:', text);
-        alert('Feedback submitted successfully!');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert(`${error.message}. This feature is still under development.`);
-    });
 }
 
 function showStartMenu() {
     reviewContainer.classList.add('hidden');
     startMenu.classList.remove('hidden');
-    startMenu.innerHTML = `
-        <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
-        <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
-        <br>
-        <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
-    `;
-    
-    librarySelect = document.getElementById('library-select');
-    gameTitle = document.getElementById('game-title');
-    
     populateLibrarySelect();
-    updateGameTitle();
-    
-    document.getElementById('start-button').addEventListener('click', startGame);
-    document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+    updateGameTitle(librarySelect, gameTitle);
 }
 
 function toggleVolume() {
@@ -348,14 +251,11 @@ function toggleVolume() {
     volumeToggle.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
 }
 
-function getTutoring() {
-    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
-}
+// Event listeners
+startButton.addEventListener('click', startGame);
+volumeToggle.addEventListener('click', toggleVolume);
+finishReviewButton.addEventListener('click', showStartMenu);
+qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 
 // Initialize the game
 showStartMenu();
-
-// Event listeners
-volumeToggle.addEventListener('click', toggleVolume);
-finishReviewButton.addEventListener('click', showStartMenu);
-qrToggle.addEventListener('click', toggleQRCode);
