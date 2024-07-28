@@ -1,4 +1,4 @@
-import { shuffleArray, getAvailableLibraries, updateGameTitle, updateTimerDisplay, toggleQRCode } from './util.js';
+import { shuffleArray, getAvailableLibraries, updateTimerDisplay, toggleQRCode, getGameImage } from './util.js';
 import { loadQuestionLibrary, allQuestions } from './questions.js';
 
 const startButton = document.getElementById('start-button');
@@ -17,7 +17,7 @@ const correctSound = document.getElementById('correctSound');
 const incorrectSound = document.getElementById('incorrectSound');
 const personalBestSound = new Audio('assets/sounds/personalBest.mp3');
 let librarySelect = document.getElementById('library-select');
-let gameTitle = document.getElementById('game-title');
+const headerImage = document.getElementById('header-image');
 const reviewContainer = document.getElementById('review-container');
 const reviewQuestionsElement = document.getElementById('review-questions');
 const finishReviewButton = document.getElementById('finish-review');
@@ -46,8 +46,16 @@ function populateLibrarySelect() {
     librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
     librarySelect.value = currentLibrary;
     librarySelect.addEventListener('change', () => {
-        currentLibrary = updateGameTitle(librarySelect, gameTitle);
+        currentLibrary = librarySelect.value;
+        updateHeaderImage();
     });
+    updateHeaderImage();
+}
+
+function updateHeaderImage() {
+    const imageSrc = getGameImage(currentLibrary);
+    headerImage.src = `assets/images/${imageSrc}`;
+    headerImage.alt = `${currentLibrary} header image`;
 }
 
 async function startGame() {
@@ -240,7 +248,7 @@ function showStartMenu() {
     reviewContainer.classList.add('hidden');
     startMenu.classList.remove('hidden');
     populateLibrarySelect();
-    updateGameTitle(librarySelect, gameTitle);
+    updateHeaderImage();
 }
 
 function toggleVolume() {
