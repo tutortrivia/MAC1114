@@ -9,10 +9,8 @@ export function getAvailableLibraries(allQuestions) {
     return Object.keys(allQuestions);
 }
 
-export function updateGameTitle(librarySelect, gameTitle) {
-    const currentLibrary = librarySelect.value;
-    gameTitle.textContent = `Who Wants To Be A ${currentLibrary.charAt(0).toUpperCase() + currentLibrary.slice(1)} Buff?`;
-    return currentLibrary;
+export function getGameImage(libraryName) {
+    return `${libraryName}.png`;
 }
 
 export function updateTimerDisplay(timerElement, timeLeft) {
