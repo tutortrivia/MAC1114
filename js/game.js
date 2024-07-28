@@ -37,7 +37,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'SetTheory';
+let currentLibrary = 'StrategicPlan';
 let currentQuestions = [];
 let answeredQuestions = [];
 
