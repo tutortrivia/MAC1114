@@ -1,0 +1,842 @@
+[
+  {
+    "questionId": "PS0000001",
+    "question": "Who is the team leader for the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "Tunjarnika Coleman-Ferrell, Ed.D.",
+      "Peter Barbatis, Ed.D.",
+      "Barbara Cipriano, M.S.",
+      "Roger Yohe, Ph.D."
+    ],
+    "correct": "Tunjarnika Coleman-Ferrell, Ed.D.",
+    "explanation": "Tunjarnika Coleman-Ferrell, Ed.D. is listed as one of the team leaders for the 'Start Strong, Finish Panther Stronger' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000002",
+    "question": "Which leader is responsible for the 'Streamline the Transfer Process' initiative?",
+    "answers": [
+      "Peter Barbatis, Ed.D.",
+      "Barbara Cipriano, M.S.",
+      "Roger Yohe, Ph.D.",
+      "Michael Pustizzi, M.B.A."
+    ],
+    "correct": "Peter Barbatis, Ed.D.",
+    "explanation": "Peter Barbatis, Ed.D. is listed as one of the team leaders for the 'Streamline the Transfer Process' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000003",
+    "question": "Who leads the 'FAB LAB: A Makerspace for Workforce Cross-collaboration' initiative?",
+    "answers": [
+      "Barbara Cipriano, M.S.",
+      "Roger Yohe, Ph.D.",
+      "Michael Pustizzi, M.B.A.",
+      "Van Williams, Ed.D."
+    ],
+    "correct": "Barbara Cipriano, M.S.",
+    "explanation": "Barbara Cipriano, M.S. is listed as one of the team leaders for the 'FAB LAB: A Makerspace for Workforce Cross-collaboration' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000004",
+    "question": "Which leader is associated with the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Roger Yohe, Ph.D.",
+      "Michael Pustizzi, M.B.A.",
+      "Van Williams, Ed.D.",
+      "Peter Barbatis, Ed.D."
+    ],
+    "correct": "Roger Yohe, Ph.D.",
+    "explanation": "Roger Yohe, Ph.D. is listed as one of the team leaders for the 'Advance Teaching Excellence' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000005",
+    "question": "Who is responsible for leading the 'Create an Exceptional Panther First Experience' initiative?",
+    "answers": [
+      "Michael Pustizzi, M.B.A.",
+      "Van Williams, Ed.D.",
+      "Peter Barbatis, Ed.D.",
+      "Barbara Cipriano, M.S."
+    ],
+    "correct": "Michael Pustizzi, M.B.A.",
+    "explanation": "Michael Pustizzi, M.B.A. is listed as one of the team leaders for the 'Create an Exceptional Panther First Experience' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000006",
+    "question": "Which leader is associated with the 'Expansion of the Panther Academic Learning Support Program (PALS)' initiative?",
+    "answers": [
+      "Van Williams, Ed.D.",
+      "Peter Barbatis, Ed.D.",
+      "Barbara Cipriano, M.S.",
+      "Roger Yohe, Ph.D."
+    ],
+    "correct": "Van Williams, Ed.D.",
+    "explanation": "Van Williams, Ed.D. is listed as one of the team leaders for the 'Expansion of the Panther Academic Learning Support Program (PALS)' initiative.",
+    "category": "Leaders",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000007",
+    "question": "Who is Destiny Keen, Ed.D. associated with in the strategic plan?",
+    "answers": [
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process",
+      "FAB LAB",
+      "Advance Teaching Excellence"
+    ],
+    "correct": "Start Strong, Finish Panther Stronger",
+    "explanation": "Destiny Keen, Ed.D. is listed as one of the team leaders for the 'Start Strong, Finish Panther Stronger' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000008",
+    "question": "Which initiative is Stephen Joyner, Ph.D. associated with?",
+    "answers": [
+      "Streamline the Transfer Process",
+      "FAB LAB",
+      "Advance Teaching Excellence",
+      "Create an Exceptional Panther First Experience"
+    ],
+    "correct": "Streamline the Transfer Process",
+    "explanation": "Stephen Joyner, Ph.D. is listed as one of the team leaders for the 'Streamline the Transfer Process' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000009",
+    "question": "Who is Kimberly Lea, Ed.S. associated with in the strategic plan?",
+    "answers": [
+      "FAB LAB",
+      "Advance Teaching Excellence",
+      "Create an Exceptional Panther First Experience",
+      "Expansion of PALS"
+    ],
+    "correct": "FAB LAB",
+    "explanation": "Kimberly Lea, Ed.S. is listed as one of the team leaders for the 'FAB LAB: A Makerspace for Workforce Cross-collaboration' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000010",
+    "question": "Which initiative is Joshua Kanies, Ed.D. associated with?",
+    "answers": [
+      "Advance Teaching Excellence",
+      "Create an Exceptional Panther First Experience",
+      "Expansion of PALS",
+      "Start Strong, Finish Panther Stronger"
+    ],
+    "correct": "Advance Teaching Excellence",
+    "explanation": "Joshua Kanies, Ed.D. is listed as one of the team leaders for the 'Advance Teaching Excellence' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000011",
+    "question": "Who is Angela Harrington, M.A. associated with in the strategic plan?",
+    "answers": [
+      "Create an Exceptional Panther First Experience",
+      "Expansion of PALS",
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process"
+    ],
+    "correct": "Create an Exceptional Panther First Experience",
+    "explanation": "Angela Harrington, M.A. is listed as one of the team leaders for the 'Create an Exceptional Panther First Experience' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000012",
+    "question": "Which initiative are Sheila Scott-Lubin, M.Ed. and Juanita Benjamin, M.B.A. associated with?",
+    "answers": [
+      "Expansion of PALS",
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process",
+      "FAB LAB"
+    ],
+    "correct": "Expansion of PALS",
+    "explanation": "Sheila Scott-Lubin, M.Ed. and Juanita Benjamin, M.B.A. are listed as team leaders for the 'Expansion of the Panther Academic Learning Support Program (PALS)' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000013",
+    "question": "What is the primary goal of the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "To enhance success rates in key courses",
+      "To streamline the transfer process",
+      "To create a makerspace for workforce collaboration",
+      "To expand the PALS program"
+    ],
+    "correct": "To enhance success rates in key courses",
+    "explanation": "The 'Start Strong, Finish Panther Stronger' initiative aims to enhance the success rates in MAC1105, MGF1106, and ENC1101 while maintaining a culture of completion.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000014",
+    "question": "What is the target increase in success rates for the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "1% points each year",
+      "2% points each year",
+      "3% points each year",
+      "5% points each year"
+    ],
+    "correct": "3% points each year",
+    "explanation": "The goal is to achieve a steady increase of 3% points each year in these courses by the year 2026.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000015",
+    "question": "What is the main objective of the 'Streamline the Transfer Process' initiative?",
+    "answers": [
+      "To retain current and prospective transfer students",
+      "To create a makerspace for students",
+      "To improve teaching practices",
+      "To expand the PALS program"
+    ],
+    "correct": "To retain current and prospective transfer students",
+    "explanation": "The 'Streamline the Transfer Process' initiative aims to retain current and prospective transfer students by establishing relationships with partners and expanding program offerings.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000016",
+    "question": "How many universities does PBSC aim to establish or revise transfer articulation agreements with over the next three years?",
+    "answers": [
+      "5 universities",
+      "10 universities",
+      "15 universities",
+      "20 universities"
+    ],
+    "correct": "10 universities",
+    "explanation": "PBSC aims to revise & increase transfer articulation agreements with 10 universities over the next three years.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000017",
+    "question": "What does FAB LAB stand for in the context of PBSC's strategic plan?",
+    "answers": [
+      "Fabrication Laboratory",
+      "Faculty and Business Laboratory",
+      "Future Academic Building",
+      "Focused Applied Business Learning"
+    ],
+    "correct": "Fabrication Laboratory",
+    "explanation": "FAB LAB stands for Fabrication Laboratory. It's described as a makerspace for workforce cross-collaboration.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000018",
+    "question": "By when does PBSC plan to open its first FAB LAB?",
+    "answers": [
+      "Fall of 2024",
+      "Spring of 2025",
+      "Fall of 2025",
+      "Fall of 2026"
+    ],
+    "correct": "Fall of 2026",
+    "explanation": "By the Fall of 2026, PBSC will open its first FAB Lab, an interdisciplinary hub for students, faculty, industry leaders, and community members.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000019",
+    "question": "What is one of the key tactics in the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Increase faculty usage of the EAB Navigate Early Alert System",
+      "Create a transfer webpage",
+      "Develop a matchmaking process for students",
+      "Implement a shared governance model"
+    ],
+    "correct": "Increase faculty usage of the EAB Navigate Early Alert System",
+    "explanation": "One of the key tactics in the 'Advance Teaching Excellence' initiative is to increase faculty usage of the EAB Navigate Early Alert System.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000020",
+    "question": "What does ACUE stand for in the context of the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Association of College and University Educators",
+      "Advanced Curriculum for University Education",
+      "Academic Center for University Excellence",
+      "Accredited Courses for University Educators"
+    ],
+    "correct": "Association of College and University Educators",
+    "explanation": "ACUE stands for Association of College and University Educators. The initiative aims to improve effective teaching practices by certifying faculty through ACUE.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000021",
+    "question": "What is the main goal of the 'Create an Exceptional Panther First Experience' initiative?",
+    "answers": [
+      "To develop high-performing, motivated, and impactful employees",
+      "To streamline the transfer process",
+      "To create a makerspace for students",
+      "To expand the PALS program"
+    ],
+    "correct": "To develop high-performing, motivated, and impactful employees",
+    "explanation": "The main goal is to develop high-performing, motivated, and impactful employees who focus their roles on student and employee experiences.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000022",
+    "question": "What is the name of the program designed to increase workplace learning for students through work-study and internships?",
+    "answers": [
+      "Grow Your Own",
+      "Panther First",
+      "Level Up Talent",
+      "PBSC Connects"
+    ],
+    "correct": "Grow Your Own",
+    "explanation": "The 'Grow Your Own' program is designed to increase workplace learning for students through work-study and internships.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000023",
+    "question": "What does PALS stand for in PBSC's strategic plan?",
+    "answers": [
+      "Panther Academic Learning Support",
+      "Professional and Leadership Skills",
+      "Personalized Advising and Learning Services",
+      "Proactive Academic Lifestyle Support"
+    ],
+    "correct": "Panther Academic Learning Support",
+    "explanation": "PALS stands for Panther Academic Learning Support Program.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000024",
+    "question": "What is the target for increasing equitable access to PALS support by 2026?",
+    "answers": [
+      "Over 500 students",
+      "Over 600 students",
+      "Over 700 students",
+      "Over 800 students"
+    ],
+    "correct": "Over 800 students",
+    "explanation": "By 2026, PBSC aims to increase equitable access for PALS support for MAT1033c and MAC1105 to over 800 students.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000025",
+    "question": "Which leader is responsible for implementing the ACUE certification program?",
+    "answers": [
+      "Roger Yohe, Ph.D.",
+      "Joshua Kanies, Ed.D.",
+      "Tunjarnika Coleman-Ferrell, Ed.D.",
+      "Peter Barbatis, Ed.D."
+    ],
+    "correct": "Roger Yohe, Ph.D.",
+    "explanation": "Roger Yohe, Ph.D. is a team leader for the 'Advance Teaching Excellence' initiative, which includes implementing ACUE certification for faculty.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000026",
+    "question": "What is Palm Beach State College's vision?",
+    "answers": [
+      "To be the community's first-choice college",
+      "To advance economic and social growth",
+      "To transform students' lives",
+      "To foster excellence in education"
+    ],
+    "correct": "To be the community's first-choice college",
+    "explanation": "PBSC's vision is to be the community's first-choice college, committing to every learner's success by fostering excellence, cultivating dynamic collaborations, and leveraging new technologies.",
+    "category": "Values",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000027",
+    "question": "Which of the following is NOT one of Palm Beach State College's stated values?",
+    "answers": [
+      "Conscientious",
+      "Belonging",
+      "Innovation",
+      "Transformational"
+    ],
+    "correct": "Innovation",
+    "explanation": "The stated values of PBSC are Conscientious, Belonging, Perseverance, and Transformational. Innovation is not explicitly listed as a value.",
+    "category": "Values",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000028",
+    "question": "Who is leading the effort to implement the Navigate Progress Report Campaign?",
+    "answers": [
+      "Van Williams, Ed.D.",
+      "Sheila Scott-Lubin, M.Ed.",
+      "Juanita Benjamin, M.B.A.",
+      "All of the above"
+    ],
+    "correct": "All of the above",
+    "explanation": "Van Williams, Ed.D., Sheila Scott-Lubin, M.Ed., and Juanita Benjamin, M.B.A. are all team leaders for the PALS expansion initiative, which includes implementing the Navigate Progress Report Campaign.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000029",
+    "question": "What is the primary focus of the 'Transformational' value at PBSC?",
+    "answers": [
+      "Changing technology",
+      "Positively changing students' lives",
+      "Transforming the campus",
+      "Altering the curriculum"
+    ],
+    "correct": "Positively changing students' lives",
+    "explanation": "The 'Transformational' value at PBSC focuses on positively and profoundly changing the lives of their constituents by adopting programs and services that meet their needs.",
+    "category": "Values",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000030",
+    "question": "Which initiative does Dana Hamadeh, M.Ed. contribute to as a team leader?",
+    "answers": [
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process",
+      "FAB LAB",
+      "Advance Teaching Excellence"
+    ],
+    "correct": "Start Strong, Finish Panther Stronger",
+    "explanation": "Dana Hamadeh, M.Ed. is listed as one of the team leaders for the 'Start Strong, Finish Panther Stronger' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000031",
+    "question": "What is the primary goal of the 'Belonging' value at PBSC?",
+    "answers": [
+      "To increase enrollment",
+      "To improve campus facilities",
+      "To cultivate an inclusive community",
+      "To enhance academic programs"
+    ],
+    "correct": "To cultivate an inclusive community",
+    "explanation": "The 'Belonging' value at PBSC aims to value all persons and backgrounds and cultivate an inclusive community that nurtures diverse, equitable, and civil perspectives.",
+    "category": "Values",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000032",
+    "question": "Which initiative aims to implement Ai Across the Curriculum (AiATC)?",
+    "answers": [
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process",
+      "Advance Teaching Excellence",
+      "Create an Exceptional Panther First Experience"
+    ],
+    "correct": "Advance Teaching Excellence",
+    "explanation": "The 'Advance Teaching Excellence' initiative includes implementing Ai Across the Curriculum (AiATC) as one of its key tactics.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000033",
+    "question": "Who is responsible for designing the Level Up Talent program?",
+    "answers": [
+      "Michael Pustizzi, M.B.A.",
+      "Angela Harrington, M.A.",
+      "Roger Yohe, Ph.D.",
+      "Peter Barbatis, Ed.D."
+    ],
+    "correct": "Michael Pustizzi, M.B.A.",
+    "explanation": "Michael Pustizzi, M.B.A. is a team leader for the 'Create an Exceptional Panther First Experience' initiative, which includes designing the Level Up Talent program.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000034",
+    "question": "What does the 'Perseverance' value at PBSC emphasize?",
+    "answers": [
+      "Overcoming technological challenges",
+      "Inspiring hope and encouraging goal achievement",
+      "Persistence in funding efforts",
+      "Enduring difficult students"
+    ],
+    "correct": "Inspiring hope and encouraging goal achievement",
+    "explanation": "The 'Perseverance' value at PBSC emphasizes inspiring hope and encouraging constituents to achieve their goals and pursue lifelong learning.",
+    "category": "Values",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000035",
+    "question": "Which initiative aims to develop a marketing plan that showcases PBSC's workforce preparation?",
+    "answers": [
+      "Start Strong, Finish Panther Stronger",
+      "FAB LAB",
+      "Advance Teaching Excellence",
+      "Create an Exceptional Panther First Experience"
+    ],
+    "correct": "FAB LAB",
+    "explanation": "The FAB LAB initiative includes developing a marketing plan that makes PBSC's workforce preparation a key element and showcases opportunities available within the FAB LAB.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000036",
+    "question": "What is the focus of the 'Conscientious' value at PBSC?",
+    "answers": [
+      "Being environmentally friendly",
+      "Serving the college community and global society ethically",
+      "Careful budgeting",
+      "Attentiveness to student complaints"
+    ],
+    "correct": "Serving the college community and global society ethically",
+    "explanation": "The 'Conscientious' value at PBSC focuses on serving the College community and global society as they aspire to do what is right, ethical, and fair.",
+    "category": "Values",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000037",
+    "question": "Who is responsible for organizing process improvement contests and team awards?",
+    "answers": [
+      "Michael Pustizzi, M.B.A.",
+      "Angela Harrington, M.A.",
+      "Roger Yohe, Ph.D.",
+      "Both Michael Pustizzi, M.B.A. and Angela Harrington, M.A."
+    ],
+    "correct": "Both Michael Pustizzi, M.B.A. and Angela Harrington, M.A.",
+    "explanation": "Michael Pustizzi, M.B.A. and Angela Harrington, M.A. are team leaders for the 'Create an Exceptional Panther First Experience' initiative, which includes organizing process improvement contests and team awards.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000038",
+    "question": "What is the target year for the Panther Strong Strategic Plan?",
+    "answers": [
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "correct": "2026",
+    "explanation": "The strategic plan is called 'Panther Strong 2026', indicating that 2026 is the target year for achieving the outlined goals and strategies.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000039",
+    "question": "Which leader is associated with implementing the shared governance model for Academic Affairs?",
+    "answers": [
+      "Roger Yohe, Ph.D.",
+      "Joshua Kanies, Ed.D.",
+      "Michael Pustizzi, M.B.A.",
+      "Angela Harrington, M.A."
+    ],
+    "correct": "Michael Pustizzi, M.B.A.",
+    "explanation": "Michael Pustizzi, M.B.A. is a team leader for the 'Create an Exceptional Panther First Experience' initiative, which includes implementing a shared governance model for Academic Affairs.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000040",
+    "question": "What does the Student Experience Statement at PBSC emphasize?",
+    "answers": [
+      "Academic rigor and competition",
+      "Technological advancements",
+      "Inclusion, well-being, and a sense of belonging",
+      "Sports and extracurricular activities"
+    ],
+    "correct": "Inclusion, well-being, and a sense of belonging",
+    "explanation": "The Palm Beach State College student experience statement emphasizes inclusion, well-being, connection, and a sense of belonging for all.",
+    "category": "Values",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000041",
+    "question": "Which initiative is Don Gladney, Ed.D. associated with in the strategic plan?",
+    "answers": [
+      "Start Strong, Finish Panther Stronger",
+      "Streamline the Transfer Process",
+      "FAB LAB",
+      "Advance Teaching Excellence"
+    ],
+    "correct": "Streamline the Transfer Process",
+    "explanation": "Don Gladney, Ed.D. is listed as one of the team leaders for the 'Streamline the Transfer Process' initiative.",
+    "category": "Leaders",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000042",
+    "question": "What is one of the key tactics in the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "Develop a matchmaking process for students",
+      "Create a transfer webpage",
+      "Implement a shared governance model",
+      "Develop intentional support services like the Math & English Refresher Program"
+    ],
+    "correct": "Develop intentional support services like the Math & English Refresher Program",
+    "explanation": "One of the key tactics in the 'Start Strong, Finish Panther Stronger' initiative is to develop intentional support services such as the Math & English Refresher Program.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000043",
+    "question": "What is the PBSC First-Choice Program mentioned in the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "A program for top-performing students",
+      "An early admission program for SDPBC senior class",
+      "A scholarship program",
+      "A program for transfer students"
+    ],
+    "correct": "An early admission program for SDPBC senior class",
+    "explanation": "The PBSC First-Choice Program is described as admitting the SDPBC (School District of Palm Beach County) senior class early.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000044",
+    "question": "What tool is mentioned for ongoing communication with students in the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "EAB Navigate",
+      "Blackboard",
+      "Canvas",
+      "PantherMail"
+    ],
+    "correct": "EAB Navigate",
+    "explanation": "The initiative mentions utilizing EAB Navigate for ongoing communication with students, including celebratory milestones, kudos, tutoring nudges, and advising reminders.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000045",
+    "question": "What is one of the leading measures for the 'Start Strong, Finish Panther Stronger' initiative?",
+    "answers": [
+      "Graduation rates",
+      "Student enrollment numbers",
+      "Faculty satisfaction",
+      "Reduction in Withdrawals"
+    ],
+    "correct": "Reduction in Withdrawals",
+    "explanation": "One of the leading measures listed for the 'Start Strong, Finish Panther Stronger' initiative is Reduction in Withdrawals.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000046",
+    "question": "What is one of the key tactics in the 'Streamline the Transfer Process' initiative?",
+    "answers": [
+      "Implement Ai Across the Curriculum",
+      "Create a FAB LAB",
+      "Design and implement a transfer webpage",
+      "Expand the PALS program"
+    ],
+    "correct": "Design and implement a transfer webpage",
+    "explanation": "One of the key tactics listed for the 'Streamline the Transfer Process' initiative is to design and implement a transfer webpage.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000047",
+    "question": "How many universities does PBSC aim to revise and increase transfer articulation agreements with over the next three years?",
+    "answers": [
+      "5 universities",
+      "10 universities",
+      "15 universities",
+      "20 universities"
+    ],
+    "correct": "10 universities",
+    "explanation": "The 'Streamline the Transfer Process' initiative aims to revise & increase transfer articulation agreements with 10 universities over the next three years.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000048",
+    "question": "What is one of the leading measures for the 'Streamline the Transfer Process' initiative?",
+    "answers": [
+      "Graduation rates",
+      "Student enrollment numbers",
+      "Transfer Rate to Partnering Institutions",
+      "Faculty satisfaction"
+    ],
+    "correct": "Transfer Rate to Partnering Institutions",
+    "explanation": "One of the leading measures listed for the 'Streamline the Transfer Process' initiative is the Transfer Rate to Partnering Institutions.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000049",
+    "question": "What is the main purpose of the FAB LAB in PBSC's strategic plan?",
+    "answers": [
+      "To conduct scientific experiments",
+      "To serve as a study space for students",
+      "To be an interdisciplinary hub for exploring work opportunities",
+      "To host faculty meetings"
+    ],
+    "correct": "To be an interdisciplinary hub for exploring work opportunities",
+    "explanation": "The FAB LAB is described as an interdisciplinary hub for students, faculty, industry leaders, and community members to explore experiential work opportunities and develop a culture of entrepreneurial excellence.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000050",
+    "question": "What type of opportunities will the FAB LAB provide postings for?",
+    "answers": [
+      "Only internships",
+      "Only job shadowing",
+      "Apprenticeships, externships, internships, mentorships, and job shadowing",
+      "Full-time job opportunities"
+    ],
+    "correct": "Apprenticeships, externships, internships, mentorships, and job shadowing",
+    "explanation": "The FAB LAB will provide postings for apprenticeships, externships, internships, mentorships, and job shadowing.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000051",
+    "question": "What is one of the key tactics in the FAB LAB initiative?",
+    "answers": [
+      "Implement a new grading system",
+      "Create a new sports team",
+      "Develop a matchmaking process for students with different skill sets",
+      "Build a new campus building"
+    ],
+    "correct": "Develop a matchmaking process for students with different skill sets",
+    "explanation": "One of the key tactics for the FAB LAB initiative is to develop a matchmaking process for students with different skill sets to partner on business initiatives.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000052",
+    "question": "What data tool is mentioned in the FAB LAB initiative for creating reports of available community opportunities?",
+    "answers": [
+      "EAB Navigate",
+      "Lightcast Alumni Pathways",
+      "PBSC Connect",
+      "Career Center Database"
+    ],
+    "correct": "Lightcast Alumni Pathways",
+    "explanation": "The initiative mentions using Lightcast Alumni Pathways data to create a report of available community internships, externships, apprenticeships, and other experiential work opportunities.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000053",
+    "question": "What is one of the leading measures for the FAB LAB initiative?",
+    "answers": [
+      "Student enrollment numbers",
+      "Graduation rates",
+      "Employee Engagement and Satisfaction with the FAB Lab",
+      "Number of new courses offered"
+    ],
+    "correct": "Employee Engagement and Satisfaction with the FAB Lab",
+    "explanation": "One of the leading measures listed for the FAB LAB initiative is Employee Engagement and Satisfaction with the FAB Lab.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000054",
+    "question": "What is one of the key tactics in the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Create a new sports team",
+      "Build a new campus building",
+      "Improve effective teaching practices by certifying faculty through ACUE",
+      "Develop a new grading system"
+    ],
+    "correct": "Improve effective teaching practices by certifying faculty through ACUE",
+    "explanation": "One of the key tactics for the 'Advance Teaching Excellence' initiative is to improve effective teaching practices by certifying faculty through ACUE (Association of College and University Educators).",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000055",
+    "question": "What does AiATC stand for in the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Artificial intelligence Across The Curriculum",
+      "Advanced instructional Academic Teaching Certification",
+      "Association of innovative Academic Teaching Communities",
+      "Accelerated integration of Academic Technology in Classrooms"
+    ],
+    "correct": "Artificial intelligence Across The Curriculum",
+    "explanation": "In the context of the 'Advance Teaching Excellence' initiative, AiATC stands for Ai Across the Curriculum, referring to the implementation of artificial intelligence across the curriculum.",
+    "category": "Initiatives",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "PS0000056",
+    "question": "What is one of the leading measures for the 'Advance Teaching Excellence' initiative?",
+    "answers": [
+      "Student enrollment numbers",
+      "Graduation rates",
+      "ACUE Certification",
+      "Number of new courses offered"
+    ],
+    "correct": "ACUE Certification",
+    "explanation": "One of the leading measures listed for the 'Advance Teaching Excellence' initiative is ACUE Certification.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000057",
+    "question": "What is one of the key tactics in the 'Create an Exceptional Panther First Experience' initiative?",
+    "answers": [
+      "Build a new campus building",
+      "Create a new sports team",
+      "Develop communication etiquette norms with PBSC Connects",
+      "Implement a new grading system"
+    ],
+    "correct": "Develop communication etiquette norms with PBSC Connects",
+    "explanation": "One of the key tactics for the 'Create an Exceptional Panther First Experience' initiative is to develop communication etiquette norms with PBSC Connects.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000058",
+    "question": "What is the 'Grow Your Own' program mentioned in the 'Create an Exceptional Panther First Experience' initiative?",
+    "answers": [
+      "A gardening program",
+      "A program to increase workplace learning for students",
+      "A faculty development program",
+      "A new degree program"
+    ],
+    "correct": "A program to increase workplace learning for students",
+    "explanation": "The 'Grow Your Own' program is described as a program to increase workplace learning for students through work-study and internships.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "PS0000059",
+    "question": "What is one of the goals of the PALS program expansion?",
+    "answers": [
+      "To increase the number of sports teams",
+      "To build new campus facilities",
+      "To increase equitable access for support in specific courses",
+      "To create new degree programs"
+    ],
+    "correct": "To increase equitable access for support in specific courses",
+    "explanation": "One of the goals of the PALS program expansion is to increase equitable access for support in MAT1033c and MAC1105 to over 800 students.",
+    "category": "Initiatives",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "PS0000060",
+    "question": "What is one of the key tactics in the PALS program expansion initiative?",
+    "answers": [
+      "Create a new sports team",
+      "Build a new campus building",
+      "Add a full-time math tutor to the online schedule",
+      "Implement a new grading system"
+    ],
+    "correct": "Add a full-time math tutor to the online schedule",
+    "explanation": "One of the key tactics for the PALS program expansion initiative is to add a full-time math tutor to the online schedule.",
+    "category": "Initiatives",
+    "difficulty": "Medium"
+  }
+]
