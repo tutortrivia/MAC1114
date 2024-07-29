@@ -261,7 +261,7 @@ function toggleVolume() {
 }
 
 function getTutoring() {
-    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
+    window.open('https://www.palmbeachstate.edu/strategic-plan/', '_blank');
 }
 
 // Event listeners
