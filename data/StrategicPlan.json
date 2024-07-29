@@ -85,7 +85,7 @@
   },
   {
     "questionId": "PS0000007",
-    "question": "Who is Destiny Keen, Ed.D. associated with in the strategic plan?",
+    "question": "What is Destiny Keen, Ed.D. associated with in the strategic plan?",
     "answers": [
       "Start Strong, Finish Panther Stronger",
       "Streamline the Transfer Process",
@@ -95,7 +95,7 @@
     "correct": "Start Strong, Finish Panther Stronger",
     "explanation": "Destiny Keen, Ed.D. is listed as one of the team leaders for the 'Start Strong, Finish Panther Stronger' initiative.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000008",
@@ -109,11 +109,11 @@
     "correct": "Streamline the Transfer Process",
     "explanation": "Stephen Joyner, Ph.D. is listed as one of the team leaders for the 'Streamline the Transfer Process' initiative.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000009",
-    "question": "Who is Kimberly Lea, Ed.S. associated with in the strategic plan?",
+    "question": "What is Kimberly Lea, Ed.S. associated with in the strategic plan?",
     "answers": [
       "FAB LAB",
       "Advance Teaching Excellence",
@@ -141,7 +141,7 @@
   },
   {
     "questionId": "PS0000011",
-    "question": "Who is Angela Harrington, M.A. associated with in the strategic plan?",
+    "question": "What is Angela Harrington, M.A. associated with in the strategic plan?",
     "answers": [
       "Create an Exceptional Panther First Experience",
       "Expansion of PALS",
@@ -347,7 +347,7 @@
     "correct": "Roger Yohe, Ph.D.",
     "explanation": "Roger Yohe, Ph.D. is a team leader for the 'Advance Teaching Excellence' initiative, which includes implementing ACUE certification for faculty.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000026",
@@ -384,12 +384,12 @@
       "Van Williams, Ed.D.",
       "Sheila Scott-Lubin, M.Ed.",
       "Juanita Benjamin, M.B.A.",
-      "All of the above"
+      "All of these"
     ],
-    "correct": "All of the above",
+    "correct": "All of these",
     "explanation": "Van Williams, Ed.D., Sheila Scott-Lubin, M.Ed., and Juanita Benjamin, M.B.A. are all team leaders for the PALS expansion initiative, which includes implementing the Navigate Progress Report Campaign.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000029",
@@ -417,7 +417,7 @@
     "correct": "Start Strong, Finish Panther Stronger",
     "explanation": "Dana Hamadeh, M.Ed. is listed as one of the team leaders for the 'Start Strong, Finish Panther Stronger' initiative.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000031",
@@ -459,7 +459,7 @@
     "correct": "Michael Pustizzi, M.B.A.",
     "explanation": "Michael Pustizzi, M.B.A. is a team leader for the 'Create an Exceptional Panther First Experience' initiative, which includes designing the Level Up Talent program.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000034",
@@ -515,7 +515,7 @@
     "correct": "Both Michael Pustizzi, M.B.A. and Angela Harrington, M.A.",
     "explanation": "Michael Pustizzi, M.B.A. and Angela Harrington, M.A. are team leaders for the 'Create an Exceptional Panther First Experience' initiative, which includes organizing process improvement contests and team awards.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000038",
@@ -543,7 +543,7 @@
     "correct": "Michael Pustizzi, M.B.A.",
     "explanation": "Michael Pustizzi, M.B.A. is a team leader for the 'Create an Exceptional Panther First Experience' initiative, which includes implementing a shared governance model for Academic Affairs.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000040",
@@ -571,7 +571,7 @@
     "correct": "Streamline the Transfer Process",
     "explanation": "Don Gladney, Ed.D. is listed as one of the team leaders for the 'Streamline the Transfer Process' initiative.",
     "category": "Leaders",
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "questionId": "PS0000042",
