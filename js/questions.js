@@ -1,5 +1,5 @@
 const allQuestions = {
-    StrategicPlan: null
+    JavaScript: null
 };
 
 async function loadQuestionLibrary(libraryName) {
