@@ -37,7 +37,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'StrategicPlan';
+let currentLibrary = 'JavaScript';
 let currentQuestions = [];
 let answeredQuestions = [];
 
