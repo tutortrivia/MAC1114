@@ -261,7 +261,7 @@ function toggleVolume() {
 }
 
 function getTutoring() {
-    window.open('https://www.palmbeachstate.edu/strategic-plan/', '_blank');
+    window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
 }
 
 // Event listeners
