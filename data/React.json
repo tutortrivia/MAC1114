@@ -1,0 +1,1122 @@
+[
+  {
+    "questionId": "REACT001",
+    "question": "What is React?",
+    "answers": [
+      "A JavaScript library for building user interfaces",
+      "A server-side programming language",
+      "A database management system",
+      "A testing framework for JavaScript"
+    ],
+    "correct": "A JavaScript library for building user interfaces",
+    "explanation": "React is a popular JavaScript library developed by Facebook for building user interfaces, particularly for single-page applications.",
+    "category": "Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT002",
+    "question": "What is JSX in React?",
+    "answers": [
+      "A JavaScript XML syntax extension",
+      "A new JavaScript version",
+      "A database query language",
+      "A CSS preprocessor"
+    ],
+    "correct": "A JavaScript XML syntax extension",
+    "explanation": "JSX is a syntax extension for JavaScript that looks similar to XML or HTML. It allows you to write HTML structures in the same file as your JavaScript code.",
+    "category": "Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT003",
+    "question": "What is a component in React?",
+    "answers": [
+      "A reusable piece of UI",
+      "A database table",
+      "A styling framework",
+      "A testing utility"
+    ],
+    "correct": "A reusable piece of UI",
+    "explanation": "In React, a component is a reusable piece of UI. Components can be class-based or function-based and can accept props as inputs.",
+    "category": "Components",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT004",
+    "question": "What is the correct way to render a component in React?",
+    "answers": [
+      "<ComponentName />",
+      "ComponentName()",
+      "<componentName />",
+      "componentName()"
+    ],
+    "correct": "<ComponentName />",
+    "explanation": "In React, components are rendered using JSX tags. Custom components should start with a capital letter, so <ComponentName /> is the correct way to render a component.",
+    "category": "Components",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT005",
+    "question": "What is the purpose of state in React?",
+    "answers": [
+      "To store and manage component-specific data",
+      "To style components",
+      "To make API calls",
+      "To define component structure"
+    ],
+    "correct": "To store and manage component-specific data",
+    "explanation": "State in React is used to store and manage component-specific data that can change over time. When state changes, React re-renders the component.",
+    "category": "State",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT006",
+    "question": "Which hook is used to add state to a functional component?",
+    "answers": [
+      "useState",
+      "useEffect",
+      "useContext",
+      "useReducer"
+    ],
+    "correct": "useState",
+    "explanation": "The useState hook is used to add state to functional components in React. It returns an array with the current state value and a function to update it.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT007",
+    "question": "What is the purpose of the useEffect hook?",
+    "answers": [
+      "To perform side effects in functional components",
+      "To create new components",
+      "To style components",
+      "To handle form submissions"
+    ],
+    "correct": "To perform side effects in functional components",
+    "explanation": "The useEffect hook is used to perform side effects in functional components. This can include data fetching, subscriptions, or manually changing the DOM.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT008",
+    "question": "What is the virtual DOM in React?",
+    "answers": [
+      "A lightweight copy of the actual DOM",
+      "A new web browser",
+      "A JavaScript engine",
+      "A database system"
+    ],
+    "correct": "A lightweight copy of the actual DOM",
+    "explanation": "The virtual DOM is a lightweight copy of the actual DOM. React uses it to improve performance by minimizing direct manipulation of the real DOM.",
+    "category": "Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT009",
+    "question": "What is the purpose of props in React?",
+    "answers": [
+      "To pass data from parent to child components",
+      "To style components",
+      "To make API calls",
+      "To define component state"
+    ],
+    "correct": "To pass data from parent to child components",
+    "explanation": "Props (short for properties) are used to pass data from parent components to child components in React. They are read-only and help make components reusable.",
+    "category": "Components",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT010",
+    "question": "What is the correct way to update state in a class component?",
+    "answers": [
+      "this.setState()",
+      "this.state.update()",
+      "this.updateState()",
+      "this.state = newState"
+    ],
+    "correct": "this.setState()",
+    "explanation": "In class components, state should be updated using the setState() method. Direct assignment (this.state = newState) will not trigger a re-render and is considered an anti-pattern.",
+    "category": "State",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT011",
+    "question": "What is the purpose of the key prop when rendering a list of elements?",
+    "answers": [
+      "To help React identify which items have changed, been added, or been removed",
+      "To style list items",
+      "To determine the order of list items",
+      "To make list items clickable"
+    ],
+    "correct": "To help React identify which items have changed, been added, or been removed",
+    "explanation": "The key prop is used to give elements in a list a stable identity. It helps React identify which items have changed, been added, or been removed, improving performance and preventing bugs.",
+    "category": "Lists",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT012",
+    "question": "What is the purpose of React.Fragment?",
+    "answers": [
+      "To group multiple elements without adding an extra node to the DOM",
+      "To create reusable components",
+      "To handle component lifecycle",
+      "To manage component state"
+    ],
+    "correct": "To group multiple elements without adding an extra node to the DOM",
+    "explanation": "React.Fragment allows you to group multiple elements without adding an extra node to the DOM. It's useful when you need to return multiple elements from a component.",
+    "category": "Components",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT013",
+    "question": "What is the purpose of the useContext hook?",
+    "answers": [
+      "To consume values from the React context",
+      "To create new contexts",
+      "To manage component state",
+      "To handle side effects"
+    ],
+    "correct": "To consume values from the React context",
+    "explanation": "The useContext hook is used to consume values from the React context without wrapping the component in a Context.Consumer. It simplifies the process of accessing context values in functional components.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT014",
+    "question": "What is the purpose of the useRef hook?",
+    "answers": [
+      "To create a mutable reference that persists across re-renders",
+      "To manage component state",
+      "To handle side effects",
+      "To create new components"
+    ],
+    "correct": "To create a mutable reference that persists across re-renders",
+    "explanation": "The useRef hook is used to create a mutable reference that persists across re-renders. It's commonly used to access DOM elements directly or to store any mutable value that doesn't require a re-render when updated.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT015",
+    "question": "What is the purpose of PropTypes in React?",
+    "answers": [
+      "To type-check the props passed to a component",
+      "To define default prop values",
+      "To create new props",
+      "To style components"
+    ],
+    "correct": "To type-check the props passed to a component",
+    "explanation": "PropTypes is a type-checking library for props in React. It helps catch bugs by validating the types of props passed to components during development.",
+    "category": "Props",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT016",
+    "question": "What is the purpose of the useCallback hook?",
+    "answers": [
+      "To memoize callback functions",
+      "To create new callback functions",
+      "To handle component lifecycle",
+      "To manage component state"
+    ],
+    "correct": "To memoize callback functions",
+    "explanation": "The useCallback hook is used to memoize callback functions. It returns a memoized version of the callback that only changes if one of the dependencies has changed, which can help optimize performance in some cases.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT017",
+    "question": "What is the purpose of the useMemo hook?",
+    "answers": [
+      "To memoize expensive computations",
+      "To manage component state",
+      "To handle side effects",
+      "To create new components"
+    ],
+    "correct": "To memoize expensive computations",
+    "explanation": "The useMemo hook is used to memoize expensive computations. It only recomputes the memoized value when one of the dependencies has changed, which can help to optimize performance by avoiding unnecessary calculations.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT018",
+    "question": "What is the purpose of the React.memo higher-order component?",
+    "answers": [
+      "To prevent unnecessary re-renders of functional components",
+      "To add state to functional components",
+      "To handle side effects in functional components",
+      "To create class components"
+    ],
+    "correct": "To prevent unnecessary re-renders of functional components",
+    "explanation": "React.memo is a higher-order component that can be used to wrap functional components to prevent unnecessary re-renders. It will only re-render the component if its props have changed, potentially improving performance.",
+    "category": "Performance Optimization",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT019",
+    "question": "What is the purpose of the useReducer hook?",
+    "answers": [
+      "To manage complex state logic in components",
+      "To create new reducers",
+      "To handle API calls",
+      "To define component structure"
+    ],
+    "correct": "To manage complex state logic in components",
+    "explanation": "The useReducer hook is used for managing more complex state logic in components. It's an alternative to useState and is preferable when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT020",
+    "question": "What is the purpose of the dangerouslySetInnerHTML attribute in React?",
+    "answers": [
+      "To render HTML directly in a component",
+      "To style components dangerously",
+      "To handle dangerous user input",
+      "To create secure components"
+    ],
+    "correct": "To render HTML directly in a component",
+    "explanation": "dangerouslySetInnerHTML is used to render HTML directly in a component. It's called 'dangerous' because it can expose your users to cross-site scripting (XSS) attacks if not used carefully with sanitized data.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT021",
+    "question": "What is the purpose of the StrictMode component in React?",
+    "answers": [
+      "To highlight potential problems in an application",
+      "To enforce strict typing",
+      "To prevent the use of class components",
+      "To optimize performance automatically"
+    ],
+    "correct": "To highlight potential problems in an application",
+    "explanation": "StrictMode is a tool for highlighting potential problems in a React application. It activates additional checks and warnings for its descendants, helping developers identify issues during development.",
+    "category": "Development Tools",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT022",
+    "question": "What is the purpose of the key prop in React?",
+    "answers": [
+      "To provide a unique identifier for elements in a list",
+      "To encrypt component data",
+      "To define component props",
+      "To style components"
+    ],
+    "correct": "To provide a unique identifier for elements in a list",
+    "explanation": "The key prop is used to give elements in a list a stable identity. It helps React identify which items have changed, been added, or been removed, and plays a crucial role in the reconciliation process.",
+    "category": "Lists",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT023",
+    "question": "What is the purpose of the useLayoutEffect hook?",
+    "answers": [
+      "To perform DOM measurements before the browser repaints",
+      "To handle component layout",
+      "To create responsive designs",
+      "To manage component state"
+    ],
+    "correct": "To perform DOM measurements before the browser repaints",
+    "explanation": "useLayoutEffect is similar to useEffect, but it fires synchronously after all DOM mutations. It's useful for performing DOM measurements before the browser repaints, which can prevent visual flickering in some cases.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT024",
+    "question": "What is the purpose of the forwardRef function in React?",
+    "answers": [
+      "To pass a ref through a component to one of its children",
+      "To create new refs",
+      "To handle form submissions",
+      "To manage component state"
+    ],
+    "correct": "To pass a ref through a component to one of its children",
+    "explanation": "forwardRef is used to pass a ref through a component to one of its children. This is particularly useful when you need to access a DOM element or a component instance inside a parent component.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT025",
+    "question": "What is the purpose of the useImperativeHandle hook?",
+    "answers": [
+      "To customize the instance value exposed when using ref",
+      "To handle imperative code",
+      "To create class components",
+      "To manage component state"
+    ],
+    "correct": "To customize the instance value exposed when using ref",
+    "explanation": "useImperativeHandle customizes the instance value that is exposed when using ref. It's used in conjunction with forwardRef and allows parent components to call methods on child components.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT026",
+    "question": "What is the purpose of the ErrorBoundary component in React?",
+    "answers": [
+      "To catch JavaScript errors anywhere in the component tree",
+      "To handle network errors",
+      "To validate form inputs",
+      "To optimize performance"
+    ],
+    "correct": "To catch JavaScript errors anywhere in the component tree",
+    "explanation": "Error Boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT027",
+    "question": "What is the purpose of the React.lazy function?",
+    "answers": [
+      "To dynamically import components",
+      "To create lazy-loaded images",
+      "To defer component rendering",
+      "To handle asynchronous operations"
+    ],
+    "correct": "To dynamically import components",
+    "explanation": "React.lazy function lets you render a dynamic import as a regular component. It allows you to dynamically import components and render them only when they're needed, which can significantly improve application performance.",
+    "category": "Performance Optimization",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT028",
+    "question": "What is the purpose of the Suspense component in React?",
+    "answers": [
+      "To specify fallback content while waiting for lazy components to load",
+      "To create suspenseful animations",
+      "To handle component errors",
+      "To manage asynchronous state"
+    ],
+    "correct": "To specify fallback content while waiting for lazy components to load",
+    "explanation": "The Suspense component lets you specify fallback content (like a loading indicator) to show while waiting for lazy components to load. It's often used in conjunction with React.lazy for code-splitting.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT029",
+    "question": "What is the purpose of the useTransition hook in React?",
+    "answers": [
+      "To mark state updates as non-urgent",
+      "To create CSS transitions",
+      "To handle component lifecycle",
+      "To manage routing transitions"
+    ],
+    "correct": "To mark state updates as non-urgent",
+    "explanation": "The useTransition hook allows you to mark some state updates as non-urgent. This can help in improving the perceived performance of your app by prioritizing more urgent updates.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT030",
+    "question": "What is the purpose of the useDeferredValue hook in React?",
+    "answers": [
+      "To defer updating a part of the UI",
+      "To create deferred promises",
+      "To handle delayed component mounting",
+      "To manage delayed state updates"
+    ],
+    "correct": "To defer updating a part of the UI",
+    "explanation": "The useDeferredValue hook lets you defer updating a part of the UI. It's useful for dealing with expensive computations in response to user input, allowing you to keep the UI responsive.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT031",
+    "question": "What is the purpose of the React Developer Tools?",
+    "answers": [
+      "To inspect and debug React component hierarchies",
+      "To write React components",
+      "To deploy React applications",
+      "To test React components"
+    ],
+    "correct": "To inspect and debug React component hierarchies",
+    "explanation": "React Developer Tools is a browser extension that allows you to inspect the React component hierarchies in the Chrome Developer Tools. It's invaluable for debugging and understanding your React applications.",
+    "category": "Development Tools",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT032",
+    "question": "What is the purpose of the shouldComponentUpdate lifecycle method?",
+    "answers": [
+      "To optimize performance by preventing unnecessary renders",
+      "To force component updates",
+      "To handle component errors",
+      "To initialize component state"
+    ],
+    "correct": "To optimize performance by preventing unnecessary renders",
+    "explanation": "The shouldComponentUpdate method is used to let React know if a component's output is not affected by the current change in state or props. This can be used to optimize performance by preventing unnecessary renders.",
+    "category": "Lifecycle Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT033",
+    "question": "What is the purpose of the React.PureComponent?",
+    "answers": [
+      "To implement shouldComponentUpdate with a shallow prop and state comparison",
+      "To create components with pure functions",
+      "To prevent side effects in components",
+      "To optimize component rendering automatically"
+    ],
+    "correct": "To implement shouldComponentUpdate with a shallow prop and state comparison",
+    "explanation": "React.PureComponent is similar to React.Component, but it implements shouldComponentUpdate() with a shallow prop and state comparison. This can provide a performance boost in some cases by reducing unnecessary renders.",
+    "category": "Performance Optimization",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT034",
+    "question": "What is the purpose of the useDebugValue hook?",
+    "answers": [
+      "To display a label for custom hooks in React DevTools",
+      "To debug component rendering",
+      "To log errors in custom hooks",
+      "To profile component performance"
+    ],
+    "correct": "To display a label for custom hooks in React DevTools",
+    "explanation": "The useDebugValue hook can be used to display a label for custom hooks in React DevTools. This can be helpful when debugging an application that uses custom hooks.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT035",
+    "question": "What is the purpose of the React.createRef() method?",
+    "answers": [
+      "To create a ref that can be attached to React elements",
+      "To create new React elements",
+      "To create a new component instance",
+      "To create a new context"
+    ],
+    "correct": "To create a ref that can be attached to React elements",
+    "explanation": "React.createRef() is used to create a ref that can be attached to React elements via the ref attribute. This allows you to access the DOM node or React element instance.",
+    "category": "Refs",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT036",
+    "question": "What is the purpose of the getDerivedStateFromProps lifecycle method?",
+    "answers": [
+      "To update state based on changes in props",
+      "To perform side effects",
+      "To initialize component state",
+      "To handle component errors"
+    ],
+    "correct": "To update state based on changes in props",
+    "explanation": "getDerivedStateFromProps is invoked right before calling the render method, both on the initial mount and on subsequent updates. It should return an object to update the state, or null to update nothing.",
+    "category": "Lifecycle Methods",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT037",
+    "question": "What is the purpose of the componentDidCatch lifecycle method?",
+    "answers": [
+      "To catch errors in child component trees",
+      "To perform cleanup after component unmounting",
+      "To update component state",
+      "To optimize component rendering"
+    ],
+    "correct": "To catch errors in child component trees",
+    "explanation": "componentDidCatch is used in error boundary components to catch errors in their child component tree. It allows components to log error information and display a fallback UI.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT038",
+    "question": "What is the purpose of the React.cloneElement() method?",
+    "answers": [
+      "To clone and return a new React element",
+      "To create a deep copy of a component",
+      "To clone the entire component tree",
+      "To duplicate DOM nodes"
+    ],
+    "correct": "To clone and return a new React element",
+    "explanation": "React.cloneElement() is used to clone and return a new React element using an existing element as the starting point. It's often used to extend or modify the props of child elements.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT039",
+    "question": "What is the purpose of the React.Children.map() method?",
+    "answers": [
+      "To iterate over and transform child components",
+      "To create a map of child components",
+      "To filter child components",
+      "To sort child components"
+    ],
+    "correct": "To iterate over and transform child components",
+    "explanation": "React.Children.map() is used to iterate over and transform child components. It's particularly useful when you need to manipulate or augment the children passed to a component.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT040",
+    "question": "What is the purpose of the React.Children.only() method?",
+    "answers": [
+      "To ensure a component has only one child element",
+      "To select the first child of a component",
+      "To remove all but one child from a component",
+      "To check if a component has any children"
+    ],
+    "correct": "To ensure a component has only one child element",
+    "explanation": "React.Children.only() verifies that children has only one child (a React element) and returns it. Otherwise, it throws an error. It's used to enforce that a component has only one child element.",
+    "category": "Advanced Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT041",
+    "question": "What is the purpose of the useImperativeHandle hook?",
+    "answers": [
+      "To customize the instance value that is exposed to parent components when using ref",
+      "To handle imperative code in functional components",
+      "To create mutable variables in functional components",
+      "To optimize the rendering of child components"
+    ],
+    "correct": "To customize the instance value that is exposed to parent components when using ref",
+    "explanation": "useImperativeHandle customizes the instance value that is exposed to parent components when using ref. It should be used with forwardRef.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT042",
+    "question": "What is the purpose of the React.memo higher-order component?",
+    "answers": [
+      "To create a memoized version of a component",
+      "To add memory management to a component",
+      "To create a component that remembers its previous props",
+      "To optimize the rendering of child components"
+    ],
+    "correct": "To create a memoized version of a component",
+    "explanation": "React.memo is a higher-order component that memoizes the rendered output of the wrapped component and skips unnecessary re-rendering. It's used for performance optimization.",
+    "category": "Performance Optimization",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT043",
+    "question": "What is the purpose of the useCallback hook?",
+    "answers": [
+      "To return a memoized callback function",
+      "To create a new callback function on each render",
+      "To execute a callback function after each render",
+      "To manage state updates in callback functions"
+    ],
+    "correct": "To return a memoized callback function",
+    "explanation": "useCallback returns a memoized version of the callback function that only changes if one of the dependencies has changed. It's useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT044",
+    "question": "What is the purpose of the useMemo hook?",
+    "answers": [
+      "To memoize expensive computations",
+      "To create memoized components",
+      "To manage memoized state",
+      "To optimize the rendering of child components"
+    ],
+    "correct": "To memoize expensive computations",
+    "explanation": "useMemo is used to memoize expensive computations so that they are only recalculated when one of their dependencies changes. This can help to optimize performance by avoiding unnecessary calculations.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT045",
+    "question": "What is the purpose of the useRef hook?",
+    "answers": [
+      "To create a mutable ref object",
+      "To reference DOM elements directly",
+      "To store values that don't cause re-renders when updated",
+      "All of the above"
+    ],
+    "correct": "All of the above",
+    "explanation": "useRef can be used to create a mutable ref object, to reference DOM elements directly, and to store values that don't cause re-renders when updated. It's a versatile hook with multiple use cases.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT046",
+    "question": "What is the purpose of the useLayoutEffect hook?",
+    "answers": [
+      "To perform DOM measurements and mutations synchronously before the browser repaints",
+      "To handle side effects in functional components",
+      "To optimize the layout of components",
+      "To manage state updates that affect layout"
+    ],
+    "correct": "To perform DOM measurements and mutations synchronously before the browser repaints",
+    "explanation": "useLayoutEffect is similar to useEffect, but it fires synchronously after all DOM mutations. It's useful for performing DOM measurements and mutations that need to be done before the browser repaints.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT047",
+    "question": "What is the purpose of the React.createContext() method?",
+    "answers": [
+      "To create a Context object for sharing data across the component tree",
+      "To create a new React component",
+      "To create a new state object",
+      "To create a new props object"
+    ],
+    "correct": "To create a Context object for sharing data across the component tree",
+    "explanation": "React.createContext() is used to create a Context object. Context provides a way to pass data through the component tree without having to pass props down manually at every level.",
+    "category": "Context",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT048",
+    "question": "What is the purpose of the useContext hook?",
+    "answers": [
+      "To consume values from a Context object",
+      "To create a new Context object",
+      "To update values in a Context object",
+      "To manage local state in functional components"
+    ],
+    "correct": "To consume values from a Context object",
+    "explanation": "The useContext hook is used to consume values from a Context object. It allows functional components to subscribe to a context without introducing nesting.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT049",
+    "question": "What is the primary purpose of React's virtual DOM?",
+    "answers": [
+      "To improve performance by minimizing direct manipulation of the actual DOM",
+      "To create a backup of the real DOM",
+      "To handle server-side rendering",
+      "To manage component state"
+    ],
+    "correct": "To improve performance by minimizing direct manipulation of the actual DOM",
+    "explanation": "The virtual DOM is a core concept in React. It's a lightweight copy of the actual DOM that React uses to optimize rendering performance by minimizing direct manipulations of the real DOM.",
+    "category": "Core Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT050",
+    "question": "What is the main difference between state and props in React?",
+    "answers": [
+      "State is mutable and managed by the component, while props are immutable and received from parent components",
+      "State is immutable, while props are mutable",
+      "State is received from parent components, while props are managed internally",
+      "There is no difference; state and props are interchangeable"
+    ],
+    "correct": "State is mutable and managed by the component, while props are immutable and received from parent components",
+    "explanation": "Understanding the difference between state and props is fundamental in React. State is mutable and managed within a component, while props are immutable and passed down from parent components.",
+    "category": "Core Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT051",
+    "question": "What is the purpose of React's useEffect hook?",
+    "answers": [
+      "To perform side effects in function components",
+      "To create local state in function components",
+      "To optimize rendering performance",
+      "To handle user events"
+    ],
+    "correct": "To perform side effects in function components",
+    "explanation": "The useEffect hook is a core part of React's hooks API. It allows you to perform side effects in function components, such as data fetching, subscriptions, or manually changing the DOM.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT052",
+    "question": "What is the primary use case for React's Context API?",
+    "answers": [
+      "To provide a way to pass data through the component tree without passing props manually at every level",
+      "To replace Redux for all state management needs",
+      "To optimize rendering performance",
+      "To handle form submissions"
+    ],
+    "correct": "To provide a way to pass data through the component tree without passing props manually at every level",
+    "explanation": "The Context API is a core feature in React that solves the problem of prop drilling. It allows you to share values like themes, user data, or any other global state across many components without explicitly passing props through every level.",
+    "category": "Core Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT053",
+    "question": "What is the main purpose of React's useState hook?",
+    "answers": [
+      "To add state management to functional components",
+      "To replace class components entirely",
+      "To optimize component rendering",
+      "To handle side effects in components"
+    ],
+    "correct": "To add state management to functional components",
+    "explanation": "The useState hook is a fundamental part of React's hooks API. It allows you to add state management to functional components, which previously was only possible with class components.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT054",
+    "question": "What is the primary benefit of using JSX in React?",
+    "answers": [
+      "It allows you to write HTML-like code in your JavaScript, making it easier to describe the UI",
+      "It improves the performance of React applications",
+      "It's required for React to work properly",
+      "It replaces the need for JavaScript in React applications"
+    ],
+    "correct": "It allows you to write HTML-like code in your JavaScript, making it easier to describe the UI",
+    "explanation": "JSX is a syntax extension for JavaScript that allows you to describe your UI in a familiar HTML-like syntax within your JavaScript code. This makes it easier to visualize and create complex UIs in React.",
+    "category": "Core Concepts",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REACT055",
+    "question": "What is the main purpose of the key prop when rendering lists in React?",
+    "answers": [
+      "To help React identify which items have changed, been added, or been removed",
+      "To style list items differently",
+      "To determine the order of list items",
+      "To make list items clickable"
+    ],
+    "correct": "To help React identify which items have changed, been added, or been removed",
+    "explanation": "The key prop is crucial when rendering lists in React. It helps React identify which items in a list have changed, been added, or been removed, which is essential for efficient rendering and maintaining component state.",
+    "category": "Core Concepts",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT056",
+    "question": "What is the primary use case for React's useRef hook?",
+    "answers": [
+      "To persist values across renders without causing re-renders",
+      "To replace all uses of state in functional components",
+      "To optimize rendering performance",
+      "To handle form submissions"
+    ],
+    "correct": "To persist values across renders without causing re-renders",
+    "explanation": "The useRef hook is primarily used to persist values across renders without causing re-renders. It's often used to store mutable values that don't require the component to re-render when they change, or to access DOM elements directly.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT057",
+    "question": "What is the main advantage of using functional components with hooks over class components in React?",
+    "answers": [
+      "They make it easier to reuse stateful logic between components",
+      "They always render faster than class components",
+      "They have access to more lifecycle methods",
+      "They can handle more complex state management"
+    ],
+    "correct": "They make it easier to reuse stateful logic between components",
+    "explanation": "Functional components with hooks offer a more straightforward way to reuse stateful logic between components without changing your component hierarchy. This was more difficult with class components and led to patterns like render props and higher-order components.",
+    "category": "Components",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT058",
+    "question": "What is the primary purpose of React's useReducer hook?",
+    "answers": [
+      "To manage more complex state logic in components",
+      "To replace Redux in all scenarios",
+      "To optimize rendering performance",
+      "To handle side effects in components"
+    ],
+    "correct": "To manage more complex state logic in components",
+    "explanation": "The useReducer hook is used for managing more complex state logic in components. It's particularly useful when you have multiple sub-values in your state, or when the next state depends on the previous one.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT059",
+    "question": "What is the main purpose of React's Fragment component?",
+    "answers": [
+      "To group multiple elements without adding an extra node to the DOM",
+      "To improve rendering performance",
+      "To handle component errors",
+      "To create reusable component logic"
+    ],
+    "correct": "To group multiple elements without adding an extra node to the DOM",
+    "explanation": "React's Fragment component allows you to group multiple elements together without adding an extra node to the DOM. This is useful when you need to return multiple elements from a component but don't want to add unnecessary divs or spans to your markup.",
+    "category": "Components",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT060",
+    "question": "What is the primary use case for the useMemo hook in React?",
+    "answers": [
+      "To memoize expensive computations so they are not recalculated on every render",
+      "To memoize entire component renders",
+      "To memoize props passed to child components",
+      "To memoize state updates"
+    ],
+    "correct": "To memoize expensive computations so they are not recalculated on every render",
+    "explanation": "The useMemo hook is primarily used to optimize performance by memoizing expensive computations. It ensures that the computation is only recalculated when one of its dependencies changes, not on every render.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT061",
+    "question": "What is the main purpose of the useCallback hook in React?",
+    "answers": [
+      "To memoize callback functions to optimize child component re-renders",
+      "To create new callback functions on every render",
+      "To replace all uses of regular functions in React",
+      "To handle asynchronous operations"
+    ],
+    "correct": "To memoize callback functions to optimize child component re-renders",
+    "explanation": "The useCallback hook is used to memoize callback functions. This is particularly useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT062",
+    "question": "What is the primary purpose of React's ErrorBoundary component?",
+    "answers": [
+      "To catch and handle errors in their child component tree",
+      "To prevent all errors in a React application",
+      "To log errors to the console",
+      "To optimize error-prone components"
+    ],
+    "correct": "To catch and handle errors in their child component tree",
+    "explanation": "Error Boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT063",
+    "question": "What is the main purpose of the React.memo higher-order component?",
+    "answers": [
+      "To create a memoized version of a component to optimize performance",
+      "To add memory management capabilities to a component",
+      "To create components that remember all their previous states",
+      "To handle memoization of props manually"
+    ],
+    "correct": "To create a memoized version of a component to optimize performance",
+    "explanation": "React.memo is a higher-order component that memoizes the rendered output of the wrapped component and skips unnecessary re-rendering. This can provide a performance boost, especially for computationally expensive components.",
+    "category": "Performance Optimization",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT064",
+    "question": "What is the primary use case for the useLayoutEffect hook in React?",
+    "answers": [
+      "To perform DOM measurements and mutations synchronously before the browser repaints",
+      "To handle all side effects in React applications",
+      "To replace the useEffect hook in all scenarios",
+      "To optimize the initial render of a React application"
+    ],
+    "correct": "To perform DOM measurements and mutations synchronously before the browser repaints",
+    "explanation": "The useLayoutEffect hook is used to perform DOM measurements and mutations synchronously immediately after React has performed all DOM mutations, but before the browser repaints. This ensures that the user won't perceive any visual inconsistencies.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT065",
+    "question": "What is the primary purpose of React's useContext hook?",
+    "answers": [
+      "To consume values from the React context without nesting",
+      "To create new context objects",
+      "To replace Redux for all state management",
+      "To optimize context updates"
+    ],
+    "correct": "To consume values from the React context without nesting",
+    "explanation": "The useContext hook allows functional components to subscribe to a React context without introducing extra nesting. It's a simpler way to access context values compared to the Context.Consumer component.",
+    "category": "Hooks",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT066",
+    "question": "What is the main benefit of using controlled components in React forms?",
+    "answers": [
+      "The component has full control over the form data, making it easier to validate and manipulate",
+      "Controlled components always render faster than uncontrolled components",
+      "Controlled components require less code to implement",
+      "Controlled components automatically handle all form submissions"
+    ],
+    "correct": "The component has full control over the form data, making it easier to validate and manipulate",
+    "explanation": "In controlled components, React controls the state of form elements. This gives you more control over the form data, making it easier to implement features like validation, conditional disabling of the submit button, or enforcing input formats.",
+    "category": "Forms",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT067",
+    "question": "What is the primary use case for React's useReducer hook?",
+    "answers": [
+      "To manage complex state logic in components",
+      "To reduce the number of components in an application",
+      "To optimize component rendering",
+      "To handle asynchronous operations"
+    ],
+    "correct": "To manage complex state logic in components",
+    "explanation": "useReducer is used for managing more complex state logic in components. It's particularly useful when you have multiple sub-values in your state, or when the next state depends on the previous one.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT068",
+    "question": "What is the main purpose of React's Strict Mode?",
+    "answers": [
+      "To highlight potential problems in an application",
+      "To enforce type checking in React applications",
+      "To improve the performance of React applications",
+      "To enable new React features automatically"
+    ],
+    "correct": "To highlight potential problems in an application",
+    "explanation": "React's Strict Mode is a tool for highlighting potential problems in an application. It activates additional checks and warnings for its descendants, helping developers identify issues during development.",
+    "category": "Development Tools",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT069",
+    "question": "What is the primary benefit of using the key prop when rendering lists in React?",
+    "answers": [
+      "It helps React identify which items have changed, been added, or been removed",
+      "It improves the styling of list items",
+      "It makes list items clickable",
+      "It automatically sorts the list items"
+    ],
+    "correct": "It helps React identify which items have changed, been added, or been removed",
+    "explanation": "The key prop gives elements in a list a stable identity. This helps React identify which items have changed, been added, or been removed, which is crucial for efficient rendering and maintaining component state in lists.",
+    "category": "Lists",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT070",
+    "question": "What is the main advantage of using React.lazy for code splitting?",
+    "answers": [
+      "It allows you to load components dynamically, improving initial load time",
+      "It automatically optimizes all images in your application",
+      "It reduces the total amount of code in your application",
+      "It eliminates the need for webpack in React applications"
+    ],
+    "correct": "It allows you to load components dynamically, improving initial load time",
+    "explanation": "React.lazy enables dynamic imports in React applications. This allows you to split your code into smaller chunks and load components only when they're needed, which can significantly improve the initial load time of your application.",
+    "category": "Performance Optimization",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT071",
+    "question": "What is the primary use case for the dangerouslySetInnerHTML attribute in React?",
+    "answers": [
+      "To insert raw HTML into a component",
+      "To improve the security of React applications",
+      "To optimize the rendering of HTML content",
+      "To handle user input in forms"
+    ],
+    "correct": "To insert raw HTML into a component",
+    "explanation": "dangerouslySetInnerHTML is React's replacement for using innerHTML in the browser DOM. It's used to insert raw HTML into a component, but should be used sparingly due to potential security risks.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT072",
+    "question": "What is the main purpose of React's useImperativeHandle hook?",
+    "answers": [
+      "To customize the instance value that is exposed to parent components when using ref",
+      "To handle imperative code in functional components",
+      "To optimize the rendering of child components",
+      "To manage component state"
+    ],
+    "correct": "To customize the instance value that is exposed to parent components when using ref",
+    "explanation": "useImperativeHandle customizes the instance value that is exposed to parent components when using ref. It can be used to expose only certain methods of a child component to its parent component.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT073",
+    "question": "What is the primary benefit of using PropTypes in React?",
+    "answers": [
+      "It helps catch bugs by validating the types of props passed to components",
+      "It automatically generates documentation for your components",
+      "It improves the performance of React applications",
+      "It enables static typing in JavaScript"
+    ],
+    "correct": "It helps catch bugs by validating the types of props passed to components",
+    "explanation": "PropTypes is a type-checking library for props in React. It helps catch bugs by validating the types of props passed to components during development, making it easier to identify and fix prop-related issues.",
+    "category": "Type Checking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT074",
+    "question": "What is the main purpose of the shouldComponentUpdate lifecycle method?",
+    "answers": [
+      "To optimize performance by preventing unnecessary re-renders",
+      "To force component updates",
+      "To handle component errors",
+      "To initialize component state"
+    ],
+    "correct": "To optimize performance by preventing unnecessary re-renders",
+    "explanation": "shouldComponentUpdate is used to let React know if a component's output is not affected by the current change in state or props. This can be used to optimize performance by preventing unnecessary re-renders.",
+    "category": "Lifecycle Methods",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT075",
+    "question": "What is the primary use case for React's createRef method?",
+    "answers": [
+      "To create refs to access DOM nodes or React elements",
+      "To create new React components programmatically",
+      "To generate unique keys for list items",
+      "To create new state variables"
+    ],
+    "correct": "To create refs to access DOM nodes or React elements",
+    "explanation": "React.createRef() is used to create a ref that can be attached to React elements via the ref attribute. This allows you to directly access DOM nodes or React component instances.",
+    "category": "Refs",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REACT076",
+    "question": "What is the main purpose of React's forwardRef function?",
+    "answers": [
+      "To pass a ref through a component to one of its children",
+      "To create new refs",
+      "To optimize the use of refs",
+      "To remove the need for refs in React"
+    ],
+    "correct": "To pass a ref through a component to one of its children",
+    "explanation": "forwardRef allows components to take a ref they receive and forward it to a child component. This is particularly useful when you need to allow parent components to directly interact with a child of a HOC or a deeply nested element.",
+    "category": "Refs",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT077",
+    "question": "What is the primary benefit of using the useCallback hook in React?",
+    "answers": [
+      "It helps prevent unnecessary re-renders in child components that rely on reference equality",
+      "It automatically memoizes all functions in a component",
+      "It replaces the need for class methods in components",
+      "It optimizes all callback functions in an application"
+    ],
+    "correct": "It helps prevent unnecessary re-renders in child components that rely on reference equality",
+    "explanation": "useCallback returns a memoized version of the callback that only changes if one of the dependencies has changed. This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT078",
+    "question": "What is the main advantage of using Server-Side Rendering (SSR) in React?",
+    "answers": [
+      "It improves the initial page load time and helps with SEO",
+      "It eliminates the need for client-side JavaScript",
+      "It automatically optimizes all React components",
+      "It prevents all runtime errors in React applications"
+    ],
+    "correct": "It improves the initial page load time and helps with SEO",
+    "explanation": "Server-Side Rendering allows the initial HTML content to be generated on the server. This can significantly improve the initial page load time and is beneficial for SEO as search engines can easily crawl the fully rendered page.",
+    "category": "Rendering",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT079",
+    "question": "What is the primary use case for the useMemo hook in React?",
+    "answers": [
+      "To memoize expensive computations to avoid unnecessary re-calculations",
+      "To memoize entire component renders",
+      "To memoize prop values",
+      "To memoize state updates"
+    ],
+    "correct": "To memoize expensive computations to avoid unnecessary re-calculations",
+    "explanation": "useMemo is used to memoize expensive computations so that they are only recalculated when one of their dependencies changes. This can help to optimize performance by avoiding unnecessary calculations on every render.",
+    "category": "Hooks",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REACT080",
+    "question": "What is the main purpose of using keys in React when rendering lists of elements?",
+    "answers": [
+      "To help React identify which items have changed, been added, or been removed",
+      "To automatically sort list items",
+      "To add click functionality to list items",
+      "To style list items differently"
+    ],
+    "correct": "To help React identify which items have changed, been added, or been removed",
+    "explanation": "Keys help React identify which items in a list have changed, been added, or been removed. They give elements a stable identity across re-renders, which is crucial for efficient updating of the user interface.",
+    "category": "Lists",
+    "difficulty": "Medium"
+  }
+]
