@@ -1,0 +1,898 @@
+[
+  {
+    "questionId": "JS0000001",
+    "question": "What is the output of console.log(typeof NaN)?",
+    "answers": [
+      "\"number\"",
+      "\"NaN\"",
+      "\"undefined\"",
+      "\"object\""
+    ],
+    "correct": "\"number\"",
+    "explanation": "In JavaScript, NaN (Not-a-Number) is a special value of the Number type, so typeof NaN returns \"number\".",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000002",
+    "question": "Which of the following is NOT a primitive data type in JavaScript?",
+    "answers": [
+      "Array",
+      "String",
+      "Boolean",
+      "Symbol"
+    ],
+    "correct": "Array",
+    "explanation": "Array is an object in JavaScript, not a primitive data type. The primitive data types are String, Number, Boolean, Null, Undefined, Symbol, and BigInt.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000003",
+    "question": "What will be the output of the following code?\n\nconst greet = (name) => `Hello, ${name}!`;\nconst sayHi = greet;\nconsole.log(sayHi('Alice'));",
+    "answers": [
+      "\"Hello, Alice!\"",
+      "\"Hello, undefined!\"",
+      "Error: sayHi is not a function",
+      "undefined"
+    ],
+    "correct": "\"Hello, Alice!\"",
+    "explanation": "The arrow function greet is assigned to sayHi. When sayHi is called with 'Alice', it executes the greet function, returning \"Hello, Alice!\".",
+    "category": "Functions and Scope",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000004",
+    "question": "What is a closure in JavaScript?",
+    "answers": [
+      "A function that has access to variables in its outer lexical environment",
+      "A way to close a connection to a database",
+      "A method to end the execution of a loop",
+      "A technique to close unused variables to free up memory"
+    ],
+    "correct": "A function that has access to variables in its outer lexical environment",
+    "explanation": "A closure is a function that has access to variables in its outer (enclosing) lexical scope, even after the outer function has returned.",
+    "category": "Functions and Scope",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000005",
+    "question": "What is the output of the following code?\n\nconst fruits = ['apple', 'banana', 'cherry'];\nconst [,second] = fruits;\nconsole.log(second);",
+    "answers": [
+      "\"banana\"",
+      "\"apple\"",
+      "undefined",
+      "['apple', 'banana', 'cherry']"
+    ],
+    "correct": "\"banana\"",
+    "explanation": "This code uses array destructuring. The comma skips the first element, and second is assigned the value of the second element in the array, which is 'banana'.",
+    "category": "Objects and Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000006",
+    "question": "Which method is used to add one or more elements to the end of an array and returns the new length of the array?",
+    "answers": [
+      "push()",
+      "pop()",
+      "unshift()",
+      "concat()"
+    ],
+    "correct": "push()",
+    "explanation": "The push() method adds one or more elements to the end of an array and returns the new length of the array.",
+    "category": "Objects and Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000007",
+    "question": "What will be the output of the following code?\n\nlet x = 5;\nif (x < 10) {\n  console.log('Less than 10');\n} else if (x < 20) {\n  console.log('Less than 20');\n} else {\n  console.log('20 or more');\n}",
+    "answers": [
+      "\"Less than 10\"",
+      "\"Less than 20\"",
+      "\"20 or more\"",
+      "No output"
+    ],
+    "correct": "\"Less than 10\"",
+    "explanation": "The first condition (x < 10) is true, so 'Less than 10' is logged. Once a condition is met in an if-else chain, the rest of the conditions are not evaluated.",
+    "category": "Control Flow",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000008",
+    "question": "Which of the following is NOT a valid loop in JavaScript?",
+    "answers": [
+      "repeat...until",
+      "for...of",
+      "while",
+      "do...while"
+    ],
+    "correct": "repeat...until",
+    "explanation": "JavaScript does not have a 'repeat...until' loop. The valid loops are for, for...in, for...of, while, and do...while.",
+    "category": "Control Flow",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000009",
+    "question": "What is the purpose of the 'use strict' directive in JavaScript?",
+    "answers": [
+      "To enable strict mode, which catches common coding errors and 'unsafe' actions",
+      "To allow the use of advanced ES6+ features",
+      "To make the code execute faster",
+      "To disable all warnings in the console"
+    ],
+    "correct": "To enable strict mode, which catches common coding errors and 'unsafe' actions",
+    "explanation": "'use strict' enables strict mode in JavaScript, which helps catch common coding errors and prevents the use of certain error-prone features.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000010",
+    "question": "What is the output of the following code?\n\nconst numbers = [1, 2, 3, 4, 5];\nconst [first, ...rest] = numbers;\nconsole.log(rest);",
+    "answers": [
+      "[2, 3, 4, 5]",
+      "[1, 2, 3, 4, 5]",
+      "1",
+      "[1]"
+    ],
+    "correct": "[2, 3, 4, 5]",
+    "explanation": "This code uses array destructuring with the rest operator (...). first gets the value 1, and rest gets an array of the remaining elements [2, 3, 4, 5].",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000011",
+    "question": "Which of the following correctly creates a Promise that resolves after 2 seconds?",
+    "answers": [
+      "new Promise(resolve => setTimeout(resolve, 2000));",
+      "Promise.resolve(setTimeout(2000));",
+      "new Promise(setTimeout(resolve, 2000));",
+      "Promise.timeout(2000);"
+    ],
+    "correct": "new Promise(resolve => setTimeout(resolve, 2000));",
+    "explanation": "This creates a new Promise that calls the resolve function after a 2000ms timeout, effectively resolving the Promise after 2 seconds.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000012",
+    "question": "What is the main advantage of using async/await over traditional Promise chains?",
+    "answers": [
+      "It makes asynchronous code look and behave more like synchronous code",
+      "It always executes faster than Promise chains",
+      "It allows you to catch all errors in a single catch block",
+      "It automatically parallelizes all asynchronous operations"
+    ],
+    "correct": "It makes asynchronous code look and behave more like synchronous code",
+    "explanation": "async/await provides a more readable and maintainable way to write asynchronous code, making it appear more like traditional synchronous code.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000013",
+    "question": "Which method is used to select the first element that matches a specified CSS selector?",
+    "answers": [
+      "querySelector()",
+      "getElementById()",
+      "getElementsByClassName()",
+      "querySelectorAll()"
+    ],
+    "correct": "querySelector()",
+    "explanation": "querySelector() returns the first Element within the document that matches the specified selector, or group of selectors.",
+    "category": "DOM Manipulation",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000014",
+    "question": "What is event bubbling in the context of DOM events?",
+    "answers": [
+      "When an event triggers on a nested element and propagates up through its ancestors",
+      "When multiple events occur simultaneously",
+      "When an event is canceled before it reaches its target",
+      "When an event triggers multiple times on the same element"
+    ],
+    "correct": "When an event triggers on a nested element and propagates up through its ancestors",
+    "explanation": "Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then propagates to outer elements.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000015",
+    "question": "Which of the following is NOT a valid way to create a custom error in JavaScript?",
+    "answers": [
+      "throw Error.custom('My custom error');",
+      "throw new Error('My custom error');",
+      "throw 'My custom error';",
+      "throw { name: 'CustomError', message: 'My custom error' };"
+    ],
+    "correct": "throw Error.custom('My custom error');",
+    "explanation": "JavaScript doesn't have a built-in Error.custom() method. The other options are valid ways to throw errors, although throwing an Error object (option 2) is generally considered the best practice.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000016",
+    "question": "What is the purpose of the console.table() method?",
+    "answers": [
+      "To display tabular data as a table in the console",
+      "To create an HTML table and append it to the DOM",
+      "To sort an array of objects based on a specified property",
+      "To convert a string of comma-separated values into an array"
+    ],
+    "correct": "To display tabular data as a table in the console",
+    "explanation": "console.table() is used to display tabular data as a table in the console. It's particularly useful for viewing arrays of objects or nested arrays in a more readable format.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000017",
+    "question": "What is the result of '5' + 3 in JavaScript?",
+    "answers": [
+      "\"53\"",
+      "8",
+      "53",
+      "NaN"
+    ],
+    "correct": "\"53\"",
+    "explanation": "In JavaScript, when the + operator is used with a string and a number, the number is converted to a string and concatenation occurs.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000018",
+    "question": "What is the purpose of the 'typeof' operator in JavaScript?",
+    "answers": [
+      "To return a string indicating the type of an unevaluated operand",
+      "To convert a value to a specific type",
+      "To check if a variable is defined",
+      "To compare the types of two variables"
+    ],
+    "correct": "To return a string indicating the type of an unevaluated operand",
+    "explanation": "The typeof operator returns a string indicating the type of the unevaluated operand. This is useful for type checking and debugging.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000019",
+    "question": "What is the output of the following code?\n\nfunction outer() {\n  let x = 10;\n  function inner() {\n    console.log(x);\n  }\n  return inner;\n}\nconst closureFn = outer();\nclosureFn();",
+    "answers": [
+      "10",
+      "undefined",
+      "Error: x is not defined",
+      "null"
+    ],
+    "correct": "10",
+    "explanation": "This is an example of a closure. The inner function has access to the x variable from its outer scope, even after the outer function has returned.",
+    "category": "Functions and Scope",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000020",
+    "question": "Which of the following correctly describes function hoisting in JavaScript?",
+    "answers": [
+      "Function declarations are hoisted, but function expressions are not",
+      "Both function declarations and expressions are fully hoisted",
+      "Neither function declarations nor expressions are hoisted",
+      "Only arrow functions are hoisted"
+    ],
+    "correct": "Function declarations are hoisted, but function expressions are not",
+    "explanation": "In JavaScript, function declarations are hoisted to the top of their scope and can be used before they appear in the code. Function expressions, however, are not hoisted.",
+    "category": "Functions and Scope",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000021",
+    "question": "What is the output of the following code?\n\nconst obj1 = { a: 1, b: 2 };\nconst obj2 = { b: 3, c: 4 };\nconst merged = { ...obj1, ...obj2 };\nconsole.log(merged);",
+    "answers": [
+      "{ a: 1, b: 3, c: 4 }",
+      "{ a: 1, b: 2, c: 4 }",
+      "{ a: 1, b: 2, b: 3, c: 4 }",
+      "Error"
+    ],
+    "correct": "{ a: 1, b: 3, c: 4 }",
+    "explanation": "This uses the spread operator to merge objects. When keys conflict, the last one overwrites previous ones. So obj2's 'b' overwrites obj1's 'b'.",
+    "category": "Objects and Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000022",
+    "question": "What is the output of the following code?\n\nconst arr = [1, 2, 3, 4, 5];\nconsole.log(arr.slice(1, 3));",
+    "answers": [
+      "[2, 3]",
+      "[1, 2]",
+      "[2, 3, 4]",
+      "[1, 2, 3]"
+    ],
+    "correct": "[2, 3]",
+    "explanation": "The slice() method returns a shallow copy of a portion of an array. It takes two arguments: the start index (inclusive) and the end index (exclusive). So slice(1, 3) returns elements at index 1 and 2.",
+    "category": "Objects and Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000023",
+    "question": "What is the purpose of the break statement in a switch statement?",
+    "answers": [
+      "To exit the switch block after a case is matched and executed",
+      "To skip to the next case without executing the current one",
+      "To end the entire function containing the switch statement",
+      "To restart the switch statement from the beginning"
+    ],
+    "correct": "To exit the switch block after a case is matched and executed",
+    "explanation": "The break statement in a switch statement is used to exit the switch block once a matching case has been found and executed. Without it, execution would 'fall through' to subsequent cases.",
+    "category": "Control Flow",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000024",
+    "question": "What will be the output of the following code?\n\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1000);\n}",
+    "answers": [
+      "3, 3, 3",
+      "0, 1, 2",
+      "2, 2, 2",
+      "undefined, undefined, undefined"
+    ],
+    "correct": "3, 3, 3",
+    "explanation": "This is a classic closure issue. By the time the setTimeout callbacks execute, the loop has completed and i is 3. Using let instead of var would print 0, 1, 2.",
+    "category": "Control Flow",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000025",
+    "question": "What is a generator function in JavaScript?",
+    "answers": [
+      "A function that can be paused and resumed, and can yield multiple values",
+      "A function that generates random numbers",
+      "A function that creates other functions",
+      "A function that automatically generates documentation"
+    ],
+    "correct": "A function that can be paused and resumed, and can yield multiple values",
+    "explanation": "Generator functions in JavaScript allow you to define an iterative algorithm by writing a single function whose execution is not continuous. They are defined using function* syntax and use yield to pause and resume.",
+    "category": "ES6+ Features",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000026",
+    "question": "What is the purpose of the Symbol data type introduced in ES6?",
+    "answers": [
+      "To create unique identifiers",
+      "To represent mathematical symbols",
+      "To encrypt data",
+      "To define new operators"
+    ],
+    "correct": "To create unique identifiers",
+    "explanation": "The Symbol data type in JavaScript is used to create unique identifiers. Every Symbol value returned from Symbol() is unique, which makes them useful for object properties and preventing name clashes.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000027",
+    "question": "What will be the output of the following code?\n\nasync function example() {\n  return 'Hello';\n}\nconsole.log(example());",
+    "answers": [
+      "A Promise object",
+      "\"Hello\"",
+      "undefined",
+      "An error"
+    ],
+    "correct": "A Promise object",
+    "explanation": "An async function always returns a Promise. In this case, the Promise will resolve with the value 'Hello', but console.log(example()) will output the Promise object itself, not its resolved value.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000028",
+    "question": "What is the difference between Promise.all() and Promise.race()?",
+    "answers": [
+      "Promise.all() waits for all promises to resolve, while Promise.race() resolves as soon as one promise resolves",
+      "Promise.all() resolves as soon as one promise resolves, while Promise.race() waits for all promises to resolve",
+      "Promise.all() is used for error handling, while Promise.race() is used for successful resolutions",
+      "There is no difference, they are aliases of the same function"
+    ],
+    "correct": "Promise.all() waits for all promises to resolve, while Promise.race() resolves as soon as one promise resolves",
+    "explanation": "Promise.all() takes an iterable of promises and returns a promise that resolves when all input promises have resolved. Promise.race() also takes an iterable of promises but returns a promise that resolves or rejects as soon as one of the input promises resolves or rejects.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000029",
+    "question": "Which method would you use to remove the last child of a DOM element?",
+    "answers": [
+      "removeChild()",
+      "deleteLast()",
+      "pop()",
+      "splice()"
+    ],
+    "correct": "removeChild()",
+    "explanation": "To remove the last child of a DOM element, you would typically use element.removeChild(element.lastChild). The removeChild() method removes a child node from the DOM and returns the removed node.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000030",
+    "question": "What is the purpose of the dataset property in JavaScript?",
+    "answers": [
+      "To access custom data attributes on HTML elements",
+      "To store large amounts of data in the browser",
+      "To create datasets for data visualization",
+      "To define new HTML elements"
+    ],
+    "correct": "To access custom data attributes on HTML elements",
+    "explanation": "The dataset property provides access to all the custom data attributes (data-*) set on an element. It's a convenient way to store extra information on standard, semantic HTML elements without using non-standard attributes or extra properties.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000031",
+    "question": "What is the purpose of the debugger statement in JavaScript?",
+    "answers": [
+      "To pause execution and call the debugging function if available",
+      "To automatically fix bugs in the code",
+      "To log all variables to the console",
+      "To prevent any errors from occurring in the code"
+    ],
+    "correct": "To pause execution and call the debugging function if available",
+    "explanation": "The debugger statement invokes any available debugging functionality. If no debugging functionality is available, this statement has no effect. It acts like a breakpoint in the code when the debugger is active.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000032",
+    "question": "Which of the following is true about the try...catch statement?",
+    "answers": [
+      "It can catch synchronous errors but not asynchronous ones",
+      "It can catch both synchronous and asynchronous errors",
+      "It only works with TypeError exceptions",
+      "It automatically fixes the error and continues execution"
+    ],
+    "correct": "It can catch synchronous errors but not asynchronous ones",
+    "explanation": "The try...catch statement can catch synchronous errors that occur within the try block. However, it cannot catch asynchronous errors (like those in setTimeout callbacks or promise rejections) unless they are explicitly handled.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000033",
+    "question": "What is the output of console.log(0.1 + 0.2 === 0.3)?",
+    "answers": [
+      "false",
+      "true",
+      "undefined",
+      "NaN"
+    ],
+    "correct": "false",
+    "explanation": "Due to how floating-point numbers are represented in binary, 0.1 + 0.2 is actually slightly larger than 0.3, so the equality check returns false.",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000034",
+    "question": "Which of the following is NOT a valid way to declare a variable in JavaScript?",
+    "answers": [
+      "define x = 5;",
+      "let x = 5;",
+      "var x = 5;",
+      "const x = 5;"
+    ],
+    "correct": "define x = 5;",
+    "explanation": "JavaScript does not have a 'define' keyword for variable declaration. The valid ways are 'var', 'let', and 'const'.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000035",
+    "question": "What is the output of the following code?\n\nfunction foo(a, b) {\n  arguments[1] = 2;\n  console.log(b);\n}\nfoo(1);",
+    "answers": [
+      "undefined",
+      "2",
+      "null",
+      "1"
+    ],
+    "correct": "undefined",
+    "explanation": "Although arguments[1] is set to 2, it doesn't affect the parameter 'b' because it wasn't provided in the function call. 'b' remains undefined.",
+    "category": "Functions and Scope",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000036",
+    "question": "What is the purpose of the 'bind' method on function objects?",
+    "answers": [
+      "To create a new function with a fixed 'this' value",
+      "To immediately invoke the function",
+      "To bind the function to a specific HTML element",
+      "To create a copy of the function"
+    ],
+    "correct": "To create a new function with a fixed 'this' value",
+    "explanation": "The 'bind' method creates a new function that, when called, has its 'this' keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.",
+    "category": "Functions and Scope",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000037",
+    "question": "What is the output of the following code?\n\nconst obj = { a: 1, b: 2 };\nconst { a, c = 3 } = obj;\nconsole.log(a, c);",
+    "answers": [
+      "1 3",
+      "1 undefined",
+      "undefined 3",
+      "1 2"
+    ],
+    "correct": "1 3",
+    "explanation": "This uses object destructuring. 'a' is assigned the value 1 from obj.a, and 'c' is assigned the default value 3 since obj.c doesn't exist.",
+    "category": "Objects and Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000038",
+    "question": "Which array method would you use to remove the last element from an array and return that element?",
+    "answers": [
+      "pop()",
+      "push()",
+      "shift()",
+      "unshift()"
+    ],
+    "correct": "pop()",
+    "explanation": "The pop() method removes the last element from an array and returns that element. This method changes the length of the array.",
+    "category": "Objects and Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000039",
+    "question": "What is the output of the following code?\n\nlet i = 0;\nwhile (i < 5) {\n  if (i === 3) {\n    i++;\n    continue;\n  }\n  console.log(i);\n  i++;\n}",
+    "answers": [
+      "0 1 2 4",
+      "0 1 2 3 4",
+      "0 1 2",
+      "0 1 2 3"
+    ],
+    "correct": "0 1 2 4",
+    "explanation": "The loop prints numbers from 0 to 4, but when i is 3, the continue statement skips the console.log and moves to the next iteration.",
+    "category": "Control Flow",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000040",
+    "question": "What is the purpose of the 'yield' keyword in JavaScript?",
+    "answers": [
+      "To pause and resume a generator function",
+      "To return a value from a regular function",
+      "To create a new promise",
+      "To define a new variable"
+    ],
+    "correct": "To pause and resume a generator function",
+    "explanation": "The 'yield' keyword is used in generator functions to pause function execution and return a value to the caller, while maintaining the function's state.",
+    "category": "Control Flow",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000041",
+    "question": "What is the purpose of the 'Object.freeze()' method in JavaScript?",
+    "answers": [
+      "To make an object immutable",
+      "To deep clone an object",
+      "To convert an object to JSON",
+      "To remove all properties from an object"
+    ],
+    "correct": "To make an object immutable",
+    "explanation": "Object.freeze() prevents new properties from being added to an object, existing properties from being removed, and values of existing properties from being changed. It returns the same object that was passed in.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000042",
+    "question": "What is a WeakMap in JavaScript?",
+    "answers": [
+      "A collection of key/value pairs where the keys must be objects",
+      "A Map that automatically removes entries after a certain time",
+      "A Map with a smaller memory footprint",
+      "A Map that can only store primitive values"
+    ],
+    "correct": "A collection of key/value pairs where the keys must be objects",
+    "explanation": "A WeakMap is a collection of key/value pairs where the keys must be objects and the values can be arbitrary values. The 'weak' refers to weakly held object references, which can be garbage collected if there is no other reference to the object.",
+    "category": "ES6+ Features",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000043",
+    "question": "What will be the output of the following code?\n\nasync function example() {\n  console.log('1');\n  await Promise.resolve('2');\n  console.log('3');\n}\nexample();\nconsole.log('4');",
+    "answers": [
+      "1 4 3",
+      "1 3 4",
+      "1 4 2",
+      "1 2 3 4"
+    ],
+    "correct": "1 4 3",
+    "explanation": "The function logs '1', then encounters await which pauses execution. The function returns, allowing '4' to be logged. Then, the promise resolves, and '3' is logged.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000044",
+    "question": "Which of the following is NOT a state of a Promise?",
+    "answers": [
+      "Paused",
+      "Pending",
+      "Fulfilled",
+      "Rejected"
+    ],
+    "correct": "Paused",
+    "explanation": "A Promise can be in one of three states: Pending (initial state), Fulfilled (operation completed successfully), or Rejected (operation failed). There is no 'Paused' state for Promises.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000045",
+    "question": "What is event delegation in the context of DOM events?",
+    "answers": [
+      "A technique to handle events on multiple elements using a single event listener on a common ancestor",
+      "A way to prevent event bubbling",
+      "A method to create custom events",
+      "A technique to automatically attach event listeners to all children of an element"
+    ],
+    "correct": "A technique to handle events on multiple elements using a single event listener on a common ancestor",
+    "explanation": "Event delegation is a technique where you attach a single event listener to a parent element to handle events on its children, even if they are added dynamically. This is possible due to event bubbling.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000046",
+    "question": "Which of the following methods is used to create a new DOM element?",
+    "answers": [
+      "document.createElement()",
+      "document.newElement()",
+      "document.generateElement()",
+      "document.createNode()"
+    ],
+    "correct": "document.createElement()",
+    "explanation": "The document.createElement() method creates a new element with the specified tag name. It returns a reference to the newly created element node.",
+    "category": "DOM Manipulation",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000047",
+    "question": "What is the purpose of the 'finally' clause in a try...catch...finally statement?",
+    "answers": [
+      "To execute code regardless of whether an exception was thrown or caught",
+      "To handle any errors that occurred in the catch block",
+      "To re-throw the caught exception",
+      "To prevent any further exceptions from being thrown"
+    ],
+    "correct": "To execute code regardless of whether an exception was thrown or caught",
+    "explanation": "The 'finally' clause in a try...catch...finally statement contains code that will be executed regardless of whether an exception was thrown or caught. It's typically used for cleanup code that should be run in both cases.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000048",
+    "question": "Which of the following is NOT a valid way to trigger the browser's debugging tools?",
+    "answers": [
+      "Using the 'debug' keyword",
+      "Using the debugger statement",
+      "Setting a breakpoint in the browser's developer tools",
+      "Using console.debug()"
+    ],
+    "correct": "Using the 'debug' keyword",
+    "explanation": "JavaScript does not have a 'debug' keyword. The debugger statement, setting breakpoints in developer tools, and using console methods are valid ways to assist in debugging, but 'debug' is not a reserved word or built-in function in JavaScript.",
+    "category": "Error Handling and Debugging",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000049",
+    "question": "What is the output of the following code?\n\nconst arr = [1, 2, 3, 4, 5];\nconst [first, ...rest, last] = arr;\nconsole.log(rest);",
+    "answers": [
+      "SyntaxError",
+      "[2, 3, 4]",
+      "[2, 3, 4, 5]",
+      "[]"
+    ],
+    "correct": "SyntaxError",
+    "explanation": "This code will throw a SyntaxError. The rest element must be the last element in a destructuring pattern. You cannot have a regular binding pattern after a rest element.",
+    "category": "ES6+ Features",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000050",
+    "question": "Which of the following is a correct way to define a private field in a JavaScript class (as of ES2022)?",
+    "answers": [
+      "#privateField = 'secret';",
+      "private privateField = 'secret';",
+      "_privateField = 'secret';",
+      "const privateField = 'secret';"
+    ],
+    "correct": "#privateField = 'secret';",
+    "explanation": "As of ES2022, private fields in classes are defined using a hash (#) prefix. This syntax ensures true privacy, unlike the convention of using an underscore (_) which doesn't actually make the field private.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000051",
+    "question": "What is the purpose of the 'globalThis' object in JavaScript?",
+    "answers": [
+      "To provide a standard way to access the global object across different JavaScript environments",
+      "To store global variables that can be accessed from any module",
+      "To define global constants that cannot be changed",
+      "To create a new global scope for each module"
+    ],
+    "correct": "To provide a standard way to access the global object across different JavaScript environments",
+    "explanation": "The 'globalThis' object, introduced in ES2020, provides a standard way to access the global object across different JavaScript environments (e.g., browsers, Node.js). It's particularly useful for writing cross-platform code.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000052",
+    "question": "What will be the output of the following code?\n\nconst obj = { a: 1, b: 2, c: 3 };\nconst { a, ...rest } = obj;\nconsole.log(rest);",
+    "answers": [
+      "{ b: 2, c: 3 }",
+      "{ a: 1, b: 2, c: 3 }",
+      "[2, 3]",
+      "{ a: 1 }"
+    ],
+    "correct": "{ b: 2, c: 3 }",
+    "explanation": "This uses object destructuring with the rest syntax. The variable 'a' is assigned the value of obj.a, and the rest of the properties are collected into the 'rest' object.",
+    "category": "Objects and Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000053",
+    "question": "In the context of JavaScript modules, what is the difference between 'export default' and 'export'?",
+    "answers": [
+      "'export default' is used to export a single value, while 'export' can be used to export multiple named values",
+      "'export default' is used for functions, while 'export' is used for variables",
+      "'export default' creates a read-only export, while 'export' allows the exported value to be modified",
+      "There is no difference, they can be used interchangeably"
+    ],
+    "correct": "'export default' is used to export a single value, while 'export' can be used to export multiple named values",
+    "explanation": "'export default' is used to export a single value as the default export of a module. 'export' is used to export multiple named values. When importing, default exports can be imported without curly braces, while named exports must be imported with curly braces.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000054",
+    "question": "What is the purpose of the 'static' keyword in JavaScript classes?",
+    "answers": [
+      "To define methods or properties that belong to the class itself, not to instances of the class",
+      "To create private methods or properties within a class",
+      "To prevent a class from being instantiated",
+      "To define constants within a class"
+    ],
+    "correct": "To define methods or properties that belong to the class itself, not to instances of the class",
+    "explanation": "The 'static' keyword is used to define static methods or properties for a class. These belong to the class itself and not to instances of the class. They are called on the class and cannot be called on instances of the class.",
+    "category": "ES6+ Features",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000055",
+    "question": "What will be the output of the following code?\n\nconst p1 = Promise.resolve(1);\nconst p2 = Promise.reject('error');\nconst p3 = Promise.resolve(3);\n\nPromise.all([p1, p2, p3]).then(console.log).catch(console.log);",
+    "answers": [
+      "'error'",
+      "[1, 'error', 3]",
+      "1",
+      "3"
+    ],
+    "correct": "'error'",
+    "explanation": "Promise.all() rejects immediately if any of the passed promises reject, passing the rejection reason from the first promise that rejects. In this case, p2 rejects with 'error', so the catch block is executed with 'error' as the argument.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000056",
+    "question": "What is the purpose of the 'AbortController' in JavaScript?",
+    "answers": [
+      "To abort one or more asynchronous operations",
+      "To handle errors in Promise chains",
+      "To cancel event listeners",
+      "To stop the execution of a function"
+    ],
+    "correct": "To abort one or more asynchronous operations",
+    "explanation": "The AbortController interface represents a controller object that allows you to abort one or more asynchronous operations, such as Fetch requests, when desired. It's particularly useful for cancelling long-running operations that are no longer needed.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000057",
+    "question": "Which of the following is NOT a valid way to define an async function in JavaScript?",
+    "answers": [
+      "async => {}",
+      "async function() {}",
+      "const func = async () => {}",
+      "class MyClass { async myMethod() {} }"
+    ],
+    "correct": "async => {}",
+    "explanation": "The syntax 'async => {}' is incorrect. For arrow functions, the correct syntax is 'async () => {}' or 'async param => {}'. The other options show valid ways to define async functions as function declarations, arrow function expressions, and class methods.",
+    "category": "Asynchronous JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000058",
+    "question": "What is the main difference between 'event.preventDefault()' and 'event.stopPropagation()'?",
+    "answers": [
+      "'preventDefault()' stops the default action of an event, while 'stopPropagation()' stops the event from bubbling up the DOM tree",
+      "'preventDefault()' stops the event from bubbling, while 'stopPropagation()' stops the default action",
+      "'preventDefault()' cancels the event entirely, while 'stopPropagation()' only stops its immediate effects",
+      "There is no difference, they can be used interchangeably"
+    ],
+    "correct": "'preventDefault()' stops the default action of an event, while 'stopPropagation()' stops the event from bubbling up the DOM tree",
+    "explanation": "'event.preventDefault()' stops the default action of an event (e.g., following a link). 'event.stopPropagation()' stops the event from bubbling up to parent elements. They serve different purposes and are often used in different scenarios.",
+    "category": "DOM Manipulation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000059",
+    "question": "What is the purpose of the 'MutationObserver' in JavaScript?",
+    "answers": [
+      "To watch for changes being made to the DOM tree",
+      "To observe changes in JavaScript objects",
+      "To detect errors in asynchronous code",
+      "To monitor network requests"
+    ],
+    "correct": "To watch for changes being made to the DOM tree",
+    "explanation": "MutationObserver is a built-in object that observes a DOM element and fires a callback when it detects a change. It's useful for tracking changes to the DOM, such as attributes modifications, or nodes being added or removed.",
+    "category": "DOM Manipulation",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000060",
+    "question": "What will be the output of the following code?\n\nconst obj = { name: 'John' };\nObject.freeze(obj);\nobj.name = 'Jane';\nconsole.log(obj.name);",
+    "answers": [
+      "'John'",
+      "'Jane'",
+      "undefined",
+      "TypeError"
+    ],
+    "correct": "'John'",
+    "explanation": "Object.freeze() makes an object immutable. After freezing, you can't add, update, or delete properties from it. The assignment obj.name = 'Jane' will be ignored in strict mode or will fail silently in non-strict mode. The original value 'John' remains unchanged.",
+    "category": "Objects and Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000061",
+    "question": "Which of the following is true about the 'for...in' loop in JavaScript?",
+    "answers": [
+      "It iterates over enumerable properties of an object, including inherited ones",
+      "It only iterates over an object's own properties",
+      "It's the preferred way to iterate over arrays",
+      "It guarantees iteration in a specific order"
+    ],
+    "correct": "It iterates over enumerable properties of an object, including inherited ones",
+    "explanation": "The 'for...in' loop iterates over all enumerable properties of an object, including those inherited from its prototype chain. It's generally not recommended for arrays as it also includes non-index properties and doesn't guarantee order.",
+    "category": "Control Flow",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JS0000062",
+    "question": "What is the purpose of the 'new.target' pseudo-property in JavaScript?",
+    "answers": [
+      "To detect whether a function or constructor was called using the new operator",
+      "To create a new instance of a built-in object",
+      "To define a new property on an object",
+      "To set the prototype of a newly created object"
+    ],
+    "correct": "To detect whether a function or constructor was called using the new operator",
+    "explanation": "The 'new.target' pseudo-property allows you to detect whether a function or constructor was called using the new operator. Inside a constructor, new.target refers to the constructor that was invoked with new. It's undefined if the function was not called with new.",
+    "category": "Functions and Scope",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JS0000063",
+    "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+    "answers": [
+      "'null' is an assigned value representing no value or no object, while 'undefined' typically means a variable has been declared but not defined",
+      "'null' is used for numbers, while 'undefined' is used for strings",
+      "'null' is used in strict mode, while 'undefined' is used in non-strict mode",
+      "There is no difference, they can be used interchangeably"
+    ],
+    "correct": "'null' is an assigned value representing no value or no object, while 'undefined' typically means a variable has been declared but not defined",
+    "explanation": "'null' is an assignment value that represents no value or no object. It's often used to explicitly indicate that a variable should have no value. 'undefined' is a variable that has been declared but hasn't been assigned a value, or a function that doesn't return any value.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JS0000064",
+    "question": "What will be the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+    "answers": [
+      "'122'",
+      "'14'",
+      "5",
+      "'32'"
+    ],
+    "correct": "'122'",
+    "explanation": "In this expression, type coercion occurs. The + operator, when used with a string, prioritizes string concatenation. So, 1 is first converted to a string, then concatenated with '2', resulting in '12'. This is then concatenated with the final '2', giving '122'.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  }
+]
