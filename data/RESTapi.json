@@ -1,0 +1,1168 @@
+[
+  {
+    "questionId": "REST0001",
+    "question": "What does REST stand for in the context of API design?",
+    "answers": [
+      "Representational State Transfer",
+      "Resource State Transfer",
+      "Remote Service Transfer",
+      "Request-State Transformation"
+    ],
+    "correct": "Representational State Transfer",
+    "explanation": "REST stands for Representational State Transfer. It is an architectural style for designing networked applications, particularly web services.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0002",
+    "question": "Which HTTP method is typically used to retrieve a resource in a REST API?",
+    "answers": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct": "GET",
+    "explanation": "The GET method is used to retrieve a resource from a REST API. It should not have any side effects on the server and is considered a safe operation.",
+    "category": "HTTP Methods",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0003",
+    "question": "What is the primary purpose of using HTTP status codes in REST APIs?",
+    "answers": [
+      "To indicate the outcome of the request",
+      "To authenticate the user",
+      "To specify the API version",
+      "To compress the response data"
+    ],
+    "correct": "To indicate the outcome of the request",
+    "explanation": "HTTP status codes are used in REST APIs to indicate the outcome of the request, such as success, client error, or server error. This helps clients understand and handle the response appropriately.",
+    "category": "Response Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0004",
+    "question": "Which of these is NOT a key principle of REST architecture?",
+    "answers": [
+      "Mandatory use of XML for data exchange",
+      "Statelessness",
+      "Uniform interface",
+      "Client-server separation"
+    ],
+    "correct": "Mandatory use of XML for data exchange",
+    "explanation": "REST does not mandate the use of any specific data format. While XML can be used, it's not a requirement. REST APIs commonly use JSON, but can use any format that suits the application's needs.",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0005",
+    "question": "What does the term 'idempotent' mean in the context of REST API methods?",
+    "answers": [
+      "Multiple identical requests have the same effect as a single request",
+      "The method can only be called once per resource",
+      "The method always returns the same response",
+      "The method requires authentication"
+    ],
+    "correct": "Multiple identical requests have the same effect as a single request",
+    "explanation": "An idempotent method means that multiple identical requests should have the same effect as a single request. This is important for reliability in case of network errors or retries.",
+    "category": "HTTP Methods",
+    "difficulty": "Hard"
+  },
+  {
+      "questionId": "REST0006",
+      "question": "What is OAuth primarily used for in REST APIs?",
+      "answers": [
+        "Authorization",
+        "Encryption",
+        "Compression",
+        "Load balancing"
+      ],
+      "correct": "Authorization",
+      "explanation": "OAuth is primarily used for authorization in REST APIs. It provides a secure way for users to grant third-party applications limited access to their resources without sharing their credentials.",
+      "category": "Security",
+      "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0007",
+    "question": "What is the purpose of HATEOAS in REST APIs?",
+    "answers": [
+      "To provide navigation information in API responses",
+      "To encrypt sensitive data in transit",
+      "To compress API responses for faster transmission",
+      "To validate user input before processing requests"
+    ],
+    "correct": "To provide navigation information in API responses",
+    "explanation": "HATEOAS (Hypermedia as the Engine of Application State) is a constraint of REST application architecture that keeps the REST style architecture unique from other network application architectures. It provides navigation information in API responses, allowing clients to dynamically navigate the API.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0008",
+    "question": "Which of these HTTP status codes indicates a successful request in a REST API?",
+    "answers": [
+      "200 OK",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "403 Forbidden"
+    ],
+    "correct": "200 OK",
+    "explanation": "The HTTP status code 200 OK indicates that the request was successful. It's commonly used when a resource is successfully retrieved, updated, or deleted.",
+    "category": "Response Handling",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0009",
+    "question": "What is the primary advantage of using a REST API over SOAP?",
+    "answers": [
+      "Simplicity and ease of use",
+      "Better security features",
+      "Faster data processing",
+      "Support for more programming languages"
+    ],
+    "correct": "Simplicity and ease of use",
+    "explanation": "REST APIs are generally considered simpler and easier to use compared to SOAP. They use standard HTTP methods, can return different data formats, and are typically easier to implement and consume.",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0010",
+    "question": "Which HTTP method is used to partially modify a resource in a REST API?",
+    "answers": [
+      "PATCH",
+      "PUT",
+      "POST",
+      "UPDATE"
+    ],
+    "correct": "PATCH",
+    "explanation": "The PATCH method is used to partially modify a resource. Unlike PUT, which replaces the entire resource, PATCH applies partial modifications to the resource.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0011",
+    "question": "What does the term 'stateless' mean in the context of REST APIs?",
+    "answers": [
+      "The server doesn't store client state between requests",
+      "The API doesn't use HTTP status codes",
+      "The client can't store local data",
+      "The server doesn't maintain a database"
+    ],
+    "correct": "The server doesn't store client state between requests",
+    "explanation": "In REST, 'stateless' means that the server does not store any client state between requests. Each request from the client must contain all the information necessary to understand and process the request.",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0012",
+    "question": "Which of these is a benefit of using JSON in REST APIs?",
+    "answers": [
+      "Lightweight and easy to parse",
+      "Better security features",
+      "Supports more data types than XML",
+      "Required by the REST specification"
+    ],
+    "correct": "Lightweight and easy to parse",
+    "explanation": "JSON (JavaScript Object Notation) is commonly used in REST APIs because it's lightweight and easy to parse. It's also easy for humans to read and write, making it a popular choice for data interchange.",
+    "category": "Data Formats",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0013",
+    "question": "What is the purpose of versioning in REST APIs?",
+    "answers": [
+      "To maintain backward compatibility",
+      "To increase the API's security",
+      "To improve API performance",
+      "To comply with legal requirements"
+    ],
+    "correct": "To maintain backward compatibility",
+    "explanation": "API versioning is used to maintain backward compatibility. It allows the API to evolve and change without breaking existing client integrations by allowing clients to continue using older versions of the API.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0014",
+    "question": "Which of these HTTP methods is not idempotent?",
+    "answers": [
+      "POST",
+      "GET",
+      "PUT",
+      "DELETE"
+    ],
+    "correct": "POST",
+    "explanation": "POST is not idempotent because multiple identical POST requests may result in multiple resources being created or multiple actions being performed. GET, PUT, and DELETE are idempotent methods.",
+    "category": "HTTP Methods",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0015",
+    "question": "What is the primary purpose of using HTTP caching in REST APIs?",
+    "answers": [
+      "To improve performance and reduce server load",
+      "To encrypt sensitive data",
+      "To validate user credentials",
+      "To compress API responses"
+    ],
+    "correct": "To improve performance and reduce server load",
+    "explanation": "HTTP caching is used in REST APIs to improve performance and reduce server load. By caching responses, the server can avoid unnecessary processing and data transfer for repeated requests.",
+    "category": "Performance",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0016",
+    "question": "Which of these is NOT a common method for authenticating REST API requests?",
+    "answers": [
+      "SOAP headers",
+      "API keys",
+      "OAuth tokens",
+      "JWT (JSON Web Tokens)"
+    ],
+    "correct": "SOAP headers",
+    "explanation": "SOAP headers are not used in REST API authentication. Common methods include API keys, OAuth tokens, and JWT. SOAP headers are specific to SOAP web services, not REST APIs.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0016",
+    "question": "Which of these is NOT a common method for authenticating REST API requests?",
+    "answers": [
+      "SOAP headers",
+      "API keys",
+      "OAuth tokens",
+      "JWT (JSON Web Tokens)"
+    ],
+    "correct": "SOAP headers",
+    "explanation": "SOAP headers are not used in REST API authentication. Common methods include API keys, OAuth tokens, and JWT. SOAP headers are specific to SOAP web services, not REST APIs.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0017",
+    "question": "What is the purpose of content negotiation in REST APIs?",
+    "answers": [
+      "To allow clients to request specific data formats",
+      "To negotiate the price of API usage",
+      "To determine the fastest server for processing requests",
+      "To select the most secure communication protocol"
+    ],
+    "correct": "To allow clients to request specific data formats",
+    "explanation": "Content negotiation allows clients to request specific representations of a resource. This enables the same API endpoint to serve different formats (like JSON or XML) based on the client's preferences.",
+    "category": "Data Formats",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0018",
+    "question": "Which HTTP status code range indicates client errors in a REST API?",
+    "answers": [
+      "400-499",
+      "200-299",
+      "300-399",
+      "500-599"
+    ],
+    "correct": "400-499",
+    "explanation": "HTTP status codes in the 400-499 range indicate client errors. These suggest that the request contains bad syntax or cannot be fulfilled for some reason that is the client's responsibility.",
+    "category": "Response Handling",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0019",
+    "question": "What is the primary purpose of using ETags in REST APIs?",
+    "answers": [
+      "To enable conditional requests and improve caching",
+      "To encrypt data in transit",
+      "To compress API responses",
+      "To authenticate API requests"
+    ],
+    "correct": "To enable conditional requests and improve caching",
+    "explanation": "ETags (Entity Tags) are used for conditional requests and to improve caching. They allow clients to make requests only if the resource has changed, reducing unnecessary data transfer and server load.",
+    "category": "Performance",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0020",
+    "question": "Which of these is NOT a benefit of using hypermedia in REST APIs?",
+    "answers": [
+      "Improved security",
+      "Increased discoverability",
+      "Better scalability",
+      "Looser coupling between client and server"
+    ],
+    "correct": "Improved security",
+    "explanation": "While hypermedia in REST APIs offers benefits like increased discoverability, better scalability, and looser coupling between client and server, it does not inherently improve security. Security is typically handled through other mechanisms.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0021",
+    "question": "What is the purpose of the OPTIONS HTTP method in REST APIs?",
+    "answers": [
+      "To describe the communication options for the target resource",
+      "To retrieve optional parameters for a resource",
+      "To set configuration options for the API",
+      "To request optional data fields in the response"
+    ],
+    "correct": "To describe the communication options for the target resource",
+    "explanation": "The OPTIONS method is used to describe the communication options for the target resource. It can be used to determine the methods supported by a resource or to handle CORS (Cross-Origin Resource Sharing) preflight requests.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0022",
+    "question": "Which of these is a key principle of RESTful API design?",
+    "answers": [
+      "Use of standard HTTP methods",
+      "Always use XML for data exchange",
+      "Maintain client state on the server",
+      "Use of complex, nested URLs"
+    ],
+    "correct": "Use of standard HTTP methods",
+    "explanation": "Using standard HTTP methods (GET, POST, PUT, DELETE, etc.) is a key principle of RESTful API design. This ensures consistency and allows clients to interact with the API in a predictable manner.",
+    "category": "API Design",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0023",
+    "question": "What is the purpose of rate limiting in REST APIs?",
+    "answers": [
+      "To prevent abuse and ensure fair usage",
+      "To increase the speed of API responses",
+      "To compress data for faster transmission",
+      "To encrypt sensitive information"
+    ],
+    "correct": "To prevent abuse and ensure fair usage",
+    "explanation": "Rate limiting is used to prevent abuse and ensure fair usage of an API. It restricts the number of requests a client can make within a specified time period, protecting the API from overuse or potential denial-of-service attacks.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+      "questionId": "REST0024",
+      "question": "What is the primary goal of the API Gateway pattern?",
+      "answers": [
+        "Request routing",
+        "Data storage",
+        "Code compilation",
+        "User interface design"
+      ],
+      "correct": "Request routing",
+      "explanation": "The primary goal of the API Gateway pattern is request routing. It acts as a single entry point for all clients, routing requests to the appropriate microservices, and can also handle cross-cutting concerns like authentication and rate limiting.",
+      "category": "API Architecture",
+      "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0025",
+    "question": "What does the term 'resource' refer to in the context of REST APIs?",
+    "answers": [
+      "Any information that can be named and addressed",
+      "Only database records",
+      "Server-side functions",
+      "API documentation"
+    ],
+    "correct": "Any information that can be named and addressed",
+    "explanation": "In REST, a resource is any information that can be named and addressed. This could be a document, an image, a temporal service, a collection of other resources, or any concept that can be identified, named, addressed, or handled on the web.",
+    "category": "Fundamentals",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0026",
+    "question": "Which of these is NOT a common way to version a REST API?",
+    "answers": [
+      "Using different database schemas",
+      "Including the version in the URL",
+      "Using a custom request header",
+      "Specifying the version in the accept header"
+    ],
+    "correct": "Using different database schemas",
+    "explanation": "While using different database schemas might be part of supporting multiple API versions internally, it's not a common way to version the API itself from the client's perspective. Common versioning methods include URL versioning, custom headers, and accept header versioning.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0027",
+    "question": "What is the primary purpose of using CORS (Cross-Origin Resource Sharing) in REST APIs?",
+    "answers": [
+      "To allow or restrict cross-origin HTTP requests",
+      "To compress API responses",
+      "To encrypt data in transit",
+      "To cache API responses on the client"
+    ],
+    "correct": "To allow or restrict cross-origin HTTP requests",
+    "explanation": "CORS (Cross-Origin Resource Sharing) is used to allow or restrict cross-origin HTTP requests. It's a security mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0028",
+    "question": "Which of these HTTP methods is safe according to the HTTP specification?",
+    "answers": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct": "GET",
+    "explanation": "GET is considered a safe method according to the HTTP specification. Safe methods should not have any side effects on the server and should only retrieve data. POST, PUT, and DELETE are not considered safe as they can modify server state.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0029",
+    "question": "What is the purpose of pagination in REST APIs?",
+    "answers": [
+      "To limit the amount of data returned in a single response",
+      "To sort the data in a specific order",
+      "To filter the data based on certain criteria",
+      "To compress the data for faster transmission"
+    ],
+    "correct": "To limit the amount of data returned in a single response",
+    "explanation": "Pagination in REST APIs is used to limit the amount of data returned in a single response. This is particularly useful when dealing with large datasets, as it improves performance and reduces the load on both the server and client.",
+    "category": "Performance",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0030",
+    "question": "Which of these is a key advantage of using JWT (JSON Web Tokens) for authentication in REST APIs?",
+    "answers": [
+      "Stateless authentication",
+      "Automatic encryption of all API data",
+      "Built-in protection against SQL injection",
+      "Elimination of the need for HTTPS"
+    ],
+    "correct": "Stateless authentication",
+    "explanation": "A key advantage of using JWT for authentication in REST APIs is that it enables stateless authentication. The server doesn't need to store session information, as all necessary data is contained within the token itself, which aligns well with REST's stateless principle.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0031",
+    "question": "What is the primary purpose of using HTTPS in REST APIs?",
+    "answers": [
+      "To encrypt data in transit",
+      "To compress API responses",
+      "To authenticate API requests",
+      "To cache API responses"
+    ],
+    "correct": "To encrypt data in transit",
+    "explanation": "The primary purpose of using HTTPS in REST APIs is to encrypt data in transit. This ensures that sensitive information exchanged between the client and server cannot be easily intercepted or tampered with by malicious parties.",
+    "category": "Security",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0032",
+    "question": "Which of these is NOT a characteristic of a well-designed REST API?",
+    "answers": [
+      "Tight coupling between client and server",
+      "Use of standard HTTP methods",
+      "Stateless interactions",
+      "Clear and consistent naming conventions"
+    ],
+    "correct": "Tight coupling between client and server",
+    "explanation": "Tight coupling between client and server is not a characteristic of a well-designed REST API. REST APIs should promote loose coupling, allowing clients and servers to evolve independently. The other options are all desirable characteristics of REST APIs.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0033",
+    "question": "What is the purpose of the 'Accept' header in REST API requests?",
+    "answers": [
+      "To specify the desired response format",
+      "To authenticate the request",
+      "To indicate the HTTP method",
+      "To compress the request body"
+    ],
+    "correct": "To specify the desired response format",
+    "explanation": "The 'Accept' header is used by the client to specify the desired response format (e.g., application/json, application/xml). This allows for content negotiation between the client and server.",
+    "category": "Data Formats",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0034",
+    "question": "Which HTTP status code is typically used to indicate a successful creation of a resource?",
+    "answers": [
+      "201 Created",
+      "200 OK",
+      "204 No Content",
+      "202 Accepted"
+    ],
+    "correct": "201 Created",
+    "explanation": "The HTTP status code 201 Created is typically used to indicate that a new resource has been successfully created as a result of the request.",
+    "category": "Response Handling",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0035",
+    "question": "What is the primary purpose of using DTOs (Data Transfer Objects) in REST APIs?",
+    "answers": [
+      "To control data exposed to clients",
+      "To increase database performance",
+      "To encrypt sensitive information",
+      "To compress API responses"
+    ],
+    "correct": "To control data exposed to clients",
+    "explanation": "DTOs (Data Transfer Objects) are primarily used to control what data is exposed to clients. They allow you to shape the data sent to and received from the API, potentially hiding internal details or combining data from multiple sources.",
+    "category": "API Design",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0036",
+    "question": "Which of these is NOT a common method for handling API versioning?",
+    "answers": [
+      "Database schema versioning",
+      "URL path versioning",
+      "Query parameter versioning",
+      "Custom header versioning"
+    ],
+    "correct": "Database schema versioning",
+    "explanation": "While database schema versioning is important for internal API management, it's not a common method for handling API versioning from the client's perspective. URL path, query parameter, and custom header versioning are more commonly used for client-facing API version management.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0037",
+    "question": "What is the purpose of the 'If-Modified-Since' header in REST API requests?",
+    "answers": [
+      "To enable conditional requests based on resource modification time",
+      "To specify the creation time of the resource",
+      "To set an expiration time for the request",
+      "To indicate when the client last accessed the API"
+    ],
+    "correct": "To enable conditional requests based on resource modification time",
+    "explanation": "The 'If-Modified-Since' header is used to make conditional requests based on the last modification time of the resource. If the resource hasn't been modified since the specified time, the server can respond with a 304 Not Modified status, saving bandwidth.",
+    "category": "Performance",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0038",
+    "question": "Which of these is a key principle of RESTful API design?",
+    "answers": [
+      "Uniform interface",
+      "Tight coupling",
+      "Stateful interactions",
+      "Complex, nested URLs"
+    ],
+    "correct": "Uniform interface",
+    "explanation": "A uniform interface is a key principle of RESTful API design. It simplifies and decouples the architecture, enabling each part to evolve independently. This includes using standard HTTP methods, hypermedia as the engine of application state (HATEOAS), and self-descriptive messages.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0039",
+    "question": "What is the main purpose of using PATCH instead of PUT for updates in a REST API?",
+    "answers": [
+      "To perform partial updates to a resource",
+      "To update multiple resources at once",
+      "To ensure idempotency of update operations",
+      "To increase the security of update operations"
+    ],
+    "correct": "To perform partial updates to a resource",
+    "explanation": "The main purpose of using PATCH instead of PUT is to perform partial updates to a resource. While PUT typically replaces the entire resource, PATCH allows for updating only specific fields or properties of the resource.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+      "questionId": "REST0040",
+      "question": "What is the purpose of using JSON Web Tokens (JWT) in REST APIs?",
+      "answers": [
+        "User authentication",
+        "Secure data transfer",
+        "API versioning",
+        "Database querying"
+      ],
+      "correct": "User authentication",
+      "explanation": "JSON Web Tokens (JWT) are primarily used for user authentication in REST APIs. They allow secure transmission of user identity information between parties as a JSON object, which can be verified and trusted because it is digitally signed.",
+      "category": "Security",
+      "difficulty": "Medium"
+    },
+  {
+    "questionId": "REST0041",
+    "question": "What is the purpose of the 'Cache-Control' header in REST API responses?",
+    "answers": [
+      "To specify caching directives",
+      "To control the compression level",
+      "To indicate the content type",
+      "To set the response priority"
+    ],
+    "correct": "To specify caching directives",
+    "explanation": "The 'Cache-Control' header is used to specify directives for caching mechanisms in both requests and responses. It can control how long a response can be cached, whether it can be cached at all, and under what conditions it should be revalidated.",
+    "category": "Performance",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0042",
+    "question": "Which HTTP method is typically used to retrieve the headers returned from a target resource?",
+    "answers": [
+      "HEAD",
+      "GET",
+      "OPTIONS",
+      "TRACE"
+    ],
+    "correct": "HEAD",
+    "explanation": "The HEAD method is used to retrieve just the headers that would be returned if the same request was made using GET, but without the response body. This can be useful for checking metadata about a resource without transferring its entire contents.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0043",
+    "question": "What is the primary purpose of using HATEOAS in REST APIs?",
+    "answers": [
+      "To enable dynamic navigation through the API",
+      "To increase API security",
+      "To optimize database queries",
+      "To compress API responses"
+    ],
+    "correct": "To enable dynamic navigation through the API",
+    "explanation": "HATEOAS (Hypermedia as the Engine of Application State) is primarily used to enable dynamic navigation through the API. It provides links in API responses that describe what actions are available and how to perform them, allowing clients to navigate the API without prior knowledge of its structure.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0044",
+    "question": "Which of these is a best practice for error handling in REST APIs?",
+    "answers": [
+      "Return appropriate HTTP status codes and error messages",
+      "Always return a 200 OK status with error details in the body",
+      "Use custom status codes for each type of error",
+      "Include stack traces in all error responses"
+    ],
+    "correct": "Return appropriate HTTP status codes and error messages",
+    "explanation": "A best practice for error handling in REST APIs is to return appropriate HTTP status codes along with clear, informative error messages. This helps clients understand and handle errors effectively without exposing sensitive information.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0045",
+    "question": "What is the purpose of the 'Vary' header in REST API responses?",
+    "answers": [
+      "To specify how caches should key responses",
+      "To indicate the API version",
+      "To list supported HTTP methods",
+      "To define the response format"
+    ],
+    "correct": "To specify how caches should key responses",
+    "explanation": "The 'Vary' header is used to specify which headers should be used to key cached responses. This is particularly important for content negotiation, as it ensures that caches serve the correct variant of a resource based on the client's requirements.",
+    "category": "Performance",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0046",
+    "question": "Which of these is NOT a common approach to handling long-running operations in REST APIs?",
+    "answers": [
+      "Synchronous blocking",
+      "Asynchronous with polling",
+      "Asynchronous with webhooks",
+      "Asynchronous with server-sent events"
+    ],
+    "correct": "Synchronous blocking",
+    "explanation": "Synchronous blocking is not a common or recommended approach for handling long-running operations in REST APIs as it can lead to timeout issues and poor user experience. Asynchronous approaches like polling, webhooks, or server-sent events are preferred for managing long-running tasks.",
+    "category": "API Design",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0047",
+    "question": "What is the main advantage of using Bearer tokens for authentication in REST APIs?",
+    "answers": [
+      "They are self-contained and stateless",
+      "They provide better encryption than other methods",
+      "They are always valid and never expire",
+      "They can only be used over HTTPS"
+    ],
+    "correct": "They are self-contained and stateless",
+    "explanation": "The main advantage of using Bearer tokens (such as JWTs) for authentication in REST APIs is that they are self-contained and stateless. This means all necessary information is included in the token itself, reducing the need for server-side storage and aligning well with REST's stateless principle.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0048",
+    "question": "Which HTTP method is considered both safe and idempotent?",
+    "answers": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "correct": "GET",
+    "explanation": "GET is considered both safe and idempotent. It's safe because it should not alter server state, and it's idempotent because multiple identical requests should have the same effect as a single request.",
+    "category": "HTTP Methods",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0001",
+    "question": "What does REST stand for in the context of API design?",
+    "answers": [
+      "Representational State Transfer",
+      "Resource State Transfer",
+      "Remote Service Transfer",
+      "Request-State Transformation"
+    ],
+    "correct": "Representational State Transfer",
+    "explanation": "REST stands for Representational State Transfer. It is an architectural style for designing networked applications, particularly web services.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  
+  ... [previous questions omitted for brevity] ...
+
+  {
+    "questionId": "REST0048",
+    "question": "Which HTTP method is considered both safe and idempotent?",
+    "answers": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "correct": "GET",
+    "explanation": "GET is considered both safe and idempotent. It's safe because it should not alter server state, and it's idempotent because multiple identical requests should have the same effect as a single request.",
+    "category": "HTTP Methods",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0049",
+    "question": "What is the purpose of the 'Link' header in REST API responses?",
+    "answers": [
+      "To provide hypermedia links related to the response",
+      "To specify the URL of the requested resource",
+      "To indicate the content type of the response",
+      "To set the maximum allowed size of the response"
+    ],
+    "correct": "To provide hypermedia links related to the response",
+    "explanation": "The 'Link' header is used to provide hypermedia links related to the response. This supports the HATEOAS principle by allowing the server to guide clients to related resources or actions.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0050",
+    "question": "Which of these is NOT a common way to implement API authentication?",
+    "answers": [
+      "IP address whitelisting",
+      "OAuth 2.0",
+      "API keys",
+      "JSON Web Tokens (JWT)"
+    ],
+    "correct": "IP address whitelisting",
+    "explanation": "While IP address whitelisting can be used as an additional security measure, it's not a common primary method for API authentication due to its limitations and inflexibility. OAuth 2.0, API keys, and JWTs are more commonly used for authenticating API requests.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0051",
+    "question": "What is the main purpose of using HTTP compression in REST APIs?",
+    "answers": [
+      "To reduce the size of transmitted data",
+      "To encrypt the data in transit",
+      "To improve server processing speed",
+      "To validate the integrity of the data"
+    ],
+    "correct": "To reduce the size of transmitted data",
+    "explanation": "The main purpose of using HTTP compression in REST APIs is to reduce the size of transmitted data. This can significantly improve performance by reducing bandwidth usage and decreasing load times, especially for larger responses.",
+    "category": "Performance",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0052",
+    "question": "Which HTTP status code is typically used to indicate that a request was accepted for processing, but the processing has not been completed?",
+    "answers": [
+      "202 Accepted",
+      "200 OK",
+      "204 No Content",
+      "201 Created"
+    ],
+    "correct": "202 Accepted",
+    "explanation": "The HTTP status code 202 Accepted is used to indicate that a request has been accepted for processing, but the processing has not been completed. This is often used for asynchronous operations.",
+    "category": "Response Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0053",
+    "question": "What is the purpose of the 'Prefer' header in REST API requests?",
+    "answers": [
+      "To indicate preferences for the response",
+      "To specify the preferred data format",
+      "To set the priority of the request",
+      "To define caching preferences"
+    ],
+    "correct": "To indicate preferences for the response",
+    "explanation": "The 'Prefer' header is used to indicate preferences for the response. It allows clients to request certain behavior from the server, such as returning a minimal response or waiting for a certain condition before responding.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0054",
+    "question": "Which of these is a key characteristic of idempotent operations in REST APIs?",
+    "answers": [
+      "Multiple identical requests have the same effect as a single request",
+      "They always return the same response",
+      "They never modify server state",
+      "They can only be performed once per resource"
+    ],
+    "correct": "Multiple identical requests have the same effect as a single request",
+    "explanation": "A key characteristic of idempotent operations is that multiple identical requests have the same effect as a single request. This is important for reliability, especially in case of network errors or retries.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0055",
+    "question": "What is the main advantage of using cursor-based pagination in REST APIs?",
+    "answers": [
+      "It handles insertions and deletions better than offset-based pagination",
+      "It always provides faster query performance",
+      "It allows random access to any page",
+      "It requires less memory on the server"
+    ],
+    "correct": "It handles insertions and deletions better than offset-based pagination",
+    "explanation": "The main advantage of cursor-based pagination is that it handles insertions and deletions better than offset-based pagination. It's more resilient to changes in the dataset between requests, making it suitable for real-time or frequently changing data.",
+    "category": "Performance",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0056",
+    "question": "Which of these is NOT a common method for representing relationships between resources in REST APIs?",
+    "answers": [
+      "Using SQL join syntax in URLs",
+      "Nesting resource URLs",
+      "Using hypermedia links",
+      "Including foreign keys in resource representations"
+    ],
+    "correct": "Using SQL join syntax in URLs",
+    "explanation": "Using SQL join syntax in URLs is not a common or recommended method for representing relationships in REST APIs. It would expose database implementation details and violate REST principles. Nesting URLs, hypermedia links, and including foreign keys are more common approaches.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0057",
+    "question": "What is the purpose of the 'Retry-After' header in REST API responses?",
+    "answers": [
+      "To indicate when to retry a failed request",
+      "To specify the frequency of polling for updates",
+      "To set the expiration time of the response",
+      "To define the maximum number of allowed retries"
+    ],
+    "correct": "To indicate when to retry a failed request",
+    "explanation": "The 'Retry-After' header is used to indicate when the client should retry a failed request. It's often used with 429 Too Many Requests or 503 Service Unavailable responses to help manage load on the server.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+      "questionId": "REST0058",
+      "question": "What is the main purpose of implementing caching in REST APIs?",
+      "answers": [
+        "Reduce server load",
+        "Increase data accuracy",
+        "Improve security",
+        "Enable real-time updates"
+      ],
+      "correct": "Reduce server load",
+      "explanation": "The main purpose of implementing caching in REST APIs is to reduce server load. By storing and reusing previously fetched resources, caching can significantly decrease the number of requests a server needs to handle, improving overall API performance.",
+      "category": "Performance",
+      "difficulty": "Medium"
+    },
+  {
+    "questionId": "REST0059",
+    "question": "What is the main purpose of using ETags in REST APIs?",
+    "answers": [
+      "To enable efficient caching and conditional requests",
+      "To encrypt the response payload",
+      "To compress the response data",
+      "To authenticate API requests"
+    ],
+    "correct": "To enable efficient caching and conditional requests",
+    "explanation": "The main purpose of using ETags (Entity Tags) in REST APIs is to enable efficient caching and conditional requests. They allow clients to make requests only if the resource has changed, reducing unnecessary data transfer.",
+    "category": "Performance",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0060",
+    "question": "Which of these is NOT a benefit of using GraphQL over REST?",
+    "answers": [
+      "Automatic data validation",
+      "Reduced over-fetching of data",
+      "Ability to request multiple resources in a single query",
+      "Strong typing of the API schema"
+    ],
+    "correct": "Automatic data validation",
+    "explanation": "While GraphQL provides many benefits, automatic data validation is not inherently one of them. GraphQL does offer strong typing and schema definition, but validation still needs to be implemented separately. The other options are indeed benefits of GraphQL over traditional REST.",
+    "category": "API Design",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0061",
+    "question": "What is the purpose of the 'Allow' header in REST API responses?",
+    "answers": [
+      "To list the HTTP methods supported by the resource",
+      "To specify which clients are allowed to access the resource",
+      "To indicate which data formats are accepted",
+      "To define the maximum allowed size of requests"
+    ],
+    "correct": "To list the HTTP methods supported by the resource",
+    "explanation": "The 'Allow' header is used to list the HTTP methods supported by the target resource. It's particularly useful in responses to OPTIONS requests or in 405 Method Not Allowed responses to indicate which methods are permitted.",
+    "category": "HTTP Methods",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0062",
+    "question": "Which of these is a key principle of the Richardson Maturity Model for REST APIs?",
+    "answers": [
+      "Use of hypermedia controls (HATEOAS)",
+      "Always use XML for data exchange",
+      "Implement complex, nested URL structures",
+      "Maintain session state on the server"
+    ],
+    "correct": "Use of hypermedia controls (HATEOAS)",
+    "explanation": "The use of hypermedia controls, also known as HATEOAS (Hypermedia as the Engine of Application State), is a key principle of the highest level (Level 3) of the Richardson Maturity Model for REST APIs. It allows for dynamic discovery of available actions and improves API flexibility.",
+    "category": "API Design",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0063",
+    "question": "What is the main purpose of using JSON Schema in REST APIs?",
+    "answers": [
+      "To define the structure of JSON data",
+      "To encrypt JSON payloads",
+      "To compress JSON responses",
+      "To convert JSON to XML"
+    ],
+    "correct": "To define the structure of JSON data",
+    "explanation": "The main purpose of using JSON Schema in REST APIs is to define the structure of JSON data. It allows you to specify the expected format, types, and constraints of JSON objects, which can be used for validation, documentation, and even code generation.",
+    "category": "Data Formats",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0064",
+    "question": "Which HTTP method is most appropriate for updating a specific field of a resource?",
+    "answers": [
+      "PATCH",
+      "PUT",
+      "POST",
+      "UPDATE"
+    ],
+    "correct": "PATCH",
+    "explanation": "The PATCH method is most appropriate for updating a specific field of a resource. Unlike PUT, which typically replaces the entire resource, PATCH is designed for partial updates, allowing clients to modify only the fields they need to change.",
+    "category": "HTTP Methods",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0065",
+    "question": "What is the purpose of API throttling?",
+    "answers": [
+      "Limit requests",
+      "Increase server capacity",
+      "Improve response time",
+      "Enhance data encryption"
+    ],
+    "correct": "Limit requests",
+    "explanation": "API throttling is used to limit the number of requests a client can make to an API within a specified time period. This helps prevent abuse, ensures fair usage, and protects the API from overload.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0066",
+    "question": "Which header is used for basic authentication in REST APIs?",
+    "answers": [
+      "Authorization",
+      "Authentication",
+      "Credentials",
+      "Basic-Auth"
+    ],
+    "correct": "Authorization",
+    "explanation": "The 'Authorization' header is used for various authentication schemes in REST APIs, including Basic Authentication. The header typically contains the authentication type followed by the credentials.",
+    "category": "Security",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0067",
+    "question": "What is the main purpose of API documentation?",
+    "answers": [
+      "Guide usage",
+      "Increase API security",
+      "Improve server performance",
+      "Implement version control"
+    ],
+    "correct": "Guide usage",
+    "explanation": "The main purpose of API documentation is to guide developers on how to use the API effectively. It typically includes details about endpoints, request/response formats, authentication methods, and example usage.",
+    "category": "API Design",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0068",
+    "question": "Which tool is commonly used for API documentation?",
+    "answers": [
+      "Swagger",
+      "Postman",
+      "Insomnia",
+      "Wireshark"
+    ],
+    "correct": "Swagger",
+    "explanation": "Swagger (now part of OpenAPI) is a popular tool for API documentation. It allows developers to describe, produce, consume, and visualize RESTful web services.",
+    "category": "Tools",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0069",
+    "question": "What is the purpose of CORS in REST APIs?",
+    "answers": [
+      "Allow/restrict",
+      "Encrypt data",
+      "Compress responses",
+      "Authenticate users"
+    ],
+    "correct": "Allow/restrict",
+    "explanation": "CORS (Cross-Origin Resource Sharing) is used to allow or restrict cross-origin HTTP requests. It's a security mechanism implemented by browsers to control access to resources located outside of a given domain.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0070",
+    "question": "Which HTTP status code indicates a client error?",
+    "answers": [
+      "400",
+      "200",
+      "500",
+      "300"
+    ],
+    "correct": "400",
+    "explanation": "HTTP status codes in the 4xx range, such as 400 Bad Request, indicate client errors. This means the request contains bad syntax or cannot be fulfilled for reasons attributed to the client.",
+    "category": "Response Handling",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0071",
+    "question": "What is the purpose of API rate limiting?",
+    "answers": [
+      "Control usage",
+      "Enhance data security",
+      "Improve response time",
+      "Implement load balancing"
+    ],
+    "correct": "Control usage",
+    "explanation": "API rate limiting is used to control the rate at which client applications can make requests to an API. It helps prevent abuse, ensures fair usage among clients, and protects the API from being overwhelmed by too many requests.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0072",
+    "question": "Which format is most commonly used for data exchange in modern REST APIs?",
+    "answers": [
+      "JSON",
+      "XML",
+      "YAML",
+      "Protocol Buffers"
+    ],
+    "correct": "JSON",
+    "explanation": "JSON (JavaScript Object Notation) is the most commonly used format for data exchange in modern REST APIs. It's lightweight, easy to read and write for humans, and easy to parse and generate for machines.",
+    "category": "Data Formats",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0073",
+    "question": "What is the purpose of API versioning?",
+    "answers": [
+      "Maintain compatibility",
+      "Increase API performance",
+      "Enhance security measures",
+      "Implement new authentication"
+    ],
+    "correct": "Maintain compatibility",
+    "explanation": "API versioning is used to maintain backward compatibility as the API evolves. It allows developers to make changes to the API without breaking existing client integrations, by allowing clients to continue using older versions.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0074",
+    "question": "Which HTTP method is idempotent but not safe?",
+    "answers": [
+      "DELETE",
+      "GET",
+      "POST",
+      "OPTIONS"
+    ],
+    "correct": "DELETE",
+    "explanation": "The DELETE method is idempotent (multiple identical requests should have the same effect as a single request) but not safe (it modifies the server's state). GET and OPTIONS are both safe and idempotent, while POST is neither.",
+    "category": "HTTP Methods",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "REST0075",
+    "question": "What is the main advantage of statelessness in REST APIs?",
+    "answers": [
+      "Scalability",
+      "Improved security",
+      "Faster response times",
+      "Reduced bandwidth usage"
+    ],
+    "correct": "Scalability",
+    "explanation": "Statelessness in REST APIs primarily enhances scalability. Since each request contains all the information necessary to process it, servers don't need to maintain client state between requests, allowing for easier distribution of requests across multiple servers.",
+    "category": "API Design",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0076",
+    "question": "Which of these is NOT a common API testing type?",
+    "answers": [
+      "Quantum",
+      "Unit",
+      "Integration",
+      "Load"
+    ],
+    "correct": "Quantum",
+    "explanation": "Quantum testing is not a common API testing type. Unit, integration, and load testing are all common practices in API development and maintenance to ensure functionality, reliability, and performance.",
+    "category": "Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0077",
+    "question": "What is the purpose of API mocking?",
+    "answers": [
+      "Simulate API",
+      "Encrypt API traffic",
+      "Optimize database queries",
+      "Generate API documentation"
+    ],
+    "correct": "Simulate API",
+    "explanation": "API mocking is used to simulate the behavior of a real API. It's useful for testing client applications, developing against APIs that aren't yet complete, or testing various scenarios without affecting real data.",
+    "category": "Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "REST0078",
+    "question": "Which protocol is REST typically used over?",
+    "answers": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "WebSocket"
+    ],
+    "correct": "HTTP",
+    "explanation": "REST is typically used over HTTP (Hypertext Transfer Protocol). While it's theoretically possible to use REST with other protocols, HTTP is the most common and practical choice due to its ubiquity and features that align well with REST principles.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0079",
+    "question": "What is the purpose of API keys?",
+    "answers": [
+      "Identify clients",
+      "Encrypt API requests",
+      "Compress API responses",
+      "Generate API documentation"
+    ],
+    "correct": "Identify clients",
+    "explanation": "API keys are primarily used to identify clients making requests to an API. They allow API providers to track usage, enforce rate limits, and in some cases, control access to certain features or resources.",
+    "category": "Security",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "REST0080",
+    "question": "Which of these is a benefit of using HATEOAS?",
+    "answers": [
+      "API flexibility",
+      "Faster data processing",
+      "Improved data encryption",
+      "Automatic database optimization"
+    ],
+    "correct": "API flexibility",
+    "explanation": "HATEOAS (Hypermedia as the Engine of Application State) enhances API flexibility. By including hypermedia links in responses, it allows the API to guide clients through the application, making it easier to evolve the API without breaking clients.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  }
+  
+]
