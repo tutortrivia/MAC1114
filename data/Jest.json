@@ -1,0 +1,1122 @@
+[
+  {
+    "questionId": "JEST0000001",
+    "question": "What is Jest primarily used for in JavaScript development?",
+    "answers": [
+      "Unit testing",
+      "Database management",
+      "Server-side rendering",
+      "Package management"
+    ],
+    "correct": "Unit testing",
+    "explanation": "Jest is a popular JavaScript testing framework primarily used for unit testing in JavaScript applications, including React, Vue, Angular, and Node.js projects.",
+    "category": "Fundamentals",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000002",
+    "question": "Which Jest CLI option is used to run tests in watch mode?",
+    "answers": [
+      "--watch",
+      "--observe",
+      "--monitor",
+      "--auto-rerun"
+    ],
+    "correct": "--watch",
+    "explanation": "The --watch CLI option in Jest is used to run tests in watch mode. This mode watches for file changes and reruns tests related to changed files automatically.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000003",
+    "question": "What is the purpose of the 'describe' function in Jest?",
+    "answers": [
+      "To group related test cases",
+      "To run asynchronous tests",
+      "To mock functions",
+      "To set up test data"
+    ],
+    "correct": "To group related test cases",
+    "explanation": "The 'describe' function in Jest is used to group related test cases together, creating a block that can contain one or more related tests.",
+    "category": "Test Structure",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000004",
+    "question": "Which Jest matcher would you use to check if a value is truthy?",
+    "answers": [
+      "toBeTruthy()",
+      "isTrue()",
+      "assertTruthy()",
+      "expectTruthy()"
+    ],
+    "correct": "toBeTruthy()",
+    "explanation": "The toBeTruthy() matcher in Jest is used to check if a value is truthy (i.e., it coerces to true when evaluated in a boolean context).",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000005",
+    "question": "What is a 'spy' in the context of Jest?",
+    "answers": [
+      "A function that tracks calls and arguments",
+      "A tool for monitoring test performance",
+      "A method for encrypting test data",
+      "A type of asynchronous test"
+    ],
+    "correct": "A function that tracks calls and arguments",
+    "explanation": "In Jest, a 'spy' is a function that allows you to track calls to the function, as well as the arguments passed to it, without affecting its actual implementation.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000006",
+    "question": "Which Jest method is used to run some setup code before any tests in a file?",
+    "answers": [
+      "beforeAll()",
+      "setupAll()",
+      "beforeEach()",
+      "initialize()"
+    ],
+    "correct": "beforeAll()",
+    "explanation": "The beforeAll() method in Jest is used to run setup code once before any tests in a file are run. It's useful for setup tasks that only need to be performed once.",
+    "category": "Test Lifecycle",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000007",
+    "question": "What is the purpose of Jest's 'mock' function?",
+    "answers": [
+      "To create mock implementations of functions",
+      "To simulate browser environments",
+      "To generate random test data",
+      "To measure code coverage"
+    ],
+    "correct": "To create mock implementations of functions",
+    "explanation": "Jest's mock function, often created with jest.fn(), allows you to create mock implementations of functions for testing purposes, tracking calls to the function and allowing you to specify return values.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000008",
+    "question": "Which Jest matcher would you use to check if an array contains a specific item?",
+    "answers": [
+      "toContain()",
+      "hasItem()",
+      "includes()",
+      "arrayHas()"
+    ],
+    "correct": "toContain()",
+    "explanation": "The toContain() matcher in Jest is used to check if an array or iterable contains a specific item. It can be used with arrays, strings, or any iterable.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000009",
+    "question": "What is snapshot testing in Jest?",
+    "answers": [
+      "A way to capture and compare the output of components",
+      "A method for testing database snapshots",
+      "A technique for measuring test performance",
+      "A tool for visual regression testing"
+    ],
+    "correct": "A way to capture and compare the output of components",
+    "explanation": "Snapshot testing in Jest is a way to capture the output of a component and compare it to a stored reference snapshot. It's often used for testing UI components to ensure they haven't changed unexpectedly.",
+    "category": "Snapshot Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000010",
+    "question": "Which command would you use to update Jest snapshots?",
+    "answers": [
+      "jest -u",
+      "jest --updateSnapshot",
+      "jest update",
+      "All of these"
+    ],
+    "correct": "All of these",
+    "explanation": "All of these commands can be used to update Jest snapshots. 'jest -u' and 'jest --updateSnapshot' are equivalent, and 'jest update' also works as a shorthand.",
+    "category": "Snapshot Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000011",
+    "question": "What is the purpose of Jest's 'expect' function?",
+    "answers": [
+      "To make assertions about values",
+      "To define test cases",
+      "To group related tests",
+      "To mock function calls"
+    ],
+    "correct": "To make assertions about values",
+    "explanation": "The 'expect' function in Jest is used to make assertions about values in your tests. It's typically followed by a matcher function that checks if the value meets certain conditions.",
+    "category": "Assertions",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000012",
+    "question": "Which Jest matcher would you use to check if a function was called with specific arguments?",
+    "answers": [
+      "toHaveBeenCalledWith()",
+      "wasCalledWith()",
+      "calledWith()",
+      "expectedArguments()"
+    ],
+    "correct": "toHaveBeenCalledWith()",
+    "explanation": "The toHaveBeenCalledWith() matcher in Jest is used to check if a mock function was called with specific arguments. It's useful for verifying the behavior of functions in your tests.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000013",
+    "question": "What is the purpose of Jest's 'test' function?",
+    "answers": [
+      "To define an individual test case",
+      "To run all tests in a file",
+      "To set up test data",
+      "To group related tests"
+    ],
+    "correct": "To define an individual test case",
+    "explanation": "The 'test' function (which is an alias for 'it') in Jest is used to define an individual test case. Each 'test' call typically contains one or more assertions about the code being tested.",
+    "category": "Test Structure",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000014",
+    "question": "Which Jest configuration option is used to specify file patterns to ignore?",
+    "answers": [
+      "testPathIgnorePatterns",
+      "ignoreFiles",
+      "excludePatterns",
+      "testIgnore"
+    ],
+    "correct": "testPathIgnorePatterns",
+    "explanation": "The 'testPathIgnorePatterns' configuration option in Jest is used to specify an array of regex patterns that Jest should ignore when looking for test files.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000015",
+    "question": "What is the purpose of Jest's 'afterEach' function?",
+    "answers": [
+      "To run cleanup code after each test",
+      "To define a test case",
+      "To set up initial test data",
+      "To group related tests"
+    ],
+    "correct": "To run cleanup code after each test",
+    "explanation": "The 'afterEach' function in Jest is used to run cleanup code after each test in a describe block. It's useful for resetting state or cleaning up side effects that might affect other tests.",
+    "category": "Test Lifecycle",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000016",
+    "question": "Which Jest method is used to create a mock function?",
+    "answers": [
+      "jest.fn()",
+      "mock.create()",
+      "new Mock()",
+      "jest.mockFunction()"
+    ],
+    "correct": "jest.fn()",
+    "explanation": "jest.fn() is used to create a new mock function in Jest. This function can be used to track calls, specify return values, and more in your tests.",
+    "category": "Mocking",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000017",
+    "question": "What is the purpose of Jest's 'toBe' matcher?",
+    "answers": [
+      "To test exact equality",
+      "To check if a value is truthy",
+      "To verify if an object has a property",
+      "To assert that a function was called"
+    ],
+    "correct": "To test exact equality",
+    "explanation": "The 'toBe' matcher in Jest tests for exact equality using Object.is. It's commonly used for comparing primitive values.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000018",
+    "question": "Which Jest method is used to run some teardown code after all tests in a file have completed?",
+    "answers": [
+      "afterAll()",
+      "teardown()",
+      "finalize()",
+      "endAll()"
+    ],
+    "correct": "afterAll()",
+    "explanation": "The afterAll() method in Jest is used to run teardown code once after all tests in a file have completed. It's useful for cleanup tasks that only need to be performed once at the end.",
+    "category": "Test Lifecycle",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000019",
+    "question": "What is the purpose of Jest's 'toEqual' matcher?",
+    "answers": [
+      "To recursively compare all properties of objects",
+      "To check if two values are exactly the same",
+      "To verify if an array contains a specific item",
+      "To assert that a function was called with certain arguments"
+    ],
+    "correct": "To recursively compare all properties of objects",
+    "explanation": "The 'toEqual' matcher in Jest is used to recursively compare all properties of objects or arrays. It's useful for comparing complex data structures.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000020",
+    "question": "What is the primary purpose of jest.spyOn()?",
+    "answers": [
+      "To create a mock function for a method on an object",
+      "To track all function calls in a test",
+      "To spy on console.log outputs",
+      "To monitor test execution time"
+    ],
+    "correct": "To create a mock function for a method on an object",
+    "explanation": "jest.spyOn() is used to create a mock function for a method on an object, allowing you to track calls to that method and optionally change its implementation.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000021",
+    "question": "What is the purpose of Jest's 'toThrow' matcher?",
+    "answers": [
+      "To test if a function throws an error",
+      "To check if a value is undefined",
+      "To verify if a promise is rejected",
+      "To assert that an object has a specific property"
+    ],
+    "correct": "To test if a function throws an error",
+    "explanation": "The 'toThrow' matcher in Jest is used to test if a function throws an error when it's called. It's useful for testing error handling in your code.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000022",
+    "question": "Which Jest configuration option is used to automatically clear mock calls and instances between every test?",
+    "answers": [
+      "clearMocks",
+      "resetMocks",
+      "autoCleanMocks",
+      "purgeMocks"
+    ],
+    "correct": "clearMocks",
+    "explanation": "The 'clearMocks' configuration option in Jest, when set to true, automatically clears mock calls and instances between every test. This helps ensure that mocks don't carry state between tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000023",
+    "question": "What is the purpose of Jest's 'spyOn' function?",
+    "answers": [
+      "To create a mock function for a method on an object",
+      "To track function calls across all tests",
+      "To simulate browser events",
+      "To measure the performance of a function"
+    ],
+    "correct": "To create a mock function for a method on an object",
+    "explanation": "Jest's spyOn function is used to create a mock function for a method on an object, allowing you to track calls to that method and change its implementation if needed.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000024",
+    "question": "Which Jest matcher would you use to check if a value is greater than another value?",
+    "answers": [
+      "toBeGreaterThan()",
+      "isGreaterThan()",
+      "expectGreaterThan()",
+      "assertGreater()"
+    ],
+    "correct": "toBeGreaterThan()",
+    "explanation": "The toBeGreaterThan() matcher in Jest is used to check if a value is greater than another value. It's commonly used for numeric comparisons.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000025",
+    "question": "What is the purpose of the 'coverage' option in Jest configuration?",
+    "answers": [
+      "To collect and report test coverage information",
+      "To ensure all files are included in testing",
+      "To set a minimum threshold for test pass rate",
+      "To limit the number of concurrent tests"
+    ],
+    "correct": "To collect and report test coverage information",
+    "explanation": "The 'coverage' option in Jest configuration is used to collect and report test coverage information. It helps identify which parts of your code are covered by tests and which are not.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000026",
+    "question": "How can you test asynchronous code in Jest?",
+    "answers": [
+      "Use async/await or return a promise",
+      "Add setTimeout to your tests",
+      "Use the asyncTest() function",
+      "Set async: true in test options"
+    ],
+    "correct": "Use async/await or return a promise",
+    "explanation": "To test asynchronous code in Jest, you can either use async/await syntax in your test function, or return a promise. Jest will wait for the promise to resolve before completing the test.",
+    "category": "Asynchronous Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000027",
+    "question": "What is the purpose of Jest's 'toMatch' matcher?",
+    "answers": [
+      "To test a string against a regular expression",
+      "To compare two objects for equality",
+      "To check if an array contains a specific item",
+      "To verify if a function was called"
+    ],
+    "correct": "To test a string against a regular expression",
+    "explanation": "The 'toMatch' matcher in Jest is used to test a string against a regular expression. It's useful for pattern matching in strings.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000028",
+    "question": "Which Jest method is used to create a mock implementation of a module?",
+    "answers": [
+      "jest.mock()",
+      "mock.create()",
+      "jest.fn()",
+      "createMockModule()"
+    ],
+    "correct": "jest.mock()",
+    "explanation": "jest.mock() is used to create a mock implementation of an entire module. This is useful when you want to mock out complex dependencies in your tests.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000029",
+    "question": "What is the purpose of the 'bail' option in Jest configuration?",
+    "answers": [
+      "To stop running tests after the first failure",
+      "To ignore errors in specific tests",
+      "To set a timeout for long-running tests",
+      "To run tests in a random order"
+    ],
+    "correct": "To stop running tests after the first failure",
+    "explanation": "The 'bail' option in Jest configuration, when set to true, causes Jest to stop running tests after the first failure. This can be useful for quickly identifying and focusing on failing tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000030",
+    "question": "Which Jest matcher would you use to check if an object has a specific property?",
+    "answers": [
+      "toHaveProperty()",
+      "hasOwnProperty()",
+      "containsKey()",
+      "includesProperty()"
+    ],
+    "correct": "toHaveProperty()",
+    "explanation": "The toHaveProperty() matcher in Jest is used to check if an object has a specific property. It can also be used to check the value of that property.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000031",
+    "question": "What is the purpose of Jest's 'toBeDefined' matcher?",
+    "answers": [
+      "To check if a value is not undefined",
+      "To verify if a variable has been declared",
+      "To test if a function returns a value",
+      "To assert that an object is not null"
+    ],
+    "correct": "To check if a value is not undefined",
+    "explanation": "The 'toBeDefined' matcher in Jest is used to check if a value is not undefined. It's often used to ensure that a variable or property has been set to some value.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000032",
+    "question": "How can you run Jest tests in watch mode?",
+    "answers": [
+      "Use the --watch flag",
+      "Set watchMode: true in Jest config",
+      "Import the watch module from Jest",
+      "Use the jest.watch() function"
+    ],
+    "correct": "Use the --watch flag",
+    "explanation": "You can run Jest tests in watch mode by using the --watch flag when running Jest. This mode watches for file changes and reruns tests related to changed files automatically.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000033",
+    "question": "What is the purpose of Jest's 'toBeInstanceOf' matcher?",
+    "answers": [
+      "To check if an object is an instance of a class",
+      "To verify if a value is of a specific type",
+      "To test if a function is a constructor",
+      "To assert that an object has a prototype"
+    ],
+    "correct": "To check if an object is an instance of a class",
+    "explanation": "The 'toBeInstanceOf' matcher in Jest is used to check if an object is an instance of a particular class or constructor function.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000034",
+    "question": "How can you run Jest tests with code coverage report?",
+    "answers": [
+      "Use the --coverage flag",
+      "Set coverage: true in Jest config",
+      "Import the coverage module from Jest",
+      "Use the jest.coverage() function"
+    ],
+    "correct": "Use the --coverage flag",
+    "explanation": "You can run Jest tests with code coverage report by using the --coverage flag when running Jest. This generates a coverage report showing which parts of your code are covered by tests.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000035",
+    "question": "What is the purpose of Jest's 'toHaveLength' matcher?",
+    "answers": [
+      "To check the length of an array or string",
+      "To verify the number of properties in an object",
+      "To test the duration of an asynchronous operation",
+      "To assert the number of times a mock function was called"
+    ],
+    "correct": "To check the length of an array or string",
+    "explanation": "The 'toHaveLength' matcher in Jest is used to check if an array or string has a specific length. It's a convenient way to assert the size of these types of values.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000036",
+    "question": "What is a test suite in Jest?",
+    "answers": [
+      "A group of related test cases",
+      "A single test function",
+      "A collection of mock objects",
+      "A set of configuration options"
+    ],
+    "correct": "A group of related test cases",
+    "explanation": "In Jest, a test suite is a group of related test cases, typically defined using the 'describe' function. It helps organize and structure your tests logically.",
+    "category": "Test Structure",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000037",
+    "question": "Which Jest method is used to create a manual mock for a module?",
+    "answers": [
+      "jest.mock()",
+      "jest.fn()",
+      "jest.spyOn()",
+      "jest.createMock()"
+    ],
+    "correct": "jest.mock()",
+    "explanation": "jest.mock() is used to create a manual mock for a module. By default, it replaces the module with an auto-mocked version, but you can provide a custom implementation.",
+    "category": "Mocking",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000038",
+    "question": "What is the purpose of the 'setupFilesAfterEnv' option in Jest configuration?",
+    "answers": [
+      "To specify setup files to run after the test environment is installed",
+      "To define files that should be included in every test",
+      "To set up the initial state for all tests",
+      "To configure the test environment before running tests"
+    ],
+    "correct": "To specify setup files to run after the test environment is installed",
+    "explanation": "The 'setupFilesAfterEnv' option in Jest configuration is used to specify setup files that should be run after the test environment is installed. This is useful for adding global setup logic for all your tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000039",
+    "question": "What is the purpose of Jest's 'toBeCloseTo' matcher?",
+    "answers": [
+      "To compare floating point numbers with a margin of error",
+      "To check if two values are approximately equal",
+      "To verify if a number is close to zero",
+      "To test if a date is near the current time"
+    ],
+    "correct": "To compare floating point numbers with a margin of error",
+    "explanation": "The 'toBeCloseTo' matcher in Jest is used to compare floating point numbers with a specified precision. It's useful for dealing with rounding errors in floating point arithmetic.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000040",
+    "question": "How do you properly test asynchronous code using async/await in Jest?",
+    "answers": [
+      "Mark the test function as async and use await for async operations",
+      "Use the done callback in the test function",
+      "Return a promise from the test function",
+      "Wrap the async code in a setTimeout"
+    ],
+    "correct": "Mark the test function as async and use await for async operations",
+    "explanation": "To test asynchronous code using async/await in Jest, you should mark the test function as async and use the await keyword for asynchronous operations. This allows Jest to properly handle the asynchronous nature of the test.",
+    "category": "Asynchronous Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000041",
+    "question": "What is the purpose of Jest's 'toMatchObject' matcher?",
+    "answers": [
+      "To check if an object matches a subset of properties",
+      "To compare two objects for exact equality",
+      "To verify if an object has specific methods",
+      "To test if an object is an instance of a class"
+    ],
+    "correct": "To check if an object matches a subset of properties",
+    "explanation": "The 'toMatchObject' matcher in Jest is used to check if an object matches a subset of the properties of another object. It's useful for partial object matching.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000042",
+    "question": "What is the purpose of the 'timers' option in Jest configuration?",
+    "answers": [
+      "To control Jest's fake timers implementation",
+      "To set a global timeout for all tests",
+      "To measure the execution time of tests",
+      "To schedule when tests should run"
+    ],
+    "correct": "To control Jest's fake timers implementation",
+    "explanation": "The 'timers' option in Jest configuration is used to control Jest's fake timers implementation. It allows you to choose between 'real' timers, 'fake' timers, or 'modern' fake timers.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000043",
+    "question": "How can you test that a function throws an error in Jest?",
+    "answers": [
+      "Wrap the function call in another function and use expect().toThrow()",
+      "Use the throws() matcher directly on the function",
+      "Set expectedError in the test options",
+      "Use try-catch and assert that an error was caught"
+    ],
+    "correct": "Wrap the function call in another function and use expect().toThrow()",
+    "explanation": "To test that a function throws an error in Jest, you should wrap the function call in another function and use expect(() => { /* function call */ }).toThrow(). This allows Jest to catch the error and perform the assertion.",
+    "category": "Error Handling",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000044",
+    "question": "What is the purpose of Jest's 'toMatchSnapshot' matcher?",
+    "answers": [
+      "To compare the output with a stored snapshot",
+      "To create a new snapshot of the current state",
+      "To verify if two objects are identical",
+      "To test if a component renders correctly"
+    ],
+    "correct": "To compare the output with a stored snapshot",
+    "explanation": "The 'toMatchSnapshot' matcher in Jest is used to compare the output of a test with a stored snapshot. It's commonly used for testing the output of components or complex data structures.",
+    "category": "Snapshot Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000045",
+    "question": "What is the purpose of the 'moduleNameMapper' option in Jest configuration?",
+    "answers": [
+      "To map module names to different paths or files",
+      "To rename test files automatically",
+      "To create aliases for frequently used modules",
+      "To exclude specific modules from testing"
+    ],
+    "correct": "To map module names to different paths or files",
+    "explanation": "The 'moduleNameMapper' option in Jest configuration is used to map module names to different paths or files. It's often used to handle aliases or to mock certain imports in tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000046",
+    "question": "How can you run Jest tests in parallel?",
+    "answers": [
+      "Use the --maxWorkers flag",
+      "Set parallel: true in Jest config",
+      "Import the parallel module from Jest",
+      "Use the jest.parallel() function"
+    ],
+    "correct": "Use the --maxWorkers flag",
+    "explanation": "You can run Jest tests in parallel by using the --maxWorkers flag followed by the number of workers you want to use. This can significantly speed up test execution on multi-core systems.",
+    "category": "Test Execution",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000047",
+    "question": "What is the purpose of Jest's 'toHaveBeenNthCalledWith' matcher?",
+    "answers": [
+      "To check the arguments of a specific function call",
+      "To verify the number of times a function was called",
+      "To test the return value of the nth function call",
+      "To assert that a function was called at least n times"
+    ],
+    "correct": "To check the arguments of a specific function call",
+    "explanation": "The 'toHaveBeenNthCalledWith' matcher in Jest is used to check the arguments of a specific function call. It allows you to verify that a mock function was called with certain arguments on its nth call.",
+    "category": "Matchers",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000048",
+    "question": "What is the purpose of the 'testEnvironment' option in Jest configuration?",
+    "answers": [
+      "To specify the test environment to use",
+      "To set environment variables for tests",
+      "To define the directory where tests are located",
+      "To configure the output format of test results"
+    ],
+    "correct": "To specify the test environment to use",
+    "explanation": "The 'testEnvironment' option in Jest configuration is used to specify the test environment to use for your tests. Common values are 'jsdom' for browser-like environment and 'node' for Node.js environment.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000049",
+    "question": "What is the purpose of Jest's 'toContainEqual' matcher?",
+    "answers": [
+      "To check if an array contains an item with a specific structure",
+      "To verify if two arrays have the same elements",
+      "To test if a string contains a substring",
+      "To assert that an object has a certain property"
+    ],
+    "correct": "To check if an array contains an item with a specific structure",
+    "explanation": "The 'toContainEqual' matcher in Jest is used to check if an array contains an item with a specific structure or values. It's useful for matching objects within arrays.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000050",
+    "question": "How can you mock a module partially in Jest?",
+    "answers": [
+      "Use jest.mock() with a factory function",
+      "Import the module and override specific methods",
+      "Use jest.partialMock() function",
+      "Set partial: true in jest.mock() options"
+    ],
+    "correct": "Use jest.mock() with a factory function",
+    "explanation": "To mock a module partially in Jest, you can use jest.mock() with a factory function that returns an object with the properties you want to mock, while keeping the rest of the module intact.",
+    "category": "Mocking",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000051",
+    "question": "What is the purpose of the 'globals' option in Jest configuration?",
+    "answers": [
+      "To define global variables available in all test files",
+      "To specify global setup and teardown functions",
+      "To set global timeouts for all tests",
+      "To configure global mocks for commonly used modules"
+    ],
+    "correct": "To define global variables available in all test files",
+    "explanation": "The 'globals' option in Jest configuration is used to define global variables that will be available in all test files. This can be useful for setting up shared constants or helper functions.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000052",
+    "question": "What is the purpose of Jest's 'toHaveReturned' matcher?",
+    "answers": [
+      "To check if a mock function has successfully returned",
+      "To verify the return value of a function",
+      "To test if a function has been called",
+      "To assert that a promise has resolved"
+    ],
+    "correct": "To check if a mock function has successfully returned",
+    "explanation": "The 'toHaveReturned' matcher in Jest is used to check if a mock function has successfully returned at least once. It doesn't consider the return value, just whether the function completed without throwing an error.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000053",
+    "question": "How can you test asynchronous code that uses callbacks in Jest?",
+    "answers": [
+      "Use the done parameter in the test function",
+      "Return a promise from the test function",
+      "Use async/await in the test function",
+      "All of these"
+    ],
+    "correct": "All of these",
+    "explanation": "Jest provides multiple ways to test asynchronous code that uses callbacks. You can use the done parameter, return a promise, or use async/await in the test function. The choice depends on the specific scenario and personal preference.",
+    "category": "Asynchronous Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000054",
+    "question": "What is the purpose of the 'collectCoverageFrom' option in Jest configuration?",
+    "answers": [
+      "To specify which files to collect coverage information from",
+      "To set the minimum coverage threshold",
+      "To determine where to save the coverage report",
+      "To configure which types of coverage to collect"
+    ],
+    "correct": "To specify which files to collect coverage information from",
+    "explanation": "The 'collectCoverageFrom' option in Jest configuration is used to specify a glob pattern for files from which coverage information should be collected. This allows you to focus coverage analysis on specific parts of your codebase.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000055",
+    "question": "What is the purpose of Jest's 'toStrictEqual' matcher?",
+    "answers": [
+      "To perform a strict equality comparison between objects",
+      "To check if two values are exactly the same",
+      "To verify if an object has the same structure as another",
+      "To test if two arrays have the same elements in the same order"
+    ],
+    "correct": "To perform a strict equality comparison between objects",
+    "explanation": "The 'toStrictEqual' matcher in Jest performs a strict equality comparison between objects. Unlike 'toEqual', it also checks for undefined properties and types of object's properties.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000056",
+    "question": "How can you run only the tests that failed in the last test run in Jest?",
+    "answers": [
+      "Use the --onlyFailed flag",
+      "Set onlyFailed: true in Jest config",
+      "Use the jest.onlyFailed() function",
+      "Run jest with the 'failed' argument"
+    ],
+    "correct": "Use the --onlyFailed flag",
+    "explanation": "You can run only the tests that failed in the last test run in Jest by using the --onlyFailed flag when running Jest. This is useful for quickly re-running and fixing failed tests.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000057",
+    "question": "What is the purpose of the 'setupFiles' option in Jest configuration?",
+    "answers": [
+      "To specify setup files to run before the tests",
+      "To define files that should be included in every test",
+      "To set up the initial state for all tests",
+      "To configure the test environment after running tests"
+    ],
+    "correct": "To specify setup files to run before the tests",
+    "explanation": "The 'setupFiles' option in Jest configuration is used to specify setup files that should be run before the tests are run. This is useful for setting up the global environment for your tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000058",
+    "question": "What is the purpose of Jest's 'toBeCalledTimes' matcher?",
+    "answers": [
+      "To check the number of times a mock function was called",
+      "To verify if a function was called with specific arguments",
+      "To test if a function was called at least once",
+      "To assert that a function was called in a specific order"
+    ],
+    "correct": "To check the number of times a mock function was called",
+    "explanation": "The 'toBeCalledTimes' matcher in Jest is used to check the exact number of times a mock function was called. It's useful for verifying the frequency of function calls in your tests.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000059",
+    "question": "How can you mock the current date in Jest tests?",
+    "answers": [
+      "Use jest.useFakeTimers() and set a specific date",
+      "Override the Date object globally",
+      "Use the mockDate() function provided by Jest",
+      "Set a global __DATE__ variable in Jest config"
+    ],
+    "correct": "Use jest.useFakeTimers() and set a specific date",
+    "explanation": "To mock the current date in Jest tests, you can use jest.useFakeTimers() to enable fake timers, and then use something like jest.setSystemTime(new Date('2020-01-01')) to set a specific date.",
+    "category": "Mocking",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000060",
+    "question": "When testing a React component with Jest and React Testing Library, which query is recommended for finding elements as a user would?",
+    "answers": [
+      "getByRole",
+      "getByTestId",
+      "getByClassName",
+      "querySelector"
+    ],
+    "correct": "getByRole",
+    "explanation": "When testing React components with Jest and React Testing Library, getByRole is recommended for finding elements as it closely mimics how users interact with your app. This approach promotes accessibility and more resilient tests.",
+    "category": "React Testing",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000061",
+    "question": "What is the purpose of Jest's 'toMatchInlineSnapshot' matcher?",
+    "answers": [
+      "To create and update inline snapshots",
+      "To compare the output with a stored snapshot",
+      "To verify if two objects are identical",
+      "To test if a component renders correctly"
+    ],
+    "correct": "To create and update inline snapshots",
+    "explanation": "The 'toMatchInlineSnapshot' matcher in Jest is used to create and update inline snapshots. Unlike regular snapshots, inline snapshots are stored directly in your test file as string literals.",
+    "category": "Snapshot Testing",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000062",
+    "question": "How can you run Jest tests with a specific pattern in the filename?",
+    "answers": [
+      "Use the -t or --testNamePattern flag",
+      "Set testPattern in Jest config",
+      "Use the jest.runWithPattern() function",
+      "Specify the pattern as an argument to jest command"
+    ],
+    "correct": "Use the -t or --testNamePattern flag",
+    "explanation": "You can run Jest tests with a specific pattern in the filename by using the -t or --testNamePattern flag followed by the pattern. This allows you to run only tests whose names match the specified pattern.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000063",
+    "question": "What is the purpose of the 'reporters' option in Jest configuration?",
+    "answers": [
+      "To specify custom reporters for test results",
+      "To define which console messages to report",
+      "To set up error reporting services",
+      "To configure how test coverage is reported"
+    ],
+    "correct": "To specify custom reporters for test results",
+    "explanation": "The 'reporters' option in Jest configuration is used to specify custom reporters for test results. This allows you to control how test results are formatted and where they are output.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000064",
+    "question": "What is the purpose of Jest's 'toThrowErrorMatchingSnapshot' matcher?",
+    "answers": [
+      "To check if an error message matches a snapshot",
+      "To verify if a function throws a specific error",
+      "To test if an error is instance of a certain class",
+      "To assert that a promise rejects with an error"
+    ],
+    "correct": "To check if an error message matches a snapshot",
+    "explanation": "The 'toThrowErrorMatchingSnapshot' matcher in Jest is used to check if an error message matches a snapshot. It's useful for testing error messages without hardcoding the exact error string in your test.",
+    "category": "Snapshot Testing",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000065",
+    "question": "What is the purpose of Jest's 'toHaveReturnedWith' matcher?",
+    "answers": [
+      "To check if a mock function returned a specific value",
+      "To verify if a function was called with certain arguments",
+      "To test if a function returned successfully",
+      "To assert that a promise resolved with a value"
+    ],
+    "correct": "To check if a mock function returned a specific value",
+    "explanation": "The 'toHaveReturnedWith' matcher in Jest is used to check if a mock function returned a specific value. It's useful for verifying the exact output of a function call.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000066",
+    "question": "How can you run Jest tests in a specific order?",
+    "answers": [
+      "Jest doesn't support running tests in a specific order",
+      "Use the --sortTests flag",
+      "Set testOrder in Jest config",
+      "Use describe.order() to set test priorities"
+    ],
+    "correct": "Jest doesn't support running tests in a specific order",
+    "explanation": "Jest intentionally doesn't support running tests in a specific order to encourage writing independent tests. Tests should not rely on the order in which they are executed.",
+    "category": "Test Execution",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000067",
+    "question": "What is the purpose of the 'resetMocks' option in Jest configuration?",
+    "answers": [
+      "To reset all mocks before each test",
+      "To clear mock usage data after all tests",
+      "To restore original implementations of mocked functions",
+      "To reset the Jest configuration to default values"
+    ],
+    "correct": "To reset all mocks before each test",
+    "explanation": "The 'resetMocks' option in Jest configuration, when set to true, automatically resets all mocks before each test. This helps ensure that mocks don't retain state between tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000068",
+    "question": "What is the purpose of Jest's 'toBeUndefined' matcher?",
+    "answers": [
+      "To check if a value is undefined",
+      "To verify if a variable has not been declared",
+      "To test if a function returns no value",
+      "To assert that a property doesn't exist on an object"
+    ],
+    "correct": "To check if a value is undefined",
+    "explanation": "The 'toBeUndefined' matcher in Jest is used to check if a value is strictly undefined. It's useful for verifying that a variable or property has not been assigned a value.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000069",
+    "question": "How can you debug Jest tests in Visual Studio Code?",
+    "answers": [
+      "Use the Jest extension and add breakpoints",
+      "Run tests with the --debug flag",
+      "Use console.log statements in your tests",
+      "Set debug: true in Jest configuration"
+    ],
+    "correct": "Use the Jest extension and add breakpoints",
+    "explanation": "To debug Jest tests in Visual Studio Code, you can use the Jest extension, which integrates with VS Code's debugger. You can then add breakpoints in your test files and use the debugger to step through the code.",
+    "category": "Debugging",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000070",
+    "question": "What is the purpose of the 'testTimeout' option in Jest configuration?",
+    "answers": [
+      "To set a default timeout for tests",
+      "To specify how long Jest should wait before re-running failed tests",
+      "To define the maximum time for the entire test suite to run",
+      "To set a delay between each test execution"
+    ],
+    "correct": "To set a default timeout for tests",
+    "explanation": "The 'testTimeout' option in Jest configuration is used to set a default timeout for tests. If a test takes longer than this time to complete, Jest will fail the test.",
+    "category": "Setup and Configuration",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000071",
+    "question": "What is the purpose of Jest's 'toHaveBeenLastCalledWith' matcher?",
+    "answers": [
+      "To check the arguments of the last function call",
+      "To verify the total number of function calls",
+      "To test the return value of the last function call",
+      "To assert that a function was called at least once"
+    ],
+    "correct": "To check the arguments of the last function call",
+    "explanation": "The 'toHaveBeenLastCalledWith' matcher in Jest is used to check the arguments of the last call to a mock function. It's useful for verifying the most recent usage of a function.",
+    "category": "Matchers",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000072",
+    "question": "How can you run Jest tests with increased memory allocation?",
+    "answers": [
+      "Use the --max-old-space-size flag with node",
+      "Set maxMemory in Jest configuration",
+      "Use the jest --allocate-memory command",
+      "Increase the memoryLimit in package.json"
+    ],
+    "correct": "Use the --max-old-space-size flag with node",
+    "explanation": "To run Jest tests with increased memory allocation, you can use the --max-old-space-size flag with node when running Jest. For example: node --max-old-space-size=8192 node_modules/.bin/jest",
+    "category": "Test Execution",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000073",
+    "question": "What is the purpose of the 'testEnvironmentOptions' in Jest configuration?",
+    "answers": [
+      "To pass options to the test environment",
+      "To set environment variables for tests",
+      "To configure the output of test results",
+      "To specify which browsers to test in"
+    ],
+    "correct": "To pass options to the test environment",
+    "explanation": "The 'testEnvironmentOptions' in Jest configuration is used to pass options to the test environment. For example, you can use it to set options for the jsdom environment.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000074",
+    "question": "What is the purpose of Jest's 'toHaveProperty' matcher?",
+    "answers": [
+      "To check if an object has a specific property",
+      "To verify if an object is an instance of a class",
+      "To test if a function has a certain method",
+      "To assert that an array contains a particular element"
+    ],
+    "correct": "To check if an object has a specific property",
+    "explanation": "The 'toHaveProperty' matcher in Jest is used to check if an object has a specific property. It can also be used to check the value of that property if provided.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000075",
+    "question": "How can you run Jest tests for changed files only?",
+    "answers": [
+      "Use the --onlyChanged flag",
+      "Set onlyChanged: true in Jest config",
+      "Use the jest.runChanged() function",
+      "Run jest with the 'changed' argument"
+    ],
+    "correct": "Use the --onlyChanged flag",
+    "explanation": "You can run Jest tests only for changed files by using the --onlyChanged flag when running Jest. This runs tests related to files changed since the last commit.",
+    "category": "Test Execution",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000076",
+    "question": "What is the purpose of the 'coverageThreshold' option in Jest configuration?",
+    "answers": [
+      "To set minimum threshold for code coverage",
+      "To specify maximum allowed code coverage",
+      "To define which files to include in coverage report",
+      "To configure how code coverage is calculated"
+    ],
+    "correct": "To set minimum threshold for code coverage",
+    "explanation": "The 'coverageThreshold' option in Jest configuration is used to set minimum thresholds for code coverage. If these thresholds are not met, Jest can be configured to fail the tests.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000077",
+    "question": "What is the purpose of Jest's 'toBeGreaterThanOrEqual' matcher?",
+    "answers": [
+      "To check if a number is greater than or equal to another",
+      "To verify if a value is truthy",
+      "To test if a date is after or equal to another",
+      "To assert that a string is longer than or equal to another"
+    ],
+    "correct": "To check if a number is greater than or equal to another",
+    "explanation": "The 'toBeGreaterThanOrEqual' matcher in Jest is used to check if a number is greater than or equal to another number. It's useful for comparing numeric values in tests.",
+    "category": "Matchers",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "JEST0000078",
+    "question": "How can you use Jest with TypeScript?",
+    "answers": [
+      "Use ts-jest preset",
+      "Jest natively supports TypeScript",
+      "Compile TypeScript to JavaScript before running tests",
+      "Use the jest-typescript package"
+    ],
+    "correct": "Use ts-jest preset",
+    "explanation": "To use Jest with TypeScript, you can use the ts-jest preset. This allows Jest to understand and process TypeScript files directly, without needing to compile them to JavaScript first.",
+    "category": "Setup and Configuration",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "JEST0000079",
+    "question": "What is the purpose of Jest's 'toHaveBeenCalledBefore' matcher?",
+    "answers": [
+      "To check if one mock function was called before another",
+      "To verify if a function was called before a certain time",
+      "To test if a function was called on a previous day",
+      "To assert that a function was called earlier in the test file"
+    ],
+    "correct": "To check if one mock function was called before another",
+    "explanation": "The 'toHaveBeenCalledBefore' matcher in Jest is used to check if one mock function was called before another. It's useful for verifying the order of function calls in your tests.",
+    "category": "Matchers",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "JEST0000080",
+    "question": "What is the purpose of the 'modulePaths' option in Jest configuration?",
+    "answers": [
+      "To specify additional locations to search for modules",
+      "To exclude certain paths from being searched for modules",
+      "To rename module paths for better readability",
+      "To define aliases for commonly used modules"
+    ],
+    "correct": "To specify additional locations to search for modules",
+    "explanation": "The 'modulePaths' option in Jest configuration is used to specify additional locations to search for modules. This can be useful when you have modules in non-standard locations that you want Jest to be able to find.",
+    "category": "Setup and Configuration",
+    "difficulty": "Hard"
+  }  
+]
