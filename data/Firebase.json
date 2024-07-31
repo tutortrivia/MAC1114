@@ -1,0 +1,1122 @@
+[
+  {
+    "questionId": "FIREBASE001",
+    "question": "What is Firebase primarily used for?",
+    "answers": [
+      "Backend-as-a-Service (BaaS)",
+      "Frontend development",
+      "Machine learning",
+      "Operating system development"
+    ],
+    "correct": "Backend-as-a-Service (BaaS)",
+    "explanation": "Firebase is primarily used as a Backend-as-a-Service (BaaS) platform, providing a variety of tools and services for building web and mobile applications without managing the backend infrastructure.",
+    "category": "Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE002",
+    "question": "Which of these is NOT a Firebase service?",
+    "answers": [
+      "Realtime Database",
+      "Cloud Firestore",
+      "Authentication",
+      "Load Balancing"
+    ],
+    "correct": "Load Balancing",
+    "explanation": "Load Balancing is not a Firebase service. Firebase offers Realtime Database, Cloud Firestore, and Authentication, among other services, but load balancing is typically handled by other Google Cloud Platform services.",
+    "category": "Services",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE003",
+    "question": "What type of database is Firebase Realtime Database?",
+    "answers": [
+      "NoSQL",
+      "Relational",
+      "Graph",
+      "Column-oriented"
+    ],
+    "correct": "NoSQL",
+    "explanation": "Firebase Realtime Database is a NoSQL database, which stores data as JSON objects and allows for real-time synchronization across clients.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE004",
+    "question": "Which Firebase feature allows you to run backend code in response to events?",
+    "answers": [
+      "Cloud Functions",
+      "Realtime Database",
+      "Authentication",
+      "Hosting"
+    ],
+    "correct": "Cloud Functions",
+    "explanation": "Firebase Cloud Functions allow you to automatically run backend code in response to events triggered by Firebase features and HTTPS requests.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE005",
+    "question": "What is the primary difference between Realtime Database and Cloud Firestore?",
+    "answers": [
+      "Data model",
+      "Real-time capabilities",
+      "Offline support",
+      "Pricing structure"
+    ],
+    "correct": "Data model",
+    "explanation": "The primary difference between Realtime Database and Cloud Firestore is their data model. Realtime Database uses a large JSON tree, while Firestore uses a more structured document-collection model.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE006",
+    "question": "Which of these authentication methods does Firebase support?",
+    "answers": [
+      "Email/Password",
+      "Google Sign-In",
+      "Phone number",
+      "All of these"
+    ],
+    "correct": "All of these",
+    "explanation": "Firebase Authentication supports multiple sign-in methods, including email/password, Google Sign-In, phone number authentication, and several other providers.",
+    "category": "Authentication",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE007",
+    "question": "What is the purpose of Firebase Security Rules?",
+    "answers": [
+      "To secure your database and storage",
+      "To improve application performance",
+      "To manage user authentication",
+      "To handle server-side logic"
+    ],
+    "correct": "To secure your database and storage",
+    "explanation": "Firebase Security Rules are used to secure your data in Realtime Database, Cloud Firestore, and Cloud Storage. They define who has read and write access to your data.",
+    "category": "Security",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE008",
+    "question": "Which Firebase service allows you to store and serve user-generated content?",
+    "answers": [
+      "Cloud Storage",
+      "Realtime Database",
+      "Cloud Functions",
+      "Hosting"
+    ],
+    "correct": "Cloud Storage",
+    "explanation": "Firebase Cloud Storage is designed for storing and serving user-generated content like images, videos, and other files.",
+    "category": "Services",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE009",
+    "question": "What is Firebase Hosting primarily used for?",
+    "answers": [
+      "Deploying web apps",
+      "Storing database backups",
+      "Running server-side code",
+      "Managing user authentication"
+    ],
+    "correct": "Deploying web apps",
+    "explanation": "Firebase Hosting is primarily used for deploying web apps, providing fast and secure hosting for your static and dynamic content.",
+    "category": "Services",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE010",
+    "question": "What is the purpose of Firebase Cloud Functions?",
+    "answers": [
+      "Run backend code in response to events",
+      "Manage user authentication",
+      "Store and retrieve data",
+      "Host static websites"
+    ],
+    "correct": "Run backend code in response to events",
+    "explanation": "Firebase Cloud Functions allow you to automatically run backend code in response to events triggered by Firebase features and HTTPS requests, without needing to manage servers.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE011",
+    "question": "What is Firebase App Distribution used for?",
+    "answers": [
+      "Distributing test versions of your app",
+      "Monetizing your app",
+      "Analyzing app performance",
+      "Managing app updates"
+    ],
+    "correct": "Distributing test versions of your app",
+    "explanation": "Firebase App Distribution is used to distribute pre-release versions of your app to testers before launching to production.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE012",
+    "question": "Which Firebase service provides A/B testing functionality?",
+    "answers": [
+      "Remote Config",
+      "Analytics",
+      "Performance Monitoring",
+      "Crashlytics"
+    ],
+    "correct": "Remote Config",
+    "explanation": "Firebase Remote Config, when used in conjunction with Analytics, provides A/B testing functionality, allowing you to test different app configurations with different user groups.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE013",
+    "question": "What is the purpose of Firebase Cloud Messaging (FCM)?",
+    "answers": [
+      "Sending push notifications",
+      "Real-time database synchronization",
+      "Serverless computing",
+      "User authentication"
+    ],
+    "correct": "Sending push notifications",
+    "explanation": "Firebase Cloud Messaging (FCM) is used for sending push notifications to mobile devices and web applications.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE014",
+    "question": "Which of these is NOT a feature of Firebase Analytics?",
+    "answers": [
+      "User behavior tracking",
+      "Crash reporting",
+      "Audience segmentation",
+      "Event logging"
+    ],
+    "correct": "Crash reporting",
+    "explanation": "Crash reporting is not a feature of Firebase Analytics. It's handled by Firebase Crashlytics. Analytics focuses on user behavior tracking, audience segmentation, and event logging.",
+    "category": "Analytics",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE015",
+    "question": "What language are Firebase Security Rules written in?",
+    "answers": [
+      "A custom Firebase language",
+      "JavaScript",
+      "JSON",
+      "Python"
+    ],
+    "correct": "A custom Firebase language",
+    "explanation": "Firebase Security Rules are written in a custom domain-specific language designed by Firebase for expressing security and data validation rules.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE016",
+    "question": "Which Firebase service helps in monitoring app performance issues?",
+    "answers": [
+      "Performance Monitoring",
+      "Crashlytics",
+      "Test Lab",
+      "Analytics"
+    ],
+    "correct": "Performance Monitoring",
+    "explanation": "Firebase Performance Monitoring helps you gain insight into your app's performance issues by collecting low-level performance data from your iOS and Android apps.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE017",
+    "question": "What is the purpose of Firebase Crashlytics?",
+    "answers": [
+      "Real-time crash reporting",
+      "Performance monitoring",
+      "A/B testing",
+      "User authentication"
+    ],
+    "correct": "Real-time crash reporting",
+    "explanation": "Firebase Crashlytics provides real-time crash reporting for your mobile apps, helping you track, prioritize, and fix stability issues that erode your app quality.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE018",
+    "question": "Which of these is NOT a feature of Firebase Cloud Functions?",
+    "answers": [
+      "Automatic scaling",
+      "Event-driven execution",
+      "Multiple language support",
+      "Client-side execution"
+    ],
+    "correct": "Client-side execution",
+    "explanation": "Firebase Cloud Functions are executed on the server-side, not client-side. They offer automatic scaling, event-driven execution, and support for multiple programming languages.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE019",
+    "question": "What is the maximum size of a document in Cloud Firestore?",
+    "answers": [
+      "1 MB",
+      "10 MB",
+      "100 MB",
+      "Unlimited"
+    ],
+    "correct": "1 MB",
+    "explanation": "In Cloud Firestore, each document is limited to 1 MB in size. This limit helps ensure optimal performance and encourages efficient data structuring.",
+    "category": "Database",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE020",
+    "question": "Which Firebase service allows you to create custom machine learning models?",
+    "answers": [
+      "ML Kit",
+      "Cloud Functions",
+      "Analytics",
+      "Remote Config"
+    ],
+    "correct": "ML Kit",
+    "explanation": "Firebase ML Kit allows you to use pre-built machine learning models in your apps, and also provides the ability to create and deploy custom machine learning models.",
+    "category": "Machine Learning",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE021",
+    "question": "What is the purpose of Firebase Dynamic Links?",
+    "answers": [
+      "Create smart URLs",
+      "Manage database connections",
+      "Handle user authentication",
+      "Monitor app performance"
+    ],
+    "correct": "Create smart URLs",
+    "explanation": "Firebase Dynamic Links are smart URLs that allow you to send existing and potential users to any location within your iOS, Android, or web app.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE022",
+    "question": "Which of these is true about Firebase Authentication?",
+    "answers": [
+      "It only supports email/password login",
+      "It requires a separate user database",
+      "It integrates with other Firebase services",
+      "It's only available for mobile apps"
+    ],
+    "correct": "It integrates with other Firebase services",
+    "explanation": "Firebase Authentication integrates tightly with other Firebase services and supports multiple authentication methods, not just email/password. It's available for both web and mobile apps.",
+    "category": "Authentication",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE023",
+    "question": "What is the primary use of Firebase Remote Config?",
+    "answers": [
+      "App behavior and appearance modification",
+      "Remote server management",
+      "User data synchronization",
+      "API endpoint configuration"
+    ],
+    "correct": "App behavior and appearance modification",
+    "explanation": "Firebase Remote Config lets you modify your app's behavior and appearance without publishing an update. It's often used for A/B testing and gradual feature rollouts.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE024",
+    "question": "Which of these is NOT a valid Firebase Security Rule condition?",
+    "answers": [
+      "allow read, write: if true;",
+      "allow read, write: if request.auth != null;",
+      "allow read, write: if request.time < timestamp.date(2020, 12, 31);",
+      "allow read, write: if db.get(path).exists();"
+    ],
+    "correct": "allow read, write: if db.get(path).exists();",
+    "explanation": "The condition 'db.get(path).exists()' is not a valid Firebase Security Rule. Security Rules don't have direct database access. The other conditions are valid examples of Firebase Security Rules.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE025",
+    "question": "What is the purpose of Firebase Test Lab?",
+    "answers": [
+      "Automated app testing",
+      "A/B testing implementation",
+      "Performance testing",
+      "Security vulnerability testing"
+    ],
+    "correct": "Automated app testing",
+    "explanation": "Firebase Test Lab is a cloud-based app-testing infrastructure that allows you to test your Android and iOS apps across a wide variety of devices and device configurations.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE026",
+    "question": "Which of these is true about Firebase Realtime Database data retrieval?",
+    "answers": [
+      "It only supports REST API",
+      "It provides real-time updates",
+      "It requires periodic polling",
+      "It's read-only by default"
+    ],
+    "correct": "It provides real-time updates",
+    "explanation": "Firebase Realtime Database provides real-time updates to connected clients, allowing data to be synced across devices instantly when it changes.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE027",
+    "question": "What is the primary difference between Firebase Hosting and Google Cloud Storage?",
+    "answers": [
+      "Content delivery speed",
+      "File size limits",
+      "Type of content served",
+      "Pricing structure"
+    ],
+    "correct": "Type of content served",
+    "explanation": "The primary difference is the type of content served. Firebase Hosting is optimized for serving web app assets and static content, while Google Cloud Storage is a more general-purpose file storage solution.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE028",
+    "question": "Which Firebase feature helps in gradually rolling out new features to users?",
+    "answers": [
+      "A/B Testing",
+      "Remote Config",
+      "App Distribution",
+      "Cloud Messaging"
+    ],
+    "correct": "Remote Config",
+    "explanation": "Firebase Remote Config can be used to gradually roll out new features to your users. It allows you to modify your app's behavior and appearance without publishing an app update.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE029",
+    "question": "What is the purpose of Firebase App Check?",
+    "answers": [
+      "Verify app integrity",
+      "Check for app updates",
+      "Monitor app performance",
+      "Manage app permissions"
+    ],
+    "correct": "Verify app integrity",
+    "explanation": "Firebase App Check helps protect your backend resources from abuse by verifying that incoming requests are coming from your authentic apps.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE030",
+    "question": "Which of these is NOT a supported data type in Firestore?",
+    "answers": [
+      "String",
+      "Number",
+      "Boolean",
+      "Function"
+    ],
+    "correct": "Function",
+    "explanation": "Firestore supports various data types including strings, numbers, booleans, arrays, and objects, but it does not support storing functions directly as a field value.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE031",
+    "question": "What is the purpose of Firebase Extensions?",
+    "answers": [
+      "Pre-packaged solutions for common tasks",
+      "Custom UI components",
+      "Third-party app integrations",
+      "Advanced database querying"
+    ],
+    "correct": "Pre-packaged solutions for common tasks",
+    "explanation": "Firebase Extensions are pre-packaged solutions for common development tasks, allowing you to quickly add functionality to your Firebase project without having to implement the features from scratch.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE032",
+    "question": "Which of these is true about Firebase Cloud Functions cold starts?",
+    "answers": [
+      "They only occur once per deployment",
+      "They can increase response time",
+      "They improve function performance",
+      "They are unrelated to inactivity periods"
+    ],
+    "correct": "They can increase response time",
+    "explanation": "Cold starts in Firebase Cloud Functions can increase response time. They occur when a function is invoked after a period of inactivity, requiring the function's execution environment to be set up.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE033",
+    "question": "What is the purpose of Firebase In-App Messaging?",
+    "answers": [
+      "Send targeted messages to users",
+      "Facilitate user-to-user chat",
+      "Debug app issues",
+      "Manage push notifications"
+    ],
+    "correct": "Send targeted messages to users",
+    "explanation": "Firebase In-App Messaging allows you to send targeted, contextual messages to users while they're actively using your app, helping to engage users at the right moment.",
+    "category": "Engagement",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE034",
+    "question": "Which of these is NOT a valid authentication method in Firebase?",
+    "answers": [
+      "Email/Password",
+      "Phone Number",
+      "Biometric",
+      "Google Sign-In"
+    ],
+    "correct": "Biometric",
+    "explanation": "While Firebase supports various authentication methods including Email/Password, Phone Number, and Google Sign-In, it doesn't directly provide biometric authentication as a standalone method.",
+    "category": "Authentication",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE035",
+    "question": "What is the primary purpose of Firebase Cloud Storage?",
+    "answers": [
+      "Store and serve user-generated content",
+      "Host static websites",
+      "Store app configuration data",
+      "Manage relational databases"
+    ],
+    "correct": "Store and serve user-generated content",
+    "explanation": "Firebase Cloud Storage is designed to store and serve user-generated content such as images, audio, video, or other user files, making it easy to manage user uploads and downloads.",
+    "category": "Services",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE036",
+    "question": "Which Firebase feature allows you to personalize your app's onboarding experience?",
+    "answers": [
+      "Remote Config",
+      "A/B Testing",
+      "Dynamic Links",
+      "In-App Messaging"
+    ],
+    "correct": "Remote Config",
+    "explanation": "Firebase Remote Config can be used to personalize your app's onboarding experience by allowing you to modify your app's behavior and appearance without publishing an app update.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE037",
+    "question": "What is the maximum number of Cloud Functions you can deploy in a single project?",
+    "answers": [
+      "1000",
+      "500",
+      "100",
+      "Unlimited"
+    ],
+    "correct": "1000",
+    "explanation": "Firebase allows you to deploy up to 1000 Cloud Functions per project. This limit helps maintain optimal performance and resource allocation.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE038",
+    "question": "Which of these is true about Firebase Security Rules?",
+    "answers": [
+      "They are written in JavaScript",
+      "They can call Cloud Functions",
+      "They are evaluated server-side",
+      "They can directly access the database"
+    ],
+    "correct": "They are evaluated server-side",
+    "explanation": "Firebase Security Rules are evaluated server-side to determine whether a read or write operation should be allowed. They use a custom syntax, not JavaScript, and cannot directly call Cloud Functions or access the database.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE039",
+    "question": "What is the purpose of Firebase App Distribution?",
+    "answers": [
+      "Distribute pre-release versions to testers",
+      "Manage app store submissions",
+      "Track app installs and uninstalls",
+      "Handle in-app purchases"
+    ],
+    "correct": "Distribute pre-release versions to testers",
+    "explanation": "Firebase App Distribution allows you to distribute pre-release versions of your app to trusted testers before launching to production, facilitating beta testing and early feedback.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE040",
+    "question": "Which Firebase service provides real-time analytics?",
+    "answers": [
+      "Google Analytics for Firebase",
+      "Crashlytics",
+      "Performance Monitoring",
+      "Test Lab"
+    ],
+    "correct": "Google Analytics for Firebase",
+    "explanation": "Google Analytics for Firebase provides real-time analytics about app usage and user engagement, allowing you to make data-driven decisions to improve your app.",
+    "category": "Analytics",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE041",
+    "question": "What is the maximum size of a file that can be uploaded to Firebase Cloud Storage?",
+    "answers": [
+      "5TB",
+      "10GB",
+      "1GB",
+      "Unlimited"
+    ],
+    "correct": "5TB",
+    "explanation": "The maximum size of a file that can be uploaded to Firebase Cloud Storage is 5TB. This large limit allows for storing and serving a wide range of file types and sizes.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE042",
+    "question": "Which of these is NOT a feature of Firebase Crashlytics?",
+    "answers": [
+      "Real-time crash reporting",
+      "Automatic error grouping",
+      "Performance monitoring",
+      "Crash-free user percentage"
+    ],
+    "correct": "Performance monitoring",
+    "explanation": "While Crashlytics offers real-time crash reporting, automatic error grouping, and crash-free user percentage, performance monitoring is a separate Firebase service.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE043",
+    "question": "What is the purpose of Firebase Dynamic Links?",
+    "answers": [
+      "Deep link to specific app content",
+      "Manage database relationships",
+      "Create dynamic database queries",
+      "Generate one-time authentication tokens"
+    ],
+    "correct": "Deep link to specific app content",
+    "explanation": "Firebase Dynamic Links are used to create smart URLs that deep link to specific content within your app, even for users who don't have the app installed yet.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE044",
+    "question": "Which of these is true about Firebase Realtime Database offline persistence?",
+    "answers": [
+      "It's enabled by default",
+      "It requires manual implementation",
+      "It's only available for iOS",
+      "It doesn't support data syncing"
+    ],
+    "correct": "It's enabled by default",
+    "explanation": "Firebase Realtime Database offline persistence is enabled by default, allowing your app to maintain a local cache of data that remains available even when the device loses network connectivity.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE045",
+    "question": "What is the primary difference between Firebase Authentication and Firebase App Check?",
+    "answers": [
+      "User verification vs app verification",
+      "Client-side vs server-side",
+      "Manual vs automatic implementation",
+      "Web-only vs mobile-only"
+    ],
+    "correct": "User verification vs app verification",
+    "explanation": "The primary difference is that Firebase Authentication verifies the identity of users, while Firebase App Check verifies the authenticity of the app itself, protecting against unauthorized access to your backend resources.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE046",
+    "question": "Which Firebase service allows you to run mobile app UI tests on real devices?",
+    "answers": [
+      "Test Lab",
+      "Crashlytics",
+      "Performance Monitoring",
+      "App Distribution"
+    ],
+    "correct": "Test Lab",
+    "explanation": "Firebase Test Lab allows you to run your mobile app UI tests on a wide range of real, physical devices hosted in Google data centers, helping you identify issues across different device configurations.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE047",
+    "question": "What is the purpose of Firebase Reserved Cloud Functions?",
+    "answers": [
+      "Automatically respond to events",
+      "Improve cold start times",
+      "Enhance security measures",
+      "Manage database backups"
+    ],
+    "correct": "Automatically respond to events",
+    "explanation": "Firebase Reserved Cloud Functions are predefined functions that automatically respond to specific events in your Firebase project, such as user creation or deletion, without requiring you to write custom code.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE048",
+    "question": "Which of these is NOT a valid Firebase Hosting feature?",
+    "answers": [
+      "Custom domains",
+      "SSL certificates",
+      "Content delivery network",
+      "Server-side rendering"
+    ],
+    "correct": "Server-side rendering",
+    "explanation": "While Firebase Hosting provides custom domains, SSL certificates, and a global CDN, it doesn't natively support server-side rendering. For SSR, you would typically use Firebase Hosting in conjunction with Cloud Functions or another server solution.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE049",
+    "question": "What is the purpose of Firebase Extensions?",
+    "answers": [
+      "Pre-packaged solutions for common tasks",
+      "Third-party app integrations",
+      "Custom UI components",
+      "Advanced analytics tools"
+    ],
+    "correct": "Pre-packaged solutions for common tasks",
+    "explanation": "Firebase Extensions are pre-packaged solutions for common development tasks. They allow you to quickly add functionality to your Firebase project without having to implement the features from scratch.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE050",
+    "question": "Which of these is NOT a supported trigger for Firebase Cloud Functions?",
+    "answers": [
+      "HTTP requests",
+      "Database events",
+      "Analytics events",
+      "Authentication events"
+    ],
+    "correct": "Analytics events",
+    "explanation": "Firebase Cloud Functions can be triggered by HTTP requests, Realtime Database events, and Authentication events, among others. However, they cannot be directly triggered by Analytics events.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE051",
+    "question": "What is the maximum number of Cloud Firestore collections you can create in a project?",
+    "answers": [
+      "1000",
+      "10000",
+      "100000",
+      "Unlimited"
+    ],
+    "correct": "Unlimited",
+    "explanation": "There is no limit to the number of collections you can create in a Cloud Firestore project. However, there are limits on other aspects like the number of indexes or the size of documents.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE052",
+    "question": "What is the purpose of Firebase App Check nonces?",
+    "answers": [
+      "Prevent replay attacks",
+      "Encrypt data transmission",
+      "Authenticate users",
+      "Manage app versions"
+    ],
+    "correct": "Prevent replay attacks",
+    "explanation": "Firebase App Check nonces are used to prevent replay attacks. Each nonce is a unique, short-lived token that can only be used once, ensuring that intercepted valid tokens cannot be reused by attackers.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE053",
+    "question": "Which Firebase service allows you to create and manage custom audiences?",
+    "answers": [
+      "Google Analytics",
+      "Remote Config",
+      "A/B Testing",
+      "Cloud Messaging"
+    ],
+    "correct": "Google Analytics",
+    "explanation": "Google Analytics for Firebase allows you to create and manage custom audiences based on user properties and behaviors, which can be used for targeted messaging or A/B testing.",
+    "category": "Analytics",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE054",
+    "question": "What is the default cache size for Firebase Realtime Database offline persistence on web?",
+    "answers": [
+      "10MB",
+      "100MB",
+      "1GB",
+      "Unlimited"
+    ],
+    "correct": "10MB",
+    "explanation": "The default cache size for Firebase Realtime Database offline persistence on web is 10MB. This can be configured to a larger size if needed, up to 100MB.",
+    "category": "Database",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE055",
+    "question": "Which of these is NOT a valid option for Firebase Authentication email action handling?",
+    "answers": [
+      "Password reset",
+      "Email verification",
+      "Sign in with email link",
+      "Two-factor authentication"
+    ],
+    "correct": "Two-factor authentication",
+    "explanation": "Firebase Authentication supports password reset, email verification, and sign in with email link as email actions. Two-factor authentication is not handled through email actions but is a separate feature.",
+    "category": "Authentication",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE056",
+    "question": "What is the purpose of Firebase Local Emulator Suite?",
+    "answers": [
+      "Develop and test locally",
+      "Improve app performance",
+      "Manage app distributions",
+      "Monitor real-time analytics"
+    ],
+    "correct": "Develop and test locally",
+    "explanation": "The Firebase Local Emulator Suite allows developers to develop and test their Firebase projects locally without affecting production data or incurring costs associated with live services.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE057",
+    "question": "Which of these is true about Firebase Security Rules for Cloud Firestore?",
+    "answers": [
+      "They support complex queries",
+      "They can call external APIs",
+      "They are written in JSON",
+      "They are evaluated for each document"
+    ],
+    "correct": "They are evaluated for each document",
+    "explanation": "Firebase Security Rules for Cloud Firestore are evaluated for each document in a query or write operation. They don't support complex queries or calling external APIs, and are written in a custom language, not JSON.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE058",
+    "question": "What is the maximum number of indices you can create in Cloud Firestore?",
+    "answers": [
+      "100",
+      "200",
+      "500",
+      "1000"
+    ],
+    "correct": "200",
+    "explanation": "In Cloud Firestore, you can create up to 200 composite indices and 200 single-field indices per database. This limit helps maintain optimal performance.",
+    "category": "Database",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE059",
+    "question": "Which Firebase service allows you to run SQL queries?",
+    "answers": [
+      "Cloud Firestore",
+      "Realtime Database",
+      "Firebase Extensions",
+      "None of these"
+    ],
+    "correct": "None of these",
+    "explanation": "Neither Cloud Firestore nor Realtime Database support SQL queries directly. They use NoSQL data models. To run SQL queries, you would need to use a separate service like Google Cloud SQL.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE060",
+    "question": "What is the purpose of Firebase Predictions?",
+    "answers": [
+      "Predict user behavior",
+      "Forecast app performance",
+      "Estimate cloud function execution time",
+      "Project database growth"
+    ],
+    "correct": "Predict user behavior",
+    "explanation": "Firebase Predictions uses machine learning to create dynamic user groups based on predicted behavior. This can be used to take action on users before they churn or to target users who are likely to make a purchase.",
+    "category": "Machine Learning",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE061",
+    "question": "Which of these is NOT a valid Firebase Cloud Messaging message type?",
+    "answers": [
+      "Notification messages",
+      "Data messages",
+      "Topic messages",
+      "Scheduled messages"
+    ],
+    "correct": "Scheduled messages",
+    "explanation": "Firebase Cloud Messaging supports notification messages, data messages, and topic messages. While you can schedule messages to be sent at a later time, 'Scheduled messages' is not a distinct message type.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE062",
+    "question": "What is the purpose of Firebase App Distribution's tester management?",
+    "answers": [
+      "Organize and invite testers",
+      "Monitor tester device performance",
+      "Track tester feedback",
+      "Manage tester payments"
+    ],
+    "correct": "Organize and invite testers",
+    "explanation": "Firebase App Distribution's tester management allows you to organize testers into groups and invite them to test your app. It doesn't handle performance monitoring, feedback tracking, or payments.",
+    "category": "Development",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "FIREBASE063",
+    "question": "Which of these is true about Firebase Dynamic Links?",
+    "answers": [
+      "They only work on mobile devices",
+      "They require a custom domain",
+      "They can survive app installs",
+      "They are only for iOS apps"
+    ],
+    "correct": "They can survive app installs",
+    "explanation": "Firebase Dynamic Links can survive the app install process, meaning a user can click a link, install the app, and still be taken to the linked content after opening the app for the first time.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE064",
+    "question": "What is the maximum number of Cloud Functions that can be triggered simultaneously in the Blaze plan?",
+    "answers": [
+      "1000",
+      "5000",
+      "10000",
+      "Unlimited"
+    ],
+    "correct": "1000",
+    "explanation": "In the Firebase Blaze plan, up to 1000 Cloud Functions can be triggered simultaneously by default. This limit can be increased by contacting Firebase support.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE065",
+    "question": "What is the purpose of Firebase Remote Config's conditional values?",
+    "answers": [
+      "Personalize app behavior",
+      "Optimize database queries",
+      "Manage user authentication",
+      "Schedule push notifications"
+    ],
+    "correct": "Personalize app behavior",
+    "explanation": "Firebase Remote Config's conditional values allow you to personalize your app's behavior and appearance for different user segments without requiring an app update.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE066",
+    "question": "Which Firebase service provides pre-built ML models for common use cases?",
+    "answers": [
+      "ML Kit",
+      "AutoML",
+      "TensorFlow Lite",
+      "Cloud AI"
+    ],
+    "correct": "ML Kit",
+    "explanation": "Firebase ML Kit provides pre-built machine learning models for common use cases such as image labeling, text recognition, and face detection, making it easy to add ML capabilities to your app.",
+    "category": "Machine Learning",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE067",
+    "question": "What is the maximum size of a Cloud Firestore document?",
+    "answers": [
+      "1 MB",
+      "10 MB",
+      "100 MB",
+      "1 GB"
+    ],
+    "correct": "1 MB",
+    "explanation": "The maximum size of a Cloud Firestore document is 1 MB. This limit helps ensure optimal performance and encourages efficient data structuring.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE068",
+    "question": "Which of these is NOT a feature of Firebase Performance Monitoring?",
+    "answers": [
+      "Automatic traces",
+      "Custom traces",
+      "Network request metrics",
+      "User behavior analysis"
+    ],
+    "correct": "User behavior analysis",
+    "explanation": "Firebase Performance Monitoring provides automatic traces, custom traces, and network request metrics, but it does not directly perform user behavior analysis. That's more in the domain of Firebase Analytics.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE069",
+    "question": "What is the purpose of Firebase App Check custom claims?",
+    "answers": [
+      "Add extra security layers",
+      "Customize user profiles",
+      "Manage app permissions",
+      "Track app usage"
+    ],
+    "correct": "Add extra security layers",
+    "explanation": "Firebase App Check custom claims allow you to add extra layers of security by including additional attestation data with your App Check token, which can be validated server-side.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE070",
+    "question": "Which of these is true about Firebase Authentication anonymous sign-in?",
+    "answers": [
+      "It creates a permanent user account",
+      "It requires an email address",
+      "It can be upgraded to a permanent account",
+      "It expires after 24 hours"
+    ],
+    "correct": "It can be upgraded to a permanent account",
+    "explanation": "Firebase Authentication's anonymous sign-in creates a temporary account that can later be upgraded to a permanent account by linking it with an email address or other sign-in method.",
+    "category": "Authentication",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE071",
+    "question": "What is the maximum number of topics a device can subscribe to in Firebase Cloud Messaging?",
+    "answers": [
+      "100",
+      "1000",
+      "5000",
+      "Unlimited"
+    ],
+    "correct": "5000",
+    "explanation": "In Firebase Cloud Messaging, a single device can subscribe to a maximum of 5000 topics. This limit helps ensure optimal performance of the messaging system.",
+    "category": "Services",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE072",
+    "question": "Which Firebase service allows you to create custom machine learning models?",
+    "answers": [
+      "ML Kit",
+      "AutoML Vision Edge",
+      "TensorFlow Lite",
+      "Custom Models"
+    ],
+    "correct": "AutoML Vision Edge",
+    "explanation": "Firebase AutoML Vision Edge allows you to create custom machine learning models for image classification and object detection without requiring deep ML expertise.",
+    "category": "Machine Learning",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE073",
+    "question": "What is the purpose of Firebase Hosting's preview channels?",
+    "answers": [
+      "Test changes before deployment",
+      "Host multiple websites",
+      "Improve content delivery speed",
+      "Manage user access control"
+    ],
+    "correct": "Test changes before deployment",
+    "explanation": "Firebase Hosting's preview channels allow you to test and share changes to your site before deploying them to your live site, facilitating easier collaboration and testing.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE074",
+    "question": "Which of these is NOT a valid Firebase A/B Testing metric?",
+    "answers": [
+      "User engagement",
+      "App stability",
+      "Revenue",
+      "User sentiment"
+    ],
+    "correct": "User sentiment",
+    "explanation": "Firebase A/B Testing allows you to measure user engagement, app stability, and revenue, among other metrics. However, it does not directly measure user sentiment, which would typically require additional user feedback mechanisms.",
+    "category": "Analytics",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE075",
+    "question": "What is the purpose of Firebase Security Rules' .validate keyword?",
+    "answers": [
+      "Validate data structure and content",
+      "Authenticate users",
+      "Encrypt data",
+      "Manage database indexes"
+    ],
+    "correct": "Validate data structure and content",
+    "explanation": "The .validate keyword in Firebase Security Rules is used to validate the structure and content of data being written to the database, ensuring data integrity and consistency.",
+    "category": "Security",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE076",
+    "question": "Which of these is true about Firebase Cloud Functions cold starts?",
+    "answers": [
+      "They only occur once per deployment",
+      "They can increase response time",
+      "They improve function performance",
+      "They are unrelated to inactivity periods"
+    ],
+    "correct": "They can increase response time",
+    "explanation": "Firebase Cloud Functions cold starts can increase response time. They occur when a function is invoked after a period of inactivity, requiring the function's execution environment to be set up.",
+    "category": "Services",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE077",
+    "question": "What is the purpose of Firebase Test Lab's Robo test?",
+    "answers": [
+      "Automatically explore and test your app",
+      "Perform security vulnerability scans",
+      "Optimize app performance",
+      "Generate synthetic user data"
+    ],
+    "correct": "Automatically explore and test your app",
+    "explanation": "Firebase Test Lab's Robo test automatically explores and tests your app's UI by simulating user actions, helping to identify crashes and other issues without requiring you to write test scripts.",
+    "category": "Development",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE078",
+    "question": "Which of these is NOT a supported data type in Cloud Firestore?",
+    "answers": [
+      "Map",
+      "Array",
+      "Timestamp",
+      "Function"
+    ],
+    "correct": "Function",
+    "explanation": "Cloud Firestore supports various data types including Map, Array, and Timestamp. However, it does not support storing functions as a data type.",
+    "category": "Database",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "FIREBASE079",
+    "question": "What is the maximum number of conditions you can use in a Firebase Remote Config parameter?",
+    "answers": [
+      "5",
+      "10",
+      "50",
+      "100"
+    ],
+    "correct": "50",
+    "explanation": "In Firebase Remote Config, you can define up to 50 conditions for a single parameter. This allows for fine-grained control over how your app behaves for different user segments.",
+    "category": "Development",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "FIREBASE080",
+    "question": "Which Firebase service allows you to monitor your app's stability and performance issues?",
+    "answers": [
+      "Crashlytics",
+      "Test Lab",
+      "Performance Monitoring",
+      "Both Crashlytics and Performance Monitoring"
+    ],
+    "correct": "Both Crashlytics and Performance Monitoring",
+    "explanation": "Both Firebase Crashlytics and Performance Monitoring help you monitor your app's stability and performance. Crashlytics focuses on crash reporting, while Performance Monitoring provides insights into app performance metrics.",
+    "category": "Development",
+    "difficulty": "Medium"
+  }
+]
