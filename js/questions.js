@@ -2,7 +2,8 @@ const allQuestions = {
     JavaScript: null,
     React: null,
     Firebase: null,
-    Jest: null
+    Jest: null,
+    RESTapi: null
 };
 
 async function loadQuestionLibrary(libraryName) {
