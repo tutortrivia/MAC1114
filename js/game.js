@@ -118,15 +118,19 @@ function displayQuestion() {
 }
 
 function checkAnswer(selectedAnswer, correctAnswer) {
+    console.log('checkAnswer called', selectedAnswer, correctAnswer);
     isTransitioning = true;
     const buttons = answersElement.getElementsByTagName('button');
+    console.log('Buttons found:', buttons.length);
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
         if (buttons[i].textContent === correctAnswer) {
+            console.log('Correct button found, adding green class');
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-green-500');
         } else if (buttons[i].textContent === selectedAnswer) {
+            console.log('Incorrect button found, adding red class');
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-red-500');
         }
