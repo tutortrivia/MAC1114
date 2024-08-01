@@ -99,7 +99,19 @@ function displayQuestion() {
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
         button.innerHTML = answer;
-        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
+        // Updated button classes for larger size
+        button.classList.add(
+            'bg-blue-500',
+            'hover:bg-blue-600',
+            'text-white',
+            'font-bold',
+            'py-4',  // Increased vertical padding
+            'px-6',  // Increased horizontal padding
+            'rounded',
+            'w-full',
+            'mb-4',  // Added margin bottom for spacing between buttons
+            'text-lg'  // Increased text size
+        );
         button.addEventListener('click', () => {
             if (!isTransitioning) {
                 checkAnswer(answer, question.correct);
@@ -116,7 +128,6 @@ function displayQuestion() {
         console.log('Question and answers typeset complete');
     });
 }
-
 function checkAnswer(selectedAnswer, correctAnswer) {
     console.log('checkAnswer called', selectedAnswer, correctAnswer);
     isTransitioning = true;
