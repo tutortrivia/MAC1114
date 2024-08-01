@@ -309,5 +309,15 @@ finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
 
-// Initialize the game
-showStartMenu();
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingMessage = document.getElementById('loading-message');
+
+    // Hide loading message when MathJax is ready
+    MathJax.startup.promise.then(() => {
+        loadingMessage.style.display = 'none';
+        console.log('MathJax loaded, loading message hidden');
+    });
+
+    // Your existing initialization code goes here
+    showStartMenu();
+});
