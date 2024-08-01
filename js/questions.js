@@ -1,5 +1,7 @@
 const allQuestions = {
-    UnitCircle: null,
+    UnitCircleBeginner: null,
+    UnitCircleIntermediate: null,
+    UnitCircleHard: null,
     Equations: null
 };
 
