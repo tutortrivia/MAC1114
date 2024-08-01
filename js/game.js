@@ -264,12 +264,24 @@ function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
 }
 
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'none';
+}
+
 // Event listeners
 startButton.addEventListener('click', startGame);
 volumeToggle.addEventListener('click', toggleVolume);
 finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+document.addEventListener('DOMContentLoaded', () => {
+    showStartMenu();
+    // Wait for MathJax to be ready
+    MathJax.startup.promise.then(() => {
+        hideLoadingScreen();
+    });
+});
 
 // Initialize the game
-showStartMenu();
+// showStartMenu();
