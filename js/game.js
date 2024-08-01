@@ -99,7 +99,7 @@ function displayQuestion() {
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
         button.innerHTML = answer;
-        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
+        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full', 'mb-2');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
                 checkAnswer(answer, question.correct);
@@ -123,10 +123,10 @@ function checkAnswer(selectedAnswer, correctAnswer) {
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        if (buttons[i].textContent === correctAnswer) {
+        if (buttons[i].innerHTML === correctAnswer) {
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-green-500');
-        } else if (buttons[i].textContent === selectedAnswer) {
+        } else if (buttons[i].innerHTML === selectedAnswer) {
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-red-500');
         }
@@ -231,23 +231,16 @@ function endGame() {
 }
 
 function displayReviewQuestions() {
-    reviewQuestionsElement.innerHTML = ''; // Clear previous content
-    answeredQuestions.forEach((question, index) => {
-        const questionReview = document.createElement('div');
-        questionReview.classList.add('mb-4', 'p-4', 'border', 'rounded');
-        questionReview.innerHTML = `
+    const reviewQuestionsHTML = answeredQuestions.map((question, index) => `
+        <div class="mb-4 p-4 border rounded ${question.isCorrect ? 'bg-green-100' : 'bg-red-100'}">
             <p class="font-semibold">${index + 1}. ${question.question}</p>
             <p>Your answer: ${question.userAnswer}</p>
             <p>Correct answer: ${question.correct}</p>
             <p>Explanation: ${question.explanation || 'Not provided'}</p>
-        `;
-        if (question.isCorrect) {
-            questionReview.classList.add('bg-green-100');
-        } else {
-            questionReview.classList.add('bg-red-100');
-        }
-        reviewQuestionsElement.appendChild(questionReview);
-    });
+        </div>
+    `).join('');
+
+    reviewQuestionsElement.innerHTML += reviewQuestionsHTML;
 
     // Typeset the review questions
     MathJax.typesetPromise([reviewQuestionsElement]).then(() => {
