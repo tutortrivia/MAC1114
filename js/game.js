@@ -47,6 +47,8 @@ let resourcesLoaded = {
     questions: false
 };
 
+let initializationTimer = null;
+
 function initializeGame() {
     console.log('Initializing game...');
     showLoadingScreen();
@@ -78,6 +80,9 @@ function initializeGame() {
             console.error('Error loading questions:', error);
             alert('Failed to load questions. Please refresh the page and try again.');
         });
+
+    // Start polling to check if all resources are loaded
+    initializationTimer = setInterval(checkAllResourcesLoaded, 500);
 }
 
 function onDOMLoaded() {
@@ -85,19 +90,16 @@ function onDOMLoaded() {
     resourcesLoaded.dom = true;
     populateLibrarySelect();
     updateHeaderImage();
-    checkAllResourcesLoaded();
 }
 
 function onMathJaxLoaded() {
     console.log('MathJax loaded');
     resourcesLoaded.mathJax = true;
-    checkAllResourcesLoaded();
 }
 
 function onQuestionsLoaded() {
     console.log('Questions loaded');
     resourcesLoaded.questions = true;
-    checkAllResourcesLoaded();
 }
 
 async function loadQuestionLibraries() {
@@ -107,8 +109,10 @@ async function loadQuestionLibraries() {
 }
 
 function checkAllResourcesLoaded() {
+    console.log('Checking resources:', resourcesLoaded);
     if (resourcesLoaded.dom && resourcesLoaded.mathJax && resourcesLoaded.questions) {
         console.log('All resources loaded, starting game');
+        clearInterval(initializationTimer);
         hideLoadingScreen();
         showStartMenu();
     } else {
