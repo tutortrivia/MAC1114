@@ -37,7 +37,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'UnitCircle';
+let currentLibrary = 'JavaScript';
 let currentQuestions = [];
 let answeredQuestions = [];
 
@@ -88,7 +88,7 @@ function displayQuestion() {
     }
 
     const question = currentQuestions[currentQuestionIndex];
-    questionElement.innerHTML = question.question;
+    questionElement.textContent = question.question;
     categoryElement.textContent = `Category: ${question.category || 'N/A'}`;
     difficultyElement.textContent = `Difficulty: ${question.difficulty || 'N/A'}`;
     answersElement.innerHTML = '';
@@ -98,23 +98,8 @@ function displayQuestion() {
 
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
-        button.innerHTML = `<span class="math-tex">${answer}</span>`;
-        button.classList.add(
-            'bg-blue-500',
-            'hover:bg-blue-600',
-            'text-white',
-            'font-bold',
-            'py-2',
-            'px-2',
-            'rounded-lg',
-            'w-full',
-            'mb-2',
-            'text-xl',
-            'min-h-[80px]',
-            'flex',
-            'items-center',
-            'justify-center'
-        );
+        button.textContent = answer;
+        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
                 checkAnswer(answer, question.correct);
@@ -125,68 +110,54 @@ function displayQuestion() {
 
     resultElement.textContent = 'Good Luck!';
     resultElement.classList.add('text-blue-500');
-
-    MathJax.typesetPromise([questionElement, answersElement]).then(() => {
-        console.log('Question and answers typeset complete');
-    });
 }
 
 function checkAnswer(selectedAnswer, correctAnswer) {
-    console.log('checkAnswer called', selectedAnswer, correctAnswer);
     isTransitioning = true;
     const buttons = answersElement.getElementsByTagName('button');
-    console.log('Buttons found:', buttons.length);
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
+        if (buttons[i].textContent === correctAnswer) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-green-500');
+        } else if (buttons[i].textContent === selectedAnswer) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-red-500');
+        }
     }
 
+    const isCorrect = selectedAnswer === correctAnswer;
+    if (isCorrect) {
+        score++;
+        resultElement.textContent = 'Correct!';
+        resultElement.classList.remove('text-blue-500');
+        resultElement.classList.add('text-green-500');
+        if (!isMuted) correctSound.play();
+    } else {
+        incorrectAnswers++;
+        resultElement.textContent = 'Incorrect!';
+        resultElement.classList.remove('text-blue-500');
+        resultElement.classList.add('text-red-500');
+        if (!isMuted) incorrectSound.play();
+    }
+
+    answeredQuestions.push({
+        ...currentQuestions[currentQuestionIndex],
+        userAnswer: selectedAnswer,
+        isCorrect: isCorrect
+    });
+
+    updateScore();
+
     setTimeout(() => {
-        for (let i = 0; i < buttons.length; i++) {
-            const buttonContent = buttons[i].innerHTML;
-            if (buttonContent.includes(correctAnswer)) {
-                console.log('Correct button found, adding green class');
-                buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
-                buttons[i].classList.add('bg-green-500');
-            } else if (buttonContent.includes(selectedAnswer)) {
-                console.log('Incorrect button found, adding red class');
-                buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
-                buttons[i].classList.add('bg-red-500');
-            }
-        }
-
-        const isCorrect = selectedAnswer === correctAnswer;
-        if (isCorrect) {
-            score++;
-            resultElement.textContent = 'Correct!';
-            resultElement.classList.remove('text-blue-500');
-            resultElement.classList.add('text-green-500');
-            if (!isMuted) correctSound.play();
-        } else {
-            incorrectAnswers++;
-            resultElement.textContent = 'Incorrect!';
-            resultElement.classList.remove('text-blue-500');
-            resultElement.classList.add('text-red-500');
-            if (!isMuted) incorrectSound.play();
-        }
-
-        answeredQuestions.push({
-            ...currentQuestions[currentQuestionIndex],
-            userAnswer: selectedAnswer,
-            isCorrect: isCorrect
-        });
-
-        updateScore();
-
-        setTimeout(() => {
-            resultElement.textContent = 'Good Luck!';
-            resultElement.classList.remove('text-green-500', 'text-red-500');
-            resultElement.classList.add('text-blue-500');
-            currentQuestionIndex++;
-            displayQuestion();
-            isTransitioning = false;
-        }, 1500);
-    }, 100);
+        resultElement.textContent = 'Good Luck!';
+        resultElement.classList.remove('text-green-500', 'text-red-500');
+        resultElement.classList.add('text-blue-500');
+        currentQuestionIndex++;
+        displayQuestion();
+        isTransitioning = false;
+    }, 1500);
 }
 
 function updateScore() {
@@ -255,7 +226,6 @@ function endGame() {
 }
 
 function displayReviewQuestions() {
-    reviewQuestionsElement.innerHTML = '';
     answeredQuestions.forEach((question, index) => {
         const questionReview = document.createElement('div');
         questionReview.classList.add('mb-4', 'p-4', 'border', 'rounded');
@@ -271,10 +241,6 @@ function displayReviewQuestions() {
             questionReview.classList.add('bg-red-100');
         }
         reviewQuestionsElement.appendChild(questionReview);
-    });
-
-    MathJax.typesetPromise([reviewQuestionsElement]).then(() => {
-        console.log('Review questions typeset complete');
     });
 }
 
@@ -305,36 +271,5 @@ finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
 
-document.addEventListener('DOMContentLoaded', function() {
-    const loadingMessage = document.getElementById('loading-message');
-
-    // Function to hide loading message and initialize the game
-    function initializeGame() {
-        loadingMessage.style.display = 'none';
-        console.log('Resources loaded, loading message hidden');
-        showStartMenu();
-    }
-
-    // Wait for MathJax to be ready
-    MathJax.startup.promise.then(() => {
-        console.log('MathJax loaded');
-        
-        // Check if audio files are loaded
-        const audioFiles = [backgroundMusic, correctSound, incorrectSound, personalBestSound];
-        const audioPromises = audioFiles.map(audio => {
-            return new Promise((resolve) => {
-                if (audio.readyState >= 2) {  // HAVE_CURRENT_DATA or higher
-                    resolve();
-                } else {
-                    audio.addEventListener('canplay', resolve);
-                }
-            });
-        });
-
-        // Wait for both MathJax and audio files to be ready
-        Promise.all(audioPromises).then(() => {
-            console.log('Audio files loaded');
-            initializeGame();
-        });
-    });
-});
+// Initialize the game
+showStartMenu();
