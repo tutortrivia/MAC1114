@@ -104,13 +104,13 @@ function displayQuestion() {
             'hover:bg-blue-600',
             'text-white',
             'font-bold',
-            'py-2',  // Significantly increased vertical padding
-            'px-2',  // Significantly increased horizontal padding
-            'rounded-lg',  // Slightly larger border radius
+            'py-2',
+            'px-2',
+            'rounded-lg',
             'w-full',
-            'mb-2',  // Increased margin between buttons
-            'text-xl',  // Significantly larger text
-            'min-h-[60px]',  // Minimum height to ensure consistent sizing
+            'mb-2',
+            'text-xl',
+            'min-h-[60px]',
             'flex',
             'items-center',
             'justify-center'
@@ -126,7 +126,6 @@ function displayQuestion() {
     resultElement.textContent = 'Good Luck!';
     resultElement.classList.add('text-blue-500');
 
-    // Typeset the new content
     MathJax.typesetPromise([questionElement, answersElement]).then(() => {
         console.log('Question and answers typeset complete');
     });
@@ -138,12 +137,10 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     const buttons = answersElement.getElementsByTagName('button');
     console.log('Buttons found:', buttons.length);
 
-    // Disable all buttons immediately
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
     }
 
-    // Apply color changes after a short delay to ensure MathJax has finished rendering
     setTimeout(() => {
         for (let i = 0; i < buttons.length; i++) {
             const buttonContent = buttons[i].innerHTML;
@@ -158,7 +155,6 @@ function checkAnswer(selectedAnswer, correctAnswer) {
             }
         }
 
-        // Rest of the function remains the same
         const isCorrect = selectedAnswer === correctAnswer;
         if (isCorrect) {
             score++;
@@ -190,7 +186,7 @@ function checkAnswer(selectedAnswer, correctAnswer) {
             displayQuestion();
             isTransitioning = false;
         }, 1500);
-    }, 100); // Short delay to ensure MathJax has finished rendering
+    }, 100);
 }
 
 function updateScore() {
@@ -259,7 +255,7 @@ function endGame() {
 }
 
 function displayReviewQuestions() {
-    reviewQuestionsElement.innerHTML = ''; // Clear previous content
+    reviewQuestionsElement.innerHTML = '';
     answeredQuestions.forEach((question, index) => {
         const questionReview = document.createElement('div');
         questionReview.classList.add('mb-4', 'p-4', 'border', 'rounded');
@@ -277,7 +273,6 @@ function displayReviewQuestions() {
         reviewQuestionsElement.appendChild(questionReview);
     });
 
-    // Typeset the review questions
     MathJax.typesetPromise([reviewQuestionsElement]).then(() => {
         console.log('Review questions typeset complete');
     });
@@ -313,12 +308,33 @@ document.getElementById('get-tutoring-button').addEventListener('click', getTuto
 document.addEventListener('DOMContentLoaded', function() {
     const loadingMessage = document.getElementById('loading-message');
 
-    // Hide loading message when MathJax is ready
-    MathJax.startup.promise.then(() => {
+    // Function to hide loading message and initialize the game
+    function initializeGame() {
         loadingMessage.style.display = 'none';
-        console.log('MathJax loaded, loading message hidden');
-    });
+        console.log('Resources loaded, loading message hidden');
+        showStartMenu();
+    }
 
-    // Your existing initialization code goes here
-    showStartMenu();
+    // Wait for MathJax to be ready
+    MathJax.startup.promise.then(() => {
+        console.log('MathJax loaded');
+        
+        // Check if audio files are loaded
+        const audioFiles = [backgroundMusic, correctSound, incorrectSound, personalBestSound];
+        const audioPromises = audioFiles.map(audio => {
+            return new Promise((resolve) => {
+                if (audio.readyState >= 2) {  // HAVE_CURRENT_DATA or higher
+                    resolve();
+                } else {
+                    audio.addEventListener('canplay', resolve);
+                }
+            });
+        });
+
+        // Wait for both MathJax and audio files to be ready
+        Promise.all(audioPromises).then(() => {
+            console.log('Audio files loaded');
+            initializeGame();
+        });
+    });
 });
