@@ -138,26 +138,27 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     const buttons = answersElement.getElementsByTagName('button');
     console.log('Buttons found:', buttons.length);
 
-    // First, disable all buttons
+    // Disable all buttons immediately
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
     }
 
-    // Then, apply color changes after a short delay
+    // Apply color changes after a short delay to ensure MathJax has finished rendering
     setTimeout(() => {
         for (let i = 0; i < buttons.length; i++) {
-            const answerContent = buttons[i].querySelector('.math-tex').textContent;
-            if (answerContent === correctAnswer) {
+            const buttonContent = buttons[i].innerHTML;
+            if (buttonContent.includes(correctAnswer)) {
                 console.log('Correct button found, adding green class');
                 buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
                 buttons[i].classList.add('bg-green-500');
-            } else if (answerContent === selectedAnswer) {
+            } else if (buttonContent.includes(selectedAnswer)) {
                 console.log('Incorrect button found, adding red class');
                 buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
                 buttons[i].classList.add('bg-red-500');
             }
         }
 
+        // Rest of the function remains the same
         const isCorrect = selectedAnswer === correctAnswer;
         if (isCorrect) {
             score++;
