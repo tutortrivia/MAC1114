@@ -41,27 +41,96 @@ let currentLibrary = 'UnitCircle';
 let currentQuestions = [];
 let answeredQuestions = [];
 
+let resourcesLoaded = {
+    dom: false,
+    mathJax: false,
+    questions: false
+};
+
 function initializeGame() {
     console.log('Initializing game...');
     showLoadingScreen();
-    populateLibrarySelect();
-    updateHeaderImage();
+    
+    // Check if DOM is already loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', onDOMLoaded);
+    } else {
+        onDOMLoaded();
+    }
 
-    // Ensure MathJax is loaded and ready
+    // Initialize MathJax
     if (window.MathJax) {
-        MathJax.startup.promise.then(() => {
-            console.log('MathJax is ready');
-            hideLoadingScreen();
-            showStartMenu();
-        }).catch(error => {
-            console.error('MathJax initialization error:', error);
-            hideLoadingScreen();
-            showStartMenu();
-        });
+        MathJax.startup.promise
+            .then(onMathJaxLoaded)
+            .catch(error => {
+                console.error('MathJax initialization error:', error);
+                onMathJaxLoaded(); // Proceed anyway
+            });
     } else {
         console.warn('MathJax not found, proceeding without it');
+        onMathJaxLoaded();
+    }
+
+    // Load questions
+    loadQuestionLibraries()
+        .then(onQuestionsLoaded)
+        .catch(error => {
+            console.error('Error loading questions:', error);
+            alert('Failed to load questions. Please refresh the page and try again.');
+        });
+}
+
+function onDOMLoaded() {
+    console.log('DOM loaded');
+    resourcesLoaded.dom = true;
+    populateLibrarySelect();
+    updateHeaderImage();
+    checkAllResourcesLoaded();
+}
+
+function onMathJaxLoaded() {
+    console.log('MathJax loaded');
+    resourcesLoaded.mathJax = true;
+    checkAllResourcesLoaded();
+}
+
+function onQuestionsLoaded() {
+    console.log('Questions loaded');
+    resourcesLoaded.questions = true;
+    checkAllResourcesLoaded();
+}
+
+async function loadQuestionLibraries() {
+    const libraries = getAvailableLibraries(allQuestions);
+    const loadPromises = libraries.map(lib => loadQuestionLibrary(lib));
+    await Promise.all(loadPromises);
+}
+
+function checkAllResourcesLoaded() {
+    if (resourcesLoaded.dom && resourcesLoaded.mathJax && resourcesLoaded.questions) {
+        console.log('All resources loaded, starting game');
         hideLoadingScreen();
         showStartMenu();
+    } else {
+        console.log('Still waiting for resources to load...');
+    }
+}
+
+function showLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+        loadingScreen.style.display = 'flex';
+    } else {
+        console.error('Loading screen element not found');
+    }
+}
+
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+        loadingScreen.style.display = 'none';
+    } else {
+        console.error('Loading screen element not found');
     }
 }
 
@@ -273,10 +342,9 @@ function displayReviewQuestions() {
 }
 
 function showStartMenu() {
+    console.log('Showing start menu');
     reviewContainer.classList.add('hidden');
     startMenu.classList.remove('hidden');
-    populateLibrarySelect();
-    updateHeaderImage();
 }
 
 function toggleVolume() {
@@ -292,20 +360,12 @@ function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
 }
 
-function showLoadingScreen() {
-    const loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.display = 'flex';
-}
-
-function hideLoadingScreen() {
-    const loadingScreen = document.getElementById('loading-screen');
-    loadingScreen.style.display = 'none';
-}
-
 // Event listeners
 startButton.addEventListener('click', startGame);
 volumeToggle.addEventListener('click', toggleVolume);
 finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
-document.addEventListener('DOMContentLoaded', initializeGame);
+
+// Initialize the game when the window is fully loaded
+window.addEventListener('load', initializeGame);
