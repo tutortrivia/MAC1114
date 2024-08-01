@@ -98,21 +98,22 @@ function displayQuestion() {
 
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
-        const answerContent = document.createElement('span');
-        answerContent.innerHTML = answer;
-
-        button.appendChild(answerContent);
+        button.innerHTML = `<span class="math-tex">${answer}</span>`;
         button.classList.add(
             'bg-blue-500',
             'hover:bg-blue-600',
             'text-white',
             'font-bold',
-            'py-4',
-            'px-6',
-            'rounded',
+            'py-8',  // Significantly increased vertical padding
+            'px-8',  // Significantly increased horizontal padding
+            'rounded-lg',  // Slightly larger border radius
             'w-full',
-            'mb-4',
-            'text-lg'
+            'mb-6',  // Increased margin between buttons
+            'text-2xl',  // Significantly larger text
+            'min-h-[120px]',  // Minimum height to ensure consistent sizing
+            'flex',
+            'items-center',
+            'justify-center'
         );
         button.addEventListener('click', () => {
             if (!isTransitioning) {
@@ -136,51 +137,59 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     isTransitioning = true;
     const buttons = answersElement.getElementsByTagName('button');
     console.log('Buttons found:', buttons.length);
+
+    // First, disable all buttons
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        const answerContent = buttons[i].querySelector('span').innerHTML;
-        if (answerContent === correctAnswer) {
-            console.log('Correct button found, adding green class');
-            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
-            buttons[i].classList.add('bg-green-500');
-        } else if (answerContent === selectedAnswer) {
-            console.log('Incorrect button found, adding red class');
-            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
-            buttons[i].classList.add('bg-red-500');
-        }
     }
 
-    const isCorrect = selectedAnswer === correctAnswer;
-    if (isCorrect) {
-        score++;
-        resultElement.textContent = 'Correct!';
-        resultElement.classList.remove('text-blue-500');
-        resultElement.classList.add('text-green-500');
-        if (!isMuted) correctSound.play();
-    } else {
-        incorrectAnswers++;
-        resultElement.textContent = 'Incorrect!';
-        resultElement.classList.remove('text-blue-500');
-        resultElement.classList.add('text-red-500');
-        if (!isMuted) incorrectSound.play();
-    }
-
-    answeredQuestions.push({
-        ...currentQuestions[currentQuestionIndex],
-        userAnswer: selectedAnswer,
-        isCorrect: isCorrect
-    });
-
-    updateScore();
-
+    // Then, apply color changes after a short delay
     setTimeout(() => {
-        resultElement.textContent = 'Good Luck!';
-        resultElement.classList.remove('text-green-500', 'text-red-500');
-        resultElement.classList.add('text-blue-500');
-        currentQuestionIndex++;
-        displayQuestion();
-        isTransitioning = false;
-    }, 1500);
+        for (let i = 0; i < buttons.length; i++) {
+            const answerContent = buttons[i].querySelector('.math-tex').textContent;
+            if (answerContent === correctAnswer) {
+                console.log('Correct button found, adding green class');
+                buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                buttons[i].classList.add('bg-green-500');
+            } else if (answerContent === selectedAnswer) {
+                console.log('Incorrect button found, adding red class');
+                buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                buttons[i].classList.add('bg-red-500');
+            }
+        }
+
+        const isCorrect = selectedAnswer === correctAnswer;
+        if (isCorrect) {
+            score++;
+            resultElement.textContent = 'Correct!';
+            resultElement.classList.remove('text-blue-500');
+            resultElement.classList.add('text-green-500');
+            if (!isMuted) correctSound.play();
+        } else {
+            incorrectAnswers++;
+            resultElement.textContent = 'Incorrect!';
+            resultElement.classList.remove('text-blue-500');
+            resultElement.classList.add('text-red-500');
+            if (!isMuted) incorrectSound.play();
+        }
+
+        answeredQuestions.push({
+            ...currentQuestions[currentQuestionIndex],
+            userAnswer: selectedAnswer,
+            isCorrect: isCorrect
+        });
+
+        updateScore();
+
+        setTimeout(() => {
+            resultElement.textContent = 'Good Luck!';
+            resultElement.classList.remove('text-green-500', 'text-red-500');
+            resultElement.classList.add('text-blue-500');
+            currentQuestionIndex++;
+            displayQuestion();
+            isTransitioning = false;
+        }, 1500);
+    }, 100); // Short delay to ensure MathJax has finished rendering
 }
 
 function updateScore() {
