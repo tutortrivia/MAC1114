@@ -37,7 +37,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'UnitCircle';
+let currentLibrary = 'Equations';
 let currentQuestions = [];
 let answeredQuestions = [];
 
