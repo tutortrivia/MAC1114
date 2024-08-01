@@ -1,10 +1,5 @@
 const allQuestions = {
-    JavaScript: null,
-    React: null,
-    Firebase: null,
-    Jest: null,
-    RESTapi: null,
-    GoogleCloud: null
+    UnitCircle: null
 };
 
 async function loadQuestionLibrary(libraryName) {
