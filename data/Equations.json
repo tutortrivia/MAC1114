@@ -1,0 +1,394 @@
+[
+  {
+    "questionId": "EQ001",
+    "question": "What is the sum formula for sine?",
+    "answers": [
+      "\\(\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B\\)",
+      "\\(\\sin(A + B) = \\sin A \\sin B - \\cos A \\cos B\\)",
+      "\\(\\sin(A + B) = \\cos A \\cos B - \\sin A \\sin B\\)",
+      "\\(\\sin(A + B) = \\cos A \\sin B - \\sin A \\cos B\\)"
+    ],
+    "correct": "\\(\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B\\)",
+    "explanation": "The sum formula for sine is \\(\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B\\).",
+    "category": "Sum and Difference Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ002",
+    "question": "What is the difference formula for cosine?",
+    "answers": [
+      "\\(\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B\\)",
+      "\\(\\cos(A - B) = \\cos A \\cos B - \\sin A \\sin B\\)",
+      "\\(\\cos(A - B) = \\sin A \\cos B - \\cos A \\sin B\\)",
+      "\\(\\cos(A - B) = \\sin A \\sin B - \\cos A \\cos B\\)"
+    ],
+    "correct": "\\(\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B\\)",
+    "explanation": "The difference formula for cosine is \\(\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B\\).",
+    "category": "Sum and Difference Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ003",
+    "question": "What is the Pythagorean identity for sine and cosine?",
+    "answers": [
+      "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+      "\\(\\tan^2 \\theta + 1 = \\sec^2 \\theta\\)",
+      "\\(\\cot^2 \\theta + 1 = \\csc^2 \\theta\\)",
+      "\\(\\sin \\theta + \\cos \\theta = 1\\)"
+    ],
+    "correct": "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+    "explanation": "The fundamental Pythagorean identity is \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\).",
+    "category": "Pythagorean Identities",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "EQ004",
+    "question": "Which of these is an even function?",
+    "answers": [
+      "\\(\\sin \\theta\\)",
+      "\\(\\cos \\theta\\)",
+      "\\(\\tan \\theta\\)",
+      "\\(\\csc \\theta\\)"
+    ],
+    "correct": "\\(\\cos \\theta\\)",
+    "explanation": "Cosine is an even function, meaning \\(\\cos(-\\theta) = \\cos(\\theta)\\).",
+    "category": "Even and Odd Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ005",
+    "question": "What is the double-angle formula for cosine?",
+    "answers": [
+      "\\(\\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta\\)",
+      "\\(\\cos 2\\theta = 2\\cos^2 \\theta - 1\\)",
+      "\\(\\cos 2\\theta = 1 - 2\\sin^2 \\theta\\)",
+      "All of these"
+    ],
+    "correct": "All of these",
+    "explanation": "All of these are valid forms of the double-angle formula for cosine.",
+    "category": "Double-Angle Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ006",
+    "question": "What is the power-reducing formula for \\(\\cos^2 \\theta\\)?",
+    "answers": [
+      "\\(\\cos^2 \\theta = \\frac{1 + \\cos 2\\theta}{2}\\)",
+      "\\(\\cos^2 \\theta = \\frac{1 - \\cos 2\\theta}{2}\\)",
+      "\\(\\cos^2 \\theta = \\frac{\\cos 2\\theta}{2}\\)",
+      "\\(\\cos^2 \\theta = \\frac{1 + \\sin 2\\theta}{2}\\)"
+    ],
+    "correct": "\\(\\cos^2 \\theta = \\frac{1 + \\cos 2\\theta}{2}\\)",
+    "explanation": "The power-reducing formula for \\(\\cos^2 \\theta\\) is \\(\\cos^2 \\theta = \\frac{1 + \\cos 2\\theta}{2}\\).",
+    "category": "Power Reducing Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ007",
+    "question": "What is the half-angle formula for sine?",
+    "answers": [
+      "\\(\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{1 - \\cos \\theta}{2}}\\)",
+      "\\(\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{1 + \\cos \\theta}{2}}\\)",
+      "\\(\\sin \\frac{\\theta}{2} = \\frac{1 - \\cos \\theta}{\\sin \\theta}\\)",
+      "\\(\\sin \\frac{\\theta}{2} = \\frac{1 + \\cos \\theta}{\\sin \\theta}\\)"
+    ],
+    "correct": "\\(\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{1 - \\cos \\theta}{2}}\\)",
+    "explanation": "The half-angle formula for sine is \\(\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{1 - \\cos \\theta}{2}}\\).",
+    "category": "Half-Angle Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ008",
+    "question": "What is the product-to-sum formula for \\(\\sin A \\cos B\\)?",
+    "answers": [
+      "\\(\\sin A \\cos B = \\frac{1}{2}[\\sin(A+B) + \\sin(A-B)]\\)",
+      "\\(\\sin A \\cos B = \\frac{1}{2}[\\sin(A+B) - \\sin(A-B)]\\)",
+      "\\(\\sin A \\cos B = \\frac{1}{2}[\\cos(A+B) + \\cos(A-B)]\\)",
+      "\\(\\sin A \\cos B = \\frac{1}{2}[\\cos(A-B) - \\cos(A+B)]\\)"
+    ],
+    "correct": "\\(\\sin A \\cos B = \\frac{1}{2}[\\sin(A+B) + \\sin(A-B)]\\)",
+    "explanation": "The product-to-sum formula for \\(\\sin A \\cos B\\) is \\(\\sin A \\cos B = \\frac{1}{2}[\\sin(A+B) + \\sin(A-B)]\\).",
+    "category": "Product-to-Sum Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ009",
+    "question": "What is the Law of Sines?",
+    "answers": [
+      "\\(\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\)",
+      "\\(a^2 = b^2 + c^2 - 2bc \\cos A\\)",
+      "\\(\\frac{\\sin A}{a} = \\frac{\\sin B}{b} = \\frac{\\sin C}{c}\\)",
+      "\\(\\cos A + \\cos B + \\cos C = -\\frac{1}{2}\\)"
+    ],
+    "correct": "\\(\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\)",
+    "explanation": "The Law of Sines states that \\(\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\) for any triangle.",
+    "category": "Laws of Sine & Cosine",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ010",
+    "question": "Which of these is an odd function?",
+    "answers": [
+      "\\(\\cos \\theta\\)",
+      "\\(\\sin \\theta\\)",
+      "\\(\\sec \\theta\\)",
+      "\\(\\cot \\theta\\)"
+    ],
+    "correct": "\\(\\sin \\theta\\)",
+    "explanation": "Sine is an odd function, meaning \\(\\sin(-\\theta) = -\\sin(\\theta)\\).",
+    "category": "Even and Odd Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ011",
+    "question": "What is the difference formula for sine?",
+    "answers": [
+      "\\(\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B\\)",
+      "\\(\\sin(A - B) = \\sin A \\cos B + \\cos A \\sin B\\)",
+      "\\(\\sin(A - B) = \\cos A \\cos B - \\sin A \\sin B\\)",
+      "\\(\\sin(A - B) = \\cos A \\sin B - \\sin A \\cos B\\)"
+    ],
+    "correct": "\\(\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B\\)",
+    "explanation": "The difference formula for sine is \\(\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B\\).",
+    "category": "Sum and Difference Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ012",
+    "question": "What is the Pythagorean identity for tangent?",
+    "answers": [
+      "\\(\\tan^2 \\theta + 1 = \\sec^2 \\theta\\)",
+      "\\(\\cot^2 \\theta + 1 = \\csc^2 \\theta\\)",
+      "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+      "\\(\\tan \\theta + \\cot \\theta = 1\\)"
+    ],
+    "correct": "\\(\\tan^2 \\theta + 1 = \\sec^2 \\theta\\)",
+    "explanation": "The Pythagorean identity for tangent is \\(\\tan^2 \\theta + 1 = \\sec^2 \\theta\\).",
+    "category": "Pythagorean Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ013",
+    "question": "Which of these is an odd function?",
+    "answers": [
+      "\\(\\cos \\theta\\)",
+      "\\(\\sec \\theta\\)",
+      "\\(\\tan \\theta\\)",
+      "\\(\\csc \\theta\\)"
+    ],
+    "correct": "\\(\\tan \\theta\\)",
+    "explanation": "Tangent is an odd function, meaning \\(\\tan(-\\theta) = -\\tan(\\theta)\\).",
+    "category": "Even and Odd Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ014",
+    "question": "What is the double-angle formula for sine?",
+    "answers": [
+      "\\(\\sin 2\\theta = 2\\sin \\theta \\cos \\theta\\)",
+      "\\(\\sin 2\\theta = 2\\sin^2 \\theta - 1\\)",
+      "\\(\\sin 2\\theta = 1 - 2\\cos^2 \\theta\\)",
+      "\\(\\sin 2\\theta = \\sin^2 \\theta - \\cos^2 \\theta\\)"
+    ],
+    "correct": "\\(\\sin 2\\theta = 2\\sin \\theta \\cos \\theta\\)",
+    "explanation": "The double-angle formula for sine is \\(\\sin 2\\theta = 2\\sin \\theta \\cos \\theta\\).",
+    "category": "Double-Angle Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ015",
+    "question": "What is the power-reducing formula for \\(\\sin^2 \\theta\\)?",
+    "answers": [
+      "\\(\\sin^2 \\theta = \\frac{1 - \\cos 2\\theta}{2}\\)",
+      "\\(\\sin^2 \\theta = \\frac{1 + \\cos 2\\theta}{2}\\)",
+      "\\(\\sin^2 \\theta = \\frac{\\sin 2\\theta}{2}\\)",
+      "\\(\\sin^2 \\theta = \\frac{1 - \\sin 2\\theta}{2}\\)"
+    ],
+    "correct": "\\(\\sin^2 \\theta = \\frac{1 - \\cos 2\\theta}{2}\\)",
+    "explanation": "The power-reducing formula for \\(\\sin^2 \\theta\\) is \\(\\sin^2 \\theta = \\frac{1 - \\cos 2\\theta}{2}\\).",
+    "category": "Power Reducing Formulas",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ016",
+    "question": "What is the half-angle formula for cosine?",
+    "answers": [
+      "\\(\\cos \\frac{\\theta}{2} = \\sqrt{\\frac{1 + \\cos \\theta}{2}}\\)",
+      "\\(\\cos \\frac{\\theta}{2} = \\sqrt{\\frac{1 - \\cos \\theta}{2}}\\)",
+      "\\(\\cos \\frac{\\theta}{2} = \\frac{1 + \\cos \\theta}{\\sin \\theta}\\)",
+      "\\(\\cos \\frac{\\theta}{2} = \\frac{1 - \\cos \\theta}{\\sin \\theta}\\)"
+    ],
+    "correct": "\\(\\cos \\frac{\\theta}{2} = \\sqrt{\\frac{1 + \\cos \\theta}{2}}\\)",
+    "explanation": "The half-angle formula for cosine is \\(\\cos \\frac{\\theta}{2} = \\sqrt{\\frac{1 + \\cos \\theta}{2}}\\).",
+    "category": "Half-Angle Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ017",
+    "question": "What is the product-to-sum formula for \\(\\cos A \\cos B\\)?",
+    "answers": [
+      "\\(\\cos A \\cos B = \\frac{1}{2}[\\cos(A+B) + \\cos(A-B)]\\)",
+      "\\(\\cos A \\cos B = \\frac{1}{2}[\\cos(A+B) - \\cos(A-B)]\\)",
+      "\\(\\cos A \\cos B = \\frac{1}{2}[\\sin(A+B) + \\sin(A-B)]\\)",
+      "\\(\\cos A \\cos B = \\frac{1}{2}[\\sin(A-B) - \\sin(A+B)]\\)"
+    ],
+    "correct": "\\(\\cos A \\cos B = \\frac{1}{2}[\\cos(A+B) + \\cos(A-B)]\\)",
+    "explanation": "The product-to-sum formula for \\(\\cos A \\cos B\\) is \\(\\cos A \\cos B = \\frac{1}{2}[\\cos(A+B) + \\cos(A-B)]\\).",
+    "category": "Product-to-Sum Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ018",
+    "question": "What is the Law of Cosines?",
+    "answers": [
+      "\\(a^2 = b^2 + c^2 - 2bc \\cos A\\)",
+      "\\(\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\)",
+      "\\(a^2 + b^2 = c^2\\)",
+      "\\(\\cos A + \\cos B + \\cos C = -\\frac{1}{2}\\)"
+    ],
+    "correct": "\\(a^2 = b^2 + c^2 - 2bc \\cos A\\)",
+    "explanation": "The Law of Cosines states that \\(a^2 = b^2 + c^2 - 2bc \\cos A\\) for any triangle.",
+    "category": "Laws of Sine & Cosine",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ019",
+    "question": "Which of these is an even function?",
+    "answers": [
+      "\\(\\tan \\theta\\)",
+      "\\(\\cot \\theta\\)",
+      "\\(\\sec \\theta\\)",
+      "\\(\\csc \\theta\\)"
+    ],
+    "correct": "\\(\\sec \\theta\\)",
+    "explanation": "Secant is an even function, meaning \\(\\sec(-\\theta) = \\sec(\\theta)\\).",
+    "category": "Even and Odd Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ020",
+    "question": "What is the sum formula for tangent?",
+    "answers": [
+      "\\(\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}\\)",
+      "\\(\\tan(A + B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)",
+      "\\(\\tan(A + B) = \\tan A + \\tan B\\)",
+      "\\(\\tan(A + B) = \\frac{\\sin(A + B)}{\\cos(A + B)}\\)"
+    ],
+    "correct": "\\(\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}\\)",
+    "explanation": "The sum formula for tangent is \\(\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}\\).",
+    "category": "Sum and Difference Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ021",
+    "question": "What is the Pythagorean identity for cotangent?",
+    "answers": [
+      "\\(\\cot^2 \\theta + 1 = \\csc^2 \\theta\\)",
+      "\\(\\tan^2 \\theta + 1 = \\sec^2 \\theta\\)",
+      "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+      "\\(\\cot \\theta + \\tan \\theta = 1\\)"
+    ],
+    "correct": "\\(\\cot^2 \\theta + 1 = \\csc^2 \\theta\\)",
+    "explanation": "The Pythagorean identity for cotangent is \\(\\cot^2 \\theta + 1 = \\csc^2 \\theta\\).",
+    "category": "Pythagorean Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ022",
+    "question": "Which of these is an odd function?",
+    "answers": [
+      "\\(\\cos \\theta\\)",
+      "\\(\\sec \\theta\\)",
+      "\\(\\csc \\theta\\)",
+      "\\(\\cot \\theta\\)"
+    ],
+    "correct": "\\(\\csc \\theta\\)",
+    "explanation": "Cosecant is an odd function, meaning \\(\\csc(-\\theta) = -\\csc(\\theta)\\).",
+    "category": "Even and Odd Identities",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "EQ023",
+    "question": "What is the double-angle formula for tangent?",
+    "answers": [
+      "\\(\\tan 2\\theta = \\frac{2\\tan \\theta}{1 - \\tan^2 \\theta}\\)",
+      "\\(\\tan 2\\theta = 2\\tan \\theta\\)",
+      "\\(\\tan 2\\theta = \\frac{\\sin 2\\theta}{\\cos 2\\theta}\\)",
+      "\\(\\tan 2\\theta = \\frac{2\\sin \\theta \\cos \\theta}{\\cos^2 \\theta - \\sin^2 \\theta}\\)"
+    ],
+    "correct": "\\(\\tan 2\\theta = \\frac{2\\tan \\theta}{1 - \\tan^2 \\theta}\\)",
+    "explanation": "The double-angle formula for tangent is \\(\\tan 2\\theta = \\frac{2\\tan \\theta}{1 - \\tan^2 \\theta}\\).",
+    "category": "Double-Angle Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ024",
+    "question": "What is the power-reducing formula for \\(\\tan^2 \\theta\\)?",
+    "answers": [
+      "\\(\\tan^2 \\theta = \\frac{1 - \\cos 2\\theta}{1 + \\cos 2\\theta}\\)",
+      "\\(\\tan^2 \\theta = \\frac{\\sin 2\\theta}{\\cos 2\\theta}\\)",
+      "\\(\\tan^2 \\theta = \\frac{1 - \\cos^2 \\theta}{\\cos^2 \\theta}\\)",
+      "\\(\\tan^2 \\theta = \\frac{\\sin^2 \\theta}{1 - \\sin^2 \\theta}\\)"
+    ],
+    "correct": "\\(\\tan^2 \\theta = \\frac{1 - \\cos 2\\theta}{1 + \\cos 2\\theta}\\)",
+    "explanation": "The power-reducing formula for \\(\\tan^2 \\theta\\) is \\(\\tan^2 \\theta = \\frac{1 - \\cos 2\\theta}{1 + \\cos 2\\theta}\\).",
+    "category": "Power Reducing Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ025",
+    "question": "What is the half-angle formula for tangent?",
+    "answers": [
+      "\\(\\tan \\frac{\\theta}{2} = \\frac{\\sin \\theta}{1 + \\cos \\theta}\\)",
+      "\\(\\tan \\frac{\\theta}{2} = \\frac{1 - \\cos \\theta}{\\sin \\theta}\\)",
+      "\\(\\tan \\frac{\\theta}{2} = \\sqrt{\\frac{1 - \\cos \\theta}{1 + \\cos \\theta}}\\)",
+      "\\(\\tan \\frac{\\theta}{2} = \\frac{1 - \\cos \\theta}{1 + \\cos \\theta}\\)"
+    ],
+    "correct": "\\(\\tan \\frac{\\theta}{2} = \\frac{\\sin \\theta}{1 + \\cos \\theta}\\)",
+    "explanation": "The half-angle formula for tangent is \\(\\tan \\frac{\\theta}{2} = \\frac{\\sin \\theta}{1 + \\cos \\theta}\\).",
+    "category": "Half-Angle Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ026",
+    "question": "What is the product-to-sum formula for \\(\\sin A \\sin B\\)?",
+    "answers": [
+      "\\(\\sin A \\sin B = \\frac{1}{2}[\\cos(A-B) - \\cos(A+B)]\\)",
+      "\\(\\sin A \\sin B = \\frac{1}{2}[\\cos(A-B) + \\cos(A+B)]\\)",
+      "\\(\\sin A \\sin B = \\frac{1}{2}[\\sin(A+B) + \\sin(A-B)]\\)",
+      "\\(\\sin A \\sin B = \\frac{1}{2}[\\sin(A+B) - \\sin(A-B)]\\)"
+    ],
+    "correct": "\\(\\sin A \\sin B = \\frac{1}{2}[\\cos(A-B) - \\cos(A+B)]\\)",
+    "explanation": "The product-to-sum formula for \\(\\sin A \\sin B\\) is \\(\\sin A \\sin B = \\frac{1}{2}[\\cos(A-B) - \\cos(A+B)]\\).",
+    "category": "Product-to-Sum Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ027",
+    "question": "What is the difference formula for tangent?",
+    "answers": [
+      "\\(\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)",
+      "\\(\\tan(A - B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}\\)",
+      "\\(\\tan(A - B) = \\tan A - \\tan B\\)",
+      "\\(\\tan(A - B) = \\frac{\\sin(A - B)}{\\cos(A - B)}\\)"
+    ],
+    "correct": "\\(\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)",
+    "explanation": "The difference formula for tangent is \\(\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\).",
+    "category": "Sum and Difference Formulas",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "EQ028",
+    "question": "What is the relationship between sine and cosecant?",
+    "answers": [
+      "\\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\)",
+      "\\(\\csc \\theta = \\frac{1}{\\cos \\theta}\\)",
+      "\\(\\csc \\theta = \\frac{1}{\\tan \\theta}\\)",
+      "\\(\\csc \\theta = \\frac{1}{\\cot \\theta}\\)"
+    ],
+    "correct": "\\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\)",
+    "explanation": "Cosecant is the reciprocal of sine: \\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\).",
+    "category": "Reciprocal Identities",
+    "difficulty": "Easy"
+  }
+]
