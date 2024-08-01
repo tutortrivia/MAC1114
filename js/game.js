@@ -41,6 +41,30 @@ let currentLibrary = 'UnitCircle';
 let currentQuestions = [];
 let answeredQuestions = [];
 
+function initializeGame() {
+    console.log('Initializing game...');
+    showLoadingScreen();
+    populateLibrarySelect();
+    updateHeaderImage();
+
+    // Ensure MathJax is loaded and ready
+    if (window.MathJax) {
+        MathJax.startup.promise.then(() => {
+            console.log('MathJax is ready');
+            hideLoadingScreen();
+            showStartMenu();
+        }).catch(error => {
+            console.error('MathJax initialization error:', error);
+            hideLoadingScreen();
+            showStartMenu();
+        });
+    } else {
+        console.warn('MathJax not found, proceeding without it');
+        hideLoadingScreen();
+        showStartMenu();
+    }
+}
+
 function populateLibrarySelect() {
     const libraries = getAvailableLibraries(allQuestions);
     librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
@@ -268,6 +292,11 @@ function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
 }
 
+function showLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'flex';
+}
+
 function hideLoadingScreen() {
     const loadingScreen = document.getElementById('loading-screen');
     loadingScreen.style.display = 'none';
@@ -279,13 +308,4 @@ volumeToggle.addEventListener('click', toggleVolume);
 finishReviewButton.addEventListener('click', showStartMenu);
 qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
-document.addEventListener('DOMContentLoaded', () => {
-    showStartMenu();
-    // Wait for MathJax to be ready
-    MathJax.startup.promise.then(() => {
-        hideLoadingScreen();
-    });
-});
-
-// Initialize the game
-showStartMenu();
+document.addEventListener('DOMContentLoaded', initializeGame);
