@@ -104,13 +104,13 @@ function displayQuestion() {
             'hover:bg-blue-600',
             'text-white',
             'font-bold',
-            'py-4',  // Significantly increased vertical padding
-            'px-4',  // Significantly increased horizontal padding
+            'py-2',  // Significantly increased vertical padding
+            'px-2',  // Significantly increased horizontal padding
             'rounded-lg',  // Slightly larger border radius
             'w-full',
-            'mb-3',  // Increased margin between buttons
+            'mb-2',  // Increased margin between buttons
             'text-xl',  // Significantly larger text
-            'min-h-[80px]',  // Minimum height to ensure consistent sizing
+            'min-h-[60px]',  // Minimum height to ensure consistent sizing
             'flex',
             'items-center',
             'justify-center'
