@@ -1,81 +1,291 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trig Quiz Game</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-    MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-        },
-        startup: {
-            pageReady: () => {
-                return MathJax.startup.defaultPageReady().then(() => {
-                    console.log('MathJax initial typesetting complete');
-                });
+import { shuffleArray, getAvailableLibraries, updateTimerDisplay, toggleQRCode, getGameImage } from './util.js';
+import { loadQuestionLibrary, allQuestions } from './questions.js';
+
+const startButton = document.getElementById('start-button');
+const gameContent = document.getElementById('game-content');
+const questionElement = document.getElementById('question');
+const categoryElement = document.getElementById('category');
+const difficultyElement = document.getElementById('difficulty');
+const answersElement = document.getElementById('answers');
+const resultElement = document.getElementById('result');
+const scoreElement = document.getElementById('score');
+const timerElement = document.getElementById('timer');
+const startMenu = document.getElementById('start-menu');
+const volumeToggle = document.getElementById('volume-toggle');
+const backgroundMusic = document.getElementById('backgroundMusic');
+const correctSound = document.getElementById('correctSound');
+const incorrectSound = document.getElementById('incorrectSound');
+const personalBestSound = new Audio('assets/sounds/personalBest.mp3');
+let librarySelect = document.getElementById('library-select');
+const headerImage = document.getElementById('header-image');
+const reviewContainer = document.getElementById('review-container');
+const reviewQuestionsElement = document.getElementById('review-questions');
+const finishReviewButton = document.getElementById('finish-review');
+const qrToggle = document.getElementById('qr-toggle');
+const qrImage = document.getElementById('qr-image');
+
+let currentQuestionIndex = 0;
+let score = 0;
+let incorrectAnswers = 0;
+let timer;
+let timeLeft = 90;
+let isMuted = false;
+let isTransitioning = false;
+let sessionBest = {
+    attempted: 0,
+    correct: 0,
+    incorrect: 0,
+    percentage: 0
+};
+let currentLibrary = 'UnitCircle';
+let currentQuestions = [];
+let answeredQuestions = [];
+
+function populateLibrarySelect() {
+    const libraries = getAvailableLibraries(allQuestions);
+    librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
+    librarySelect.value = currentLibrary;
+    librarySelect.addEventListener('change', () => {
+        currentLibrary = librarySelect.value;
+        updateHeaderImage();
+    });
+    updateHeaderImage();
+}
+
+function updateHeaderImage() {
+    const imageSrc = getGameImage(currentLibrary);
+    headerImage.src = `assets/images/${imageSrc}`;
+    headerImage.alt = `${currentLibrary} header image`;
+}
+
+async function startGame() {
+    currentLibrary = librarySelect.value;
+    currentQuestions = await loadQuestionLibrary(currentLibrary);
+    if (!currentQuestions) {
+        alert("Failed to load questions. Please try again.");
+        return;
+    }
+    shuffleArray(currentQuestions);
+    currentQuestionIndex = 0;
+    score = 0;
+    incorrectAnswers = 0;
+    answeredQuestions = [];
+    updateScore();
+    timeLeft = 90;
+    startMenu.classList.add('hidden');
+    gameContent.classList.remove('hidden');
+    displayQuestion();
+    startTimer();
+    if (!isMuted) {
+        backgroundMusic.play();
+    }
+}
+
+function displayQuestion() {
+    if (currentQuestionIndex >= currentQuestions.length || timeLeft <= 0) {
+        endGame();
+        return;
+    }
+
+    const question = currentQuestions[currentQuestionIndex];
+    questionElement.innerHTML = question.question;
+    categoryElement.textContent = `Category: ${question.category || 'N/A'}`;
+    difficultyElement.textContent = `Difficulty: ${question.difficulty || 'N/A'}`;
+    answersElement.innerHTML = '';
+
+    const shuffledAnswers = [...question.answers];
+    shuffleArray(shuffledAnswers);
+
+    shuffledAnswers.forEach((answer) => {
+        const button = document.createElement('button');
+        button.innerHTML = answer;
+        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full', 'mb-2');
+        button.addEventListener('click', () => {
+            if (!isTransitioning) {
+                checkAnswer(answer, question.correct);
             }
+        });
+        answersElement.appendChild(button);
+    });
+
+    resultElement.textContent = 'Good Luck!';
+    resultElement.classList.add('text-blue-500');
+
+    // Typeset the new content
+    MathJax.typesetPromise([questionElement, answersElement]).then(() => {
+        console.log('Question and answers typeset complete');
+    });
+}
+
+function checkAnswer(selectedAnswer, correctAnswer) {
+    isTransitioning = true;
+    const buttons = answersElement.getElementsByTagName('button');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+        if (buttons[i].innerHTML === correctAnswer) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-green-500');
+        } else if (buttons[i].innerHTML === selectedAnswer) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-red-500');
         }
-    };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div id="loading-screen" class="fixed top-0 left-0 w-full h-full bg-white flex items-center justify-center z-50">
-        <div class="text-2xl font-bold">Loading...</div>
-    </div>
-    <div id="game-container" class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full">
-        <img id="header-image" src="assets/images/UnitCircle.png" alt="Game header" class="mx-auto mb-4">
-        <div id="volume-control" class="text-center mb-4">
-            <button id="volume-toggle" class="text-2xl">
-                <i class="fas fa-volume-up"></i>
-            </button>
+    }
+
+    const isCorrect = selectedAnswer === correctAnswer;
+    if (isCorrect) {
+        score++;
+        resultElement.textContent = 'Correct!';
+        resultElement.classList.remove('text-blue-500');
+        resultElement.classList.add('text-green-500');
+        if (!isMuted) correctSound.play();
+    } else {
+        incorrectAnswers++;
+        resultElement.textContent = 'Incorrect!';
+        resultElement.classList.remove('text-blue-500');
+        resultElement.classList.add('text-red-500');
+        if (!isMuted) incorrectSound.play();
+    }
+
+    answeredQuestions.push({
+        ...currentQuestions[currentQuestionIndex],
+        userAnswer: selectedAnswer,
+        isCorrect: isCorrect
+    });
+
+    updateScore();
+
+    setTimeout(() => {
+        resultElement.textContent = 'Good Luck!';
+        resultElement.classList.remove('text-green-500', 'text-red-500');
+        resultElement.classList.add('text-blue-500');
+        currentQuestionIndex++;
+        displayQuestion();
+        isTransitioning = false;
+    }, 1500);
+}
+
+function updateScore() {
+    scoreElement.textContent = `Score: ${score} | Incorrect: ${incorrectAnswers}`;
+}
+
+function startTimer() {
+    updateTimerDisplay(timerElement, timeLeft);
+    timer = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay(timerElement, timeLeft);
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            endGame();
+        }
+    }, 1000);
+}
+
+function endGame() {
+    clearInterval(timer);
+    gameContent.classList.add('hidden');
+    reviewContainer.classList.remove('hidden');
+
+    const attempted = score + incorrectAnswers;
+    const percentageCorrect = attempted > 0 ? (score / attempted * 100).toFixed(2) : 0;
+
+    let resultsHTML = `
+        <h2 class="text-2xl font-bold mb-4">Quiz Completed!</h2>
+        <p>Topics Covered: ${currentLibrary.charAt(0).toUpperCase() + currentLibrary.slice(1)} Trivia</p>
+        <p>Questions Attempted: ${attempted}</p>
+        <p>Correct Answers: ${score}</p>
+        <p>Incorrect Answers: ${incorrectAnswers}</p>
+        <p>Percentage Correct: ${percentageCorrect}%</p>
+    `;
+
+    let personalBestAchieved = false;
+
+    if (attempted > sessionBest.attempted) {
+        sessionBest.attempted = attempted;
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Questions Attempted!</p>`;
+        personalBestAchieved = true;
+    }
+    if (score > sessionBest.correct) {
+        sessionBest.correct = score;
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Correct Answers!</p>`;
+        personalBestAchieved = true;
+    }
+    if (incorrectAnswers > sessionBest.incorrect) {
+        sessionBest.incorrect = incorrectAnswers;
+    }
+    if (parseFloat(percentageCorrect) > sessionBest.percentage) {
+        sessionBest.percentage = parseFloat(percentageCorrect);
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Percentage Correct!</p>`;
+        personalBestAchieved = true;
+    }
+
+    if (personalBestAchieved && !isMuted) {
+        personalBestSound.play();
+    }
+
+    reviewQuestionsElement.innerHTML = resultsHTML;
+    displayReviewQuestions();
+
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0;
+}
+
+function displayReviewQuestions() {
+    const reviewQuestionsHTML = answeredQuestions.map((question, index) => `
+        <div class="mb-4 p-4 border rounded ${question.isCorrect ? 'bg-green-100' : 'bg-red-100'}">
+            <p class="font-semibold">${index + 1}. ${question.question}</p>
+            <p>Your answer: ${question.userAnswer}</p>
+            <p>Correct answer: ${question.correct}</p>
+            <p>Explanation: ${question.explanation || 'Not provided'}</p>
         </div>
-        <div id="start-menu" class="text-center">
-            <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
-            <button id="start-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Start New Game</button>
-            <br>
-            <button id="get-tutoring-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Learn More</button>
-        </div>
-        <div id="game-content" class="hidden">
-            <div id="timer" class="text-2xl font-bold text-center mb-4"></div>
-            <div id="question-container" class="mb-6">
-                <p id="category" class="text-sm font-semibold text-gray-500 mb-2"></p>
-                <p id="difficulty" class="text-sm font-semibold text-gray-500 mb-2"></p>
-                <p id="question" class="text-xl font-semibold mb-4"></p>
-                <div id="answers" class="grid grid-cols-1 gap-4"></div>
-            </div>
-            <div id="result" class="text-center mb-4 font-bold text-blue-500">Good Luck!</div>
-            <p id="score" class="text-center font-semibold"></p>
-        </div>
-        <div id="review-container" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Review Questions</h2>
-            <div id="review-questions"></div>
-            <button id="finish-review" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Finish Review</button>
-        </div>
-        <div id="qr-container" class="mt-4 text-center">
-            <button id="qr-toggle" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-                Display QR
-            </button>
-            <div id="qr-image" class="mt-4 hidden">
-                <img src="assets/images/qr.png" alt="QR Code" class="mx-auto">
-            </div>
-        </div>
-    </div>
-    <audio id="backgroundMusic" loop>
-        <source src="assets/sounds/backgroundMusic.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="correctSound">
-        <source src="assets/sounds/correctSound.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="incorrectSound">
-        <source src="assets/sounds/incorrectSound.mp3" type="audio/mpeg">
-    </audio>
-    <script type="module" src="js/questions.js"></script>
-    <script type="module" src="js/util.js"></script>
-    <script type="module" src="js/game.js"></script>
-</body>
-</html>
+    `).join('');
+
+    reviewQuestionsElement.innerHTML += reviewQuestionsHTML;
+
+    // Typeset the review questions
+    MathJax.typesetPromise([reviewQuestionsElement]).then(() => {
+        console.log('Review questions typeset complete');
+    });
+}
+
+function showStartMenu() {
+    reviewContainer.classList.add('hidden');
+    startMenu.classList.remove('hidden');
+    populateLibrarySelect();
+    updateHeaderImage();
+}
+
+function toggleVolume() {
+    isMuted = !isMuted;
+    backgroundMusic.muted = isMuted;
+    correctSound.muted = isMuted;
+    incorrectSound.muted = isMuted;
+    personalBestSound.muted = isMuted;
+    volumeToggle.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+}
+
+function getTutoring() {
+    window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
+}
+
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'none';
+}
+
+// Event listeners
+startButton.addEventListener('click', startGame);
+volumeToggle.addEventListener('click', toggleVolume);
+finishReviewButton.addEventListener('click', showStartMenu);
+qrToggle.addEventListener('click', () => toggleQRCode(qrImage, qrToggle));
+document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+document.addEventListener('DOMContentLoaded', () => {
+    showStartMenu();
+    // Wait for MathJax to be ready
+    MathJax.startup.promise.then(() => {
+        hideLoadingScreen();
+    });
+});
+
+// Initialize the game
+showStartMenu();
