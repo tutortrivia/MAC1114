@@ -196,7 +196,7 @@ function displayQuestion() {
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
         button.innerHTML = answer;
-        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full', 'mb-2');
+        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-2', 'rounded', 'w-full', 'mb-1');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
                 checkAnswer(answer, question.correct);
