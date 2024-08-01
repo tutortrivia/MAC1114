@@ -98,19 +98,21 @@ function displayQuestion() {
 
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
-        button.innerHTML = answer;
-        // Updated button classes for larger size
+        const answerContent = document.createElement('span');
+        answerContent.innerHTML = answer;
+
+        button.appendChild(answerContent);
         button.classList.add(
             'bg-blue-500',
             'hover:bg-blue-600',
             'text-white',
             'font-bold',
-            'py-4',  // Increased vertical padding
-            'px-6',  // Increased horizontal padding
+            'py-4',
+            'px-6',
             'rounded',
             'w-full',
-            'mb-4',  // Added margin bottom for spacing between buttons
-            'text-lg'  // Increased text size
+            'mb-4',
+            'text-lg'
         );
         button.addEventListener('click', () => {
             if (!isTransitioning) {
@@ -128,19 +130,20 @@ function displayQuestion() {
         console.log('Question and answers typeset complete');
     });
 }
+
 function checkAnswer(selectedAnswer, correctAnswer) {
     console.log('checkAnswer called', selectedAnswer, correctAnswer);
     isTransitioning = true;
     const buttons = answersElement.getElementsByTagName('button');
     console.log('Buttons found:', buttons.length);
-
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        if (buttons[i].textContent === correctAnswer) {
+        const answerContent = buttons[i].querySelector('span').innerHTML;
+        if (answerContent === correctAnswer) {
             console.log('Correct button found, adding green class');
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-green-500');
-        } else if (buttons[i].textContent === selectedAnswer) {
+        } else if (answerContent === selectedAnswer) {
             console.log('Incorrect button found, adding red class');
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-red-500');
