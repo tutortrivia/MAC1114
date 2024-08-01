@@ -110,7 +110,7 @@ function displayQuestion() {
             'w-full',
             'mb-2',
             'text-xl',
-            'min-h-[60px]',
+            'min-h-[80px]',
             'flex',
             'items-center',
             'justify-center'
