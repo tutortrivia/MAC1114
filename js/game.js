@@ -361,7 +361,7 @@ function toggleVolume() {
 }
 
 function getTutoring() {
-    window.open('https://mindcraftmagazine.beehiiv.com/', '_blank');
+    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
 }
 
 // Event listeners
