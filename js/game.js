@@ -88,7 +88,7 @@ function displayQuestion() {
     }
 
     const question = currentQuestions[currentQuestionIndex];
-    questionElement.textContent = question.question;
+    questionElement.innerHTML = question.question;
     categoryElement.textContent = `Category: ${question.category || 'N/A'}`;
     difficultyElement.textContent = `Difficulty: ${question.difficulty || 'N/A'}`;
     answersElement.innerHTML = '';
@@ -98,7 +98,7 @@ function displayQuestion() {
 
     shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
-        button.textContent = answer;
+        button.innerHTML = answer;
         button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
@@ -110,6 +110,11 @@ function displayQuestion() {
 
     resultElement.textContent = 'Good Luck!';
     resultElement.classList.add('text-blue-500');
+
+    // Typeset the new content
+    MathJax.typesetPromise([questionElement, answersElement]).then(() => {
+        console.log('Question and answers typeset complete');
+    });
 }
 
 function checkAnswer(selectedAnswer, correctAnswer) {
@@ -226,6 +231,7 @@ function endGame() {
 }
 
 function displayReviewQuestions() {
+    reviewQuestionsElement.innerHTML = ''; // Clear previous content
     answeredQuestions.forEach((question, index) => {
         const questionReview = document.createElement('div');
         questionReview.classList.add('mb-4', 'p-4', 'border', 'rounded');
@@ -241,6 +247,11 @@ function displayReviewQuestions() {
             questionReview.classList.add('bg-red-100');
         }
         reviewQuestionsElement.appendChild(questionReview);
+    });
+
+    // Typeset the review questions
+    MathJax.typesetPromise([reviewQuestionsElement]).then(() => {
+        console.log('Review questions typeset complete');
     });
 }
 
